@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="https://fom.in.ua/echo" method="POST">
+        <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Please enter name" value="John Doe" name="name" autofocus required size="40">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Please enter email" value="johndoe@example.com" name="email" required size="40">
+        </p>
+        <p>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" placeholder="Please enter password" value="testpassword" name="password" required size="37">
+        </p>
+        <p>
+            <label>Gender</label>
+            <label><input type="radio" checked name="gender" value="male">Male</label>
+            <label><input type="radio" name="gender" value="female">Female</label>
+        </p>
+        <p>
+            <label for="birth">Birthdate</label>
+            <input type="date" id="birth" name="birthDate">
+        </p>
+        <p>
+            <label>Contacts</label>
+            <select name="contacts">
+                <option>Skype</option>
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>Viber</option>
+            </select>
+            <input type="text" placeholder="enter a username" value="skypeusername" name="messangername">
+            <input type="reset">
+            <br>
+            <label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+            <select name="other">
+                <option>Other</option>
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>Viber</option>
+            </select>
+            <input type="text" placeholder="Facebook" size="8">
+            <input type="text" placeholder="enter a username" value="othername" name="othername">
+            <input type="reset">
+            <br>
+            <label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+            <button type="submit">Save</button> or <button type="submit">Add new</button>
+        </p>
+        <p>
+            <label>Photo</label>
+            <input type="file" name="photo" multiple="multiple">
+        </p>
+        <p>
+            <label>Hobbies</label>
+            <select multiple="multiple" size="4">
+                <option value="movies">Movies</option>
+                <option value=" music">Music</option>
+                <option value="cooking">Cooking</option>
+                <option value="photography">Photography</option>
+                <option value="drawing">Drawing</option>
+                <option value="playing">Playing</option>
+            </select>
+        </p>
+        <p>
+            <label for="field">Some words</label>
+            <textarea id="field" name="someWords" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="checkbox" name="terms">
+            <label>Agreement</label>
+        </p>
+        <input type="submit" value="Update profile" name="updProfile">
+        <input type="submit" value="Next" name="next">
+    </form>
+</body>
+</html>
