@@ -5,7 +5,6 @@
     <title>Form</title>
 </head>
 <body>
-    <!-- Do we need to put form into main - article???? -->
     <form action="https://fom.in.ua/echo" method="POST">
         <!-- Enter name -->
         <div>
@@ -13,21 +12,21 @@
                 Name
             </label>
             <!-- What do we need to leave - placeholder or value???? -->
-            <input type="text" id="name" placeholder="Please enter name" value="John Doe" name="name" autofocus required size="40">
+            <input type="text" id="name" placeholder="Please enter name" name="name" autofocus required size="40">
         </div>
         <!-- Enter email -->
         <div>
             <label for="email">
                 Email
             </label>
-            <input type="text" id="email" placeholder="Please enter email" value="johndoe@example.com" name="email" required size="40">
+            <input type="text" id="email" placeholder="Please enter email" name="email" required size="40">
         </div>
         <!-- Enter password -->
         <div>
             <label for="pass">
                 Password
             </label>
-            <input type="password" id="pass" placeholder="Please enter password" value="testpassword" name="password" required size="37">
+            <input type="password" id="pass" placeholder="Please enter password" name="password" required size="37">
         </div>
         <!-- Select gender -->
         <div>
@@ -59,7 +58,7 @@
                 <option>Instagram</option>
                 <option>Viber</option>
             </select>
-            <input type="text" placeholder="enter a username" value="johndoe" name="messangername">
+            <input type="text" placeholder="enter a username" name="messangername">
             <a href="#">
                 Delete
             </a>
@@ -71,8 +70,8 @@
                     <option>Instagram</option>
                     <option>Viber</option>
                 </select>
-                <input type="text" placeholder="Facebook" value="Facebook" size="8">
-                <input type="text" placeholder="enter a username" value="johndoe" name="othername">
+                <input type="text" placeholder="Facebook" size="8">
+                <input type="text" placeholder="enter a username" name="othername">
                 <a href="#">
                     Delete
                 </a>
@@ -93,11 +92,9 @@
             <label>
                 Photo
             </label>
-            <!-- Do we need to put choose files into fieldset???? -->
-            <!-- <fieldset>
+            <div>
                 <input type="file" name="photo" multiple="multiple">
-            </fieldset> -->
-            <input type="file" name="photo" multiple="multiple">
+            </div>
         </div>
         <!-- Select hobbies (4 visible, scroll to check the other options) -->
         <div>
