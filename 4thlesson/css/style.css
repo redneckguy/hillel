@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
 .piano {
     width: 1440px;
     height: 480px;
@@ -11,32 +17,37 @@
     background-size: cover;
     display: inline-block;
     text-align: center;
+    padding: 125px 40px;
 }
 
-.piano__letters {
+.piano,
+a {
+    color: #fff;
+}
+
+.piano__block {
     width: 1360px;
     height: 230px;
-    margin: 124.91px auto 125.09px;
 }
 
 .piano__possibilities {
     width: 330px;
     height: 112;
-    color: #fff;
-    font: normal 400 56px/56px roboto, sans-serif;
+    font-size: 56px;
+    line-height:56px;
     display: inline-block;
+    margin-bottom: 22px;
 }
 
 .piano__possibilities-member {
     width: 386px;
     height: 53px;
-    font: normal 400 22px/26.4px roboto, sans-serif;
-    color: #fff;
-    margin: 22px auto 20px;
+    font-size: 22px;
+    line-height: 26.4px;
+    margin: 0 auto 20px;
 }
 
 .piano__possibilities-watchlink {
-    font: normal 400 18px roboto, sans-serif;
-    color: #fff;
+    font-size: 18px;
     text-transform: uppercase;
 }
