@@ -15,7 +15,6 @@ h3 {
     height: 480px;
     background: url(../images/piano.jpg) 100% 100% no-repeat #331306;
     background-size: cover;
-    display: inline-block;
     text-align: center;
     padding: 125px 40px;
 }
@@ -35,8 +34,8 @@ a {
     height: 112;
     font-size: 56px;
     line-height:56px;
-    display: inline-block;
     margin-bottom: 22px;
+    display: inline-block;
 }
 
 .piano__possibilities-member {
