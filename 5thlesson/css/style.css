@@ -1,6 +1,3 @@
-/* font-family: 'Lato', sans-serif;
-font-family: 'Roboto Slab', serif; */
-
 /* ___ FONTS _________ */
 
 @font-face {
@@ -116,10 +113,11 @@ footer {
     margin-bottom: 45px;
 }
 
-/* .entry-block > p,
+/* word spasing for paragraphs */
+.entry-block > p,
 .geography-block > p {
     word-spacing: 5px;
-} */
+}
 
 .geography-block > p:not(:last-child),
 .geography-headline {
