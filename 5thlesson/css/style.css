@@ -51,13 +51,18 @@ font-family: 'Roboto Slab', serif; */
 }
 
 body {
-    padding: 0 36px;
+    padding: 0 37px;
     font-family: 'Lato', sans-serif;
     color: #4B5157;
-    /* background-color: black; */
+    background-color: black;
 }
 
-/* ___ ARTICLE PARTS _________ */
+main,
+footer {
+    background-color: #fff;
+}
+
+/* ___ HEADER PARTS _________ */
 
 .article-header {
     width: 1366px;
@@ -66,6 +71,11 @@ body {
     background-image: url(/images/background.jpg);
     background-size: cover;
     background-position: center;
+    color: #fff;
+}
+
+.article-header,
+.text-block {
     margin-bottom: 60px;
 }
 
@@ -75,7 +85,6 @@ body {
 }
 
 .article-headline {
-    color: #fff;
     font-size: 55px;
     line-height: 70px;
     width: 749px;
@@ -84,7 +93,6 @@ body {
 }
 
 .article-description {
-    color: #fff;
     font-size: 18px;
     line-height: 30px;
     width: 556px;
@@ -97,24 +105,37 @@ body {
     padding: 0 210px;
 }
 
-.text-block > div {
+.entry-block,
+.geography-block {
     width: 623px;
     font-size: 18px;
     line-height: 30px;
+}
+
+.entry-block {
     margin-bottom: 45px;
 }
 
-span {
+/* .entry-block > p,
+.geography-block > p {
+    word-spacing: 5px;
+} */
+
+.geography-block > p:not(:last-child),
+.geography-headline {
+    margin-bottom: 30px;
+}
+
+.entry-bigletter {
     color: #4592FF;
     font-weight: 900;
     font-size: 100px;
     float: left;
-    padding: 0 8px 29px 2px;
-    margin: 30px 1px 0 -8px;
+    margin: 31px 12px 0px -5px;
 }
 
-p {
-    word-spacing: 5px;
+.geography-block {
+    margin-bottom: 30px;
 }
 
 .geography-headline {
@@ -122,6 +143,12 @@ p {
     font-size: 25px;
 }
 
+/* ___ FOOTER PARTS _________ */
+
+.footer {
+    padding: 0 113px;
+    height: 135px;
+}
 
 hr {
     display: block;
@@ -129,5 +156,22 @@ hr {
     width: 1140px;
     border: 0;
     border-top: 1px solid #D9DADB;
-    margin: 1em auto
+    margin: 0 auto 40px;
+}
+
+.footer-universal,
+.footer-copyright {
+    color: #939699;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-universal {
+    width: 750px;
+    height: 40px;
+    float: left;
+}
+
+.footer-copyright {
+    text-align: right;
 }
