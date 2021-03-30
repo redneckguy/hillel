@@ -61,6 +61,7 @@ main {
 /* ___ HEADER PARTS _________ */
 
 .article-header {
+    width: 100vw;
     padding: 130px 406px 160px 210px;
     background-image: url(/images/background.jpg);
     background-size: cover;
@@ -74,6 +75,10 @@ main {
     margin-bottom: 60px;
 }
 
+.article-block {
+    width: 644px;
+}
+
 .article-headline,
 .geography-headline {
     font-family: 'Roboto Slab', serif;
@@ -82,7 +87,6 @@ main {
 .article-headline {
     font-size: 55px;
     line-height: 1.273;
-    width: 749px;
     margin-bottom: 30px;
 }
 

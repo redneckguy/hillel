@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.piano {
+    width: 100%;
+    background-image: url(../images/piano.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    text-align: center;
+    padding: 12.5rem 4rem;
+}
+
+.piano,
+a {
+    color: #fff;
+}
+
+.piano__block {
+    width: 38.6rem;
+    margin: 0 auto;
+}
+
+.piano__possibilities {
+    font-size: 5.6rem;
+    line-height:1;
+    margin-bottom: 2.2rem;
+}
+
+.piano__possibilities-member {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.piano__possibilities-watchlink {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
