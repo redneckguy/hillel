@@ -62,7 +62,7 @@ main {
 
 .article-header {
     padding: 130px 406px 160px 210px;
-    background-image: url(/images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,13 +110,13 @@ main {
     margin-bottom: 45px;
 }
 
-/* word spasing for paragraphs */
-.entry-block > p,
-.geography-block > p {
+/* word spacing for paragraphs */
+.entry-paragraph,
+.geography-paragraph {
     word-spacing: 5px;
 }
 
-.geography-block > p:not(:last-child),
+.geography-paragraph:not(:last-child),
 .geography-headline {
     margin-bottom: 30px;
 }
@@ -127,7 +127,7 @@ main {
     line-height: 0.35;
     font-size: 100px;
     float: left;
-    margin: 27px 12px 0px -5px;
+    margin: 27px 12px 0 -5px;
 }
 
 .geography-block {
@@ -142,17 +142,11 @@ main {
 /* ___ FOOTER PARTS _________ */
 
 .footer {
-    padding: 0 113px;
-    height: 135px;
-}
-
-hr {
-    display: block;
-    height: 1px;
     width: 1140px;
-    border: 0;
+    margin: 0 auto;
+    padding-top: 40px;
+    height: 135px;
     border-top: 1px solid #D9DADB;
-    margin: 0 auto 40px;
 }
 
 .footer-universal,
