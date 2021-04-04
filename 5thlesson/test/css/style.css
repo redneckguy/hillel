@@ -1,0 +1,175 @@
+/* ___ FONTS _________ */
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/subset-Lato-Regular.eot');
+    src: url('../fonts/subset-Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/subset-Lato-Regular.woff2') format('woff2'),
+    url('../fonts/subset-Lato-Regular.woff') format('woff'),
+    url('../fonts/subset-Lato-Regular.ttf') format('truetype'),
+    url('../fonts/subset-Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/subset-Lato-Black.eot');
+    src: url('../fonts/subset-Lato-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/subset-Lato-Black.woff2') format('woff2'),
+    url('../fonts/subset-Lato-Black.woff') format('woff'),
+    url('../fonts/subset-Lato-Black.ttf') format('truetype'),
+    url('../fonts/subset-Lato-Black.svg#Lato-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/subset-RobotoSlab-Bold.eot');
+    src: url('../fonts/subset-RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/subset-RobotoSlab-Bold.woff2') format('woff2'),
+    url('../fonts/subset-RobotoSlab-Bold.woff') format('woff'),
+    url('../fonts/subset-RobotoSlab-Bold.ttf') format('truetype'),
+    url('../fonts/subset-RobotoSlab-Bold.svg#RobotoSlab-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ___ MAIN ELEMENTS _________ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #4B5157;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+/* ___ HEADER PARTS _________ */
+
+.header {
+    margin: 0 auto 60px;
+    padding-top: 130px;
+    padding-bottom: 160px;
+    /*padding-right: 40px;*/
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.article-header {
+    padding-left: 97px;
+    color: #fff;
+}
+
+.text-block {
+    margin-bottom: 60px;
+}
+
+.article-headline,
+.geography-headline {
+    font-family: 'Roboto Slab', serif;
+}
+
+.article-headline {
+    font-size: 55px;
+    line-height: 1.28;
+    max-width: 749px;
+    margin-bottom: 30px;
+}
+
+.article-description {
+    font-size: 18px;
+    line-height: 1.67;
+    max-width: 556px;
+    opacity: 0.85;
+}
+
+/* ___ MAIN TEXT PARTS _________ */
+
+.text-block {
+    padding: 0 210px;
+}
+
+.entry-block {
+    margin-bottom: 45px;
+}
+
+.entry-block,
+.geography-block {
+    max-width: 623px;
+    font-size: 18px;
+    line-height: 1.67;
+}
+
+.entry-bigletter {
+    color: #4592FF;
+    font-weight: 900;
+    line-height: 0.35;
+    font-size: 100px;
+    float: left;
+    margin: 27px 12px 0 -5px;
+}
+
+/* word spacing for paragraphs */
+.entry-paragraph,
+.geography-paragraph {
+    word-spacing: 5px;
+}
+
+.geography-block {
+    margin-bottom: 30px;
+}
+
+.geography-headline,
+.geography-paragraph:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.geography-headline {
+    color: #262D33;
+    font-size: 25px;
+}
+
+/* ___ FOOTER PARTS _________ */
+
+.footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 40px;
+    height: 135px;
+    border-top: 1px solid #D9DADB;
+}
+
+.footer-universal,
+.footer-copyright {
+    color: #939699;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+.footer-universal {
+    max-width: 750px;
+    float: left;
+}
+
+.footer-copyright {
+    text-align: right;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
