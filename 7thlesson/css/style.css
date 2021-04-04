@@ -18,6 +18,7 @@ body {
 /* ________ HEADER SECTION ________ */
 
 /* --- Contact Section --- */
+
 .contact__section {
     padding: 3px 33.5px 4px;
     background-color: #F4F4F4;
@@ -47,31 +48,74 @@ body {
     margin-right: 0;
 }
 
-/* HR tags arrow */
-/* .contact__dropdown {
+/* --- Room Section --- */
+
+.room__selections-container,
+.room__logo-container,
+.room__selections,
+.room__selections-products,
+.room__selections-explore,
+.room__selections-shop,
+.room__showrooms-words,
+.room__showrooms {
     display: inline-block;
-    position: relative;
-    vertical-align: middle;
 }
 
-.contact__dropdown-leftpart,
-.contact__dropdown-rightpart {
-    opacity: 0.9;
-    background-color: #AAAAAA;
-    border: none;
-    height: 1px;
-    width: 10px;
-    border-radius: 1px;
-    margin: 0;
-    position: absolute;
+.room__section {
+    padding: 25px 32px 24px;
 }
 
-.contact__dropdown-leftpart {
-    transform: rotate(40deg);
-    left: 0px;
+.room__container {
+    max-width: 1376px;
+    margin: 0 auto;
 }
 
-.contact__dropdown-rightpart {
-    transform: rotate(-40deg);
-    left: 7.3px;
-} */
+.room__logo-container {
+    max-width: 399px;
+    padding-left: 88px;
+    padding-right: 261px;
+}
+
+.room__selections-container {
+    
+}
+
+.room__selections {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.room__selections-products {
+    margin-right: 100px;
+}
+
+.room__selections-explore {
+    margin-right: 120px;
+}
+
+.room__showrooms {
+
+}
+
+.room__showrooms-words {
+
+}
+
+.testlicontainer {
+    border: 1px solid black;
+    padding: 50px 30px;
+    display: inline-block;
+    max-width: 300px;
+}
+
+.testlicontainer-ul {
+    padding: 50px 30px;
+}
+
+.testlicontainer-li {
+    display: inline-block;
+}
