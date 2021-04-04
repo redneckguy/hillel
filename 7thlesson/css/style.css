@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #AAA;
+}
+
+.clearxix::after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* ________ HEADER SECTION ________ */
+
+/* --- Contact Section --- */
+.contact__section {
+    padding: 3px 33.5px 4px;
+    background-color: #F4F4F4;
+}
+
+.contact__container {
+    max-width: 1373px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.contact__text {
+    font-size: 12px;
+    line-height: 2.75;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-right: 25px;
+    opacity: 0.9;
+}
+
+.contact__text-tel {
+    margin-right: 23px;
+}
+
+.contact__text-us {
+    margin-right: 0;
+}
+
+/* HR tags arrow */
+/* .contact__dropdown {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.contact__dropdown-leftpart,
+.contact__dropdown-rightpart {
+    opacity: 0.9;
+    background-color: #AAAAAA;
+    border: none;
+    height: 1px;
+    width: 10px;
+    border-radius: 1px;
+    margin: 0;
+    position: absolute;
+}
+
+.contact__dropdown-leftpart {
+    transform: rotate(40deg);
+    left: 0px;
+}
+
+.contact__dropdown-rightpart {
+    transform: rotate(-40deg);
+    left: 7.3px;
+} */
