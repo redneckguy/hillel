@@ -61,20 +61,19 @@ a {
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
-    margin-right: 20px;
     opacity: 0.9;
 }
 
-.contact__text-sales {
+.contact__text:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.contact__text:first-child {
     padding-right: 6px;
 }
 
-.contact__text-tel {
-    margin-right: 22px;
-}
-
-.contact__text-us {
-    margin-right: 0;
+.contact__text:nth-child(2) {
+    padding-right: 2px;
 }
 
 .contact__select {
@@ -226,11 +225,11 @@ li[class*="selections-words"],
     padding-bottom: 32px;
 }
 
-div[class*="fourrooms__picture-n-info"] {
+.fourrooms__picture-n-info {
     display: inline-block;
 }
 
-.fourrooms__picture-n-info-margin {
+.fourrooms__picture-n-info:first-child {
     margin-right: 20px;
 }
 
