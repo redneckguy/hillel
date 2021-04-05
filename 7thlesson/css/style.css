@@ -210,7 +210,7 @@ li[class*="selections-words"],
 /* --- 4 rooms Section --- */
 
 .fourrooms__margin {
-
+    margin-bottom: 212px;
 }
 
 .fourrooms__container {
@@ -243,4 +243,23 @@ div[class*="fourrooms__picture-n-info"] {
     font-size: 24px;
     line-height: 28px;
     color: #1A1A1A;
+}
+
+/* --- Choose room Section --- */
+
+.chooseroom__margin {
+
+}
+
+.chooseroom__container {
+    padding: 0 200px;
+}
+
+.chooseroom__ltrs {
+    max-width: 941px;
+    margin: 0 auto;
+}
+
+.chooseroom__title {
+    
 }
