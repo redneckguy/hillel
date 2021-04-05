@@ -2,10 +2,21 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+  
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #AAA;
 }
+
 
 .clearfix::after {
     content: " ";
@@ -15,16 +26,26 @@ body {
     clear: both;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    padding: 0 50px;
+}
+
 /* ________ HEADER SECTION ________ */
 
 .header {
     border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 48px;
 }
 
 /* --- Contact Section --- */
 
 .contact__section {
-    padding: 3px 33.5px 4px;
+    padding: 4px 33.5px 3px;
     background-color: #F4F4F4;
 }
 
@@ -42,11 +63,6 @@ body {
     display: inline-block;
     margin-right: 20px;
     opacity: 0.9;
-}
-
-.contact__text a {
-    text-decoration: none;
-    color: inherit;
 }
 
 .contact__text-sales {
@@ -67,8 +83,11 @@ body {
 
 /* --- Room Section --- */
 
+.room__section-bigcontainer {
+    padding: 25px 32px 24px;
+}
+
 .room__section {
-    padding: 25px 0 24px;
     max-width: 1376px;
     margin: 0 auto;
 }
@@ -82,7 +101,7 @@ body {
 }
 
 .room__selections-container {
-    padding-top: 17px;
+    padding-top: 18px;
     float: left;
 }
 
@@ -105,8 +124,8 @@ li[class*="words-explore"] {
 }
 
 .room__showrooms {
-    max-width: 563px;
-    padding-left: 361px;
+    max-width: 565px;
+    padding-left: 360px;
 }
 
 .room__showrooms-maptag {
@@ -115,20 +134,75 @@ li[class*="words-explore"] {
 }
 
 .room__showrooms-words {
-    padding: 17px 4px 0;
-    margin-left: 11px;
+    padding: 18px 4px 0;
+    margin-left: 12px;
     float: left;
 }
 
 .room__showrooms-basket {
     padding-top: 12px;
-    padding-left: 43px;
+    padding-left: 44px;
 }
 
 .room__selections-container,
 .room__selections,
 li[class*="selections-words"],
 .room__showrooms,
-.room__showrooms-words {
+.room__showrooms-words,
+.room__showrooms-basket,
+.room__showrooms-maptag {
+    display: inline-block;
+}
+
+/* ________ MAIN SECTION ________ */
+
+/* --- Prime Picture Section --- */
+
+.primepicture__margin {
+    margin-bottom: 80px;
+}
+
+.primepicture {
+    padding: 0 6px;
+}
+
+.primepicture__image {
+    max-width: 1327px;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+/* --- Design inspires Section --- */
+
+.designinsp__margin {
+    margin-bottom: 210px;
+}
+
+.designinsp {
+    padding: 0 70px;
+}
+
+.designinsp__info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 85px 0 55px;
+}
+
+.designinsp__title {
+    max-width: 355px;
+    font-size: 48px;
+    line-height: 1.21;
+    color: #1A1A1A;
+    margin-right: 132px;
+}
+
+.designinsp__descr {
+    max-width: 569px;
+    font-size: 24px;
+    line-height: 1.67;
+}
+
+.designinsp__title,
+.designinsp__descr {
     display: inline-block;
 }
