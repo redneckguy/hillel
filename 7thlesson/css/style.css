@@ -178,7 +178,7 @@ li[class*="selections-words"],
     margin-bottom: 210px;
 }
 
-.designinsp {
+.designinsp__container {
     padding: 0 70px;
 }
 
@@ -205,4 +205,42 @@ li[class*="selections-words"],
 .designinsp__title,
 .designinsp__descr {
     display: inline-block;
+}
+
+/* --- 4 rooms Section --- */
+
+.fourrooms__margin {
+
+}
+
+.fourrooms__container {
+    padding: 0 70px;
+}
+
+.fourrooms__pictures-ltr {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fourrooms__pictures-level {
+    padding-bottom: 32px;
+}
+
+div[class*="fourrooms__picture-n-info"] {
+    display: inline-block;
+}
+
+.fourrooms__picture-n-info-margin {
+    margin-right: 20px;
+}
+
+.fourrooms__img {
+    max-width: 588px;
+    margin-bottom: 6px;
+}
+
+.fourrooms__info {
+    font-size: 24px;
+    line-height: 28px;
+    color: #1A1A1A;
 }
