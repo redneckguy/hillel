@@ -7,7 +7,7 @@ body {
     color: #AAA;
 }
 
-.clearxix::after {
+.clearfix::after {
     content: " ";
     visibility: hidden;
     display: block;
@@ -17,6 +17,10 @@ body {
 
 /* ________ HEADER SECTION ________ */
 
+.header {
+    border-bottom: 1px solid #E0E0E0;
+}
+
 /* --- Contact Section --- */
 
 .contact__section {
@@ -25,7 +29,7 @@ body {
 }
 
 .contact__container {
-    max-width: 1373px;
+    max-width: 1376px;
     margin: 0 auto;
     text-align: right;
 }
@@ -36,36 +40,35 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 20px;
     opacity: 0.9;
 }
 
+.contact__text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact__text-sales {
+    padding-right: 6px;
+}
+
 .contact__text-tel {
-    margin-right: 23px;
+    margin-right: 22px;
 }
 
 .contact__text-us {
     margin-right: 0;
 }
 
+.contact__select {
+    display: none;
+}
+
 /* --- Room Section --- */
 
-.room__selections-container,
-.room__logo-container,
-.room__selections,
-.room__selections-products,
-.room__selections-explore,
-.room__selections-shop,
-.room__showrooms-words,
-.room__showrooms {
-    display: inline-block;
-}
-
 .room__section {
-    padding: 25px 32px 24px;
-}
-
-.room__container {
+    padding: 25px 0 24px;
     max-width: 1376px;
     margin: 0 auto;
 }
@@ -74,48 +77,58 @@ body {
     max-width: 399px;
     padding-left: 88px;
     padding-right: 261px;
+    line-height: 0;
+    float: left;
 }
 
 .room__selections-container {
-    
+    padding-top: 17px;
+    float: left;
 }
 
-.room__selections {
+.room__selections-container,
+.room__showrooms {
     color: black;
     text-transform: uppercase;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.25;
     letter-spacing: 2px;
-    text-align: center;
 }
 
-.room__selections-products {
-    margin-right: 100px;
+li[class*="words-products"] {
+    margin-right: 97px;
+    padding: 0 4px;
 }
 
-.room__selections-explore {
-    margin-right: 120px;
+li[class*="words-explore"] {
+    margin-right: 118px;
 }
 
 .room__showrooms {
+    max-width: 563px;
+    padding-left: 361px;
+}
 
+.room__showrooms-maptag {
+    padding-top: 13px;
+    float: left;
 }
 
 .room__showrooms-words {
-
+    padding: 17px 4px 0;
+    margin-left: 11px;
+    float: left;
 }
 
-.testlicontainer {
-    border: 1px solid black;
-    padding: 50px 30px;
-    display: inline-block;
-    max-width: 300px;
+.room__showrooms-basket {
+    padding-top: 12px;
+    padding-left: 43px;
 }
 
-.testlicontainer-ul {
-    padding: 50px 30px;
-}
-
-.testlicontainer-li {
+.room__selections-container,
+.room__selections,
+li[class*="selections-words"],
+.room__showrooms,
+.room__showrooms-words {
     display: inline-block;
 }

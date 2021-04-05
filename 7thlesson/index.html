@@ -12,57 +12,60 @@
     <title>ROOM</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <section class="contact__section">
             <div class="contact__container">
-                <div class="contact__text">
-                    Contact Sales
+                <div class="contact__text contact__text-sales">
+                    <a href="#">
+                        Contact Sales
+                    </a>
                 </div>
                 <div class="contact__text contact__text-tel">
-                    TEL 646-791-3726
+                    <a href="tel:+16467913726">
+                        TEL 646-791-3726
+                    </a>
                 </div>
                 <div class="contact__text contact__text-us">
-                    US
+                    <label for="us-selection">
+                        US
+                    </label>
+                    <div class="contact__select">
+                        <select name="us" id="us-selection">
+                            <option>Option1</option>
+                            <option>Option2</option>
+                        </select>
+                    </div>
                 </div>
                 <img src="images/arrow.svg" alt="arrow">
             </div>
         </section>
-        <section class="room__section">
-            <div class="room__container">
-                <div class="room__logo-container">
-                    <img src="images/roomlogo.svg" alt="room_logo">
+        <section class="room__section clearfix">
+            <div class="room__logo-container">
+                <img src="images/roomlogo.svg" alt="room_logo">
+            </div>
+            <nav class="room__selections-container">
+                <ul class="room__selections">
+                    <li class="room__selections-words-products">
+                        Products
+                    </li>
+                    <li class="room__selections-words-explore">
+                        Explore
+                    </li>
+                    <li class="room__selections-words-shop">
+                        Shop
+                    </li>
+                </ul>
+            </nav>
+            <div class="room__showrooms">
+                <img class="room__showrooms-maptag" src="images/maptag.svg" alt="map_tag">
+                <div class="room__showrooms-words">
+                    Showrooms
                 </div>
-                <nav class="room__selections-container">
-                    <ul class="room__selections">
-                        <li class="room__selections-products">
-                            Products
-                        </li>
-                        <li class="room__selections-explore">
-                            Explore
-                        </li>
-                        <li class="room__selections-shop">
-                            Shop
-                        </li>
-                    </ul>
-                </nav>
-                <div class="room__showrooms">
-                    <img src="images/maptag.svg" alt="map_tag">
-                    <div class="room__showrooms-words">
-                        Showrooms
-                    </div>
-                    <img src="images/basket.svg" alt="basket">
-                </div>
+                <img class="room__showrooms-basket" src="images/basket.svg" alt="basket">
             </div>
         </section>
     </header>
     <main>
-        <nav class="testlicontainer">
-            <ul class="testlicontainer-ul">
-                <li class="testlicontainer-li">test</li>
-                <li class="testlicontainer-li">test</li>
-                <li class="testlicontainer-li">test</li>
-            </ul>
-        </nav>
     </main>
 </body>
 </html>
