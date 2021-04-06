@@ -247,7 +247,7 @@ li[class*="selections-words"],
 /* --- Choose room Section --- */
 
 .chooseroom__margin {
-
+    margin-bottom: 125px;
 }
 
 .chooseroom__container {
@@ -257,8 +257,108 @@ li[class*="selections-words"],
 .chooseroom__ltrs {
     max-width: 941px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .chooseroom__title {
-    
+    color: #1A1A1A;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 27px;
+}
+
+.chooseroom__over {
+    color: #4A4A4A;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+/* --- Brands Section --- */
+
+.brands_margin {
+    margin-bottom: 190px;
+}
+
+.brands__container {
+    padding: 0 125px 0 70.5px;
+}
+
+.brands__block {
+    max-width: 1144.5px;
+    margin: 0 auto;
+}
+
+.brands__firstline {
+    max-width: 1052px;
+    margin: 0 43px 49px 49.5px;
+    line-height: 0;
+}
+
+.nike {
+    margin-right: 95px;
+}
+
+.nasa,
+.google {
+    margin-right: 82px;
+}
+
+.uber {
+    margin-right: 69px;
+}
+
+.walmart {
+    margin-right: 65px;
+}
+
+.brands__secondline {
+    max-width: 1079px;
+    margin: 0 20px 49px 45.5px;
+    line-height: 0;
+}
+
+.hulu {
+    margin-right: 71px;
+}
+
+.reddit {
+    margin-right: 47px;
+}
+
+.knotel {
+    margin-right: 58px;
+}
+
+.samsung {
+    margin-right: 59px;
+}
+
+.amazon {
+    margin-right: 43px;
+}
+
+.brands__thirdline {
+    max-width: 1058;
+    margin: 0 42px 49px 44.5px;
+    line-height: 0;
+}
+
+.buzzfeed {
+    margin-right: 90px;
+}
+
+.apple {
+    margin-right: 75px;
+}
+
+.harrys {
+    margin-right: 76px;
+}
+
+.asana {
+    margin-right: 61px;
+}
+
+.jpmorgan {
+    margin-right: 57px;
 }
