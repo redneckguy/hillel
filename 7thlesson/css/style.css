@@ -362,3 +362,51 @@ li[class*="selections-words"],
 .jpmorgan {
     margin-right: 57px;
 }
+
+/* --- Slider Section --- */
+
+.slider__margin {
+    margin-bottom: 83px;
+}
+
+.slider__container {
+    max-width: 1440px;
+    margin: 0 auto 24px;
+    line-height: 0;
+    background-color: #aab5b9;
+    background-image: url(/images/meetingrmbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.arrowleft {
+    margin: 328px 593px 330px 104px;
+}
+
+.arrowright {
+    margin: 328px 104px 330px 593px;
+}
+
+.dots__container {
+    text-align: center;
+    line-height: 0;
+}
+
+.footerdot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.footerdot:first-child {
+    background-color: #46856E;
+}
+
+.footerdot:not(:last-child) {
+    margin-right: 12px;
+}
