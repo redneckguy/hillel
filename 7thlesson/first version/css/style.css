@@ -374,7 +374,7 @@ li[class*="selections-words"],
     margin: 0 auto 24px;
     line-height: 0;
     background-color: #aab5b9;
-    background-image: url(/images/meetingrmbg.jpg);
+    background-image: url(../images/meetingrmbg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
