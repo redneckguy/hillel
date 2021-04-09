@@ -50,9 +50,9 @@ a {
 }
 
 .contact__container {
-    max-width: 1376px;
+    max-width: 1373px;
     margin: 0 auto;
-    text-align: right;
+    font-size: 0;
 }
 
 .contact__text {
@@ -62,27 +62,23 @@ a {
     letter-spacing: 1px;
     display: inline-block;
     opacity: 0.9;
-}
-
-.contact__text:not(:last-of-type) {
-    margin-right: 20px;
-}
-
-.contact__text:first-child {
-    padding-right: 6px;
-}
-
-.contact__text:nth-child(2) {
-    padding-right: 2px;
+    float: right;
 }
 
 .contact__select {
-    display: none;
+    text-transform: inherit;
+    color: inherit;
+    font-size: inherit;
+    border: 1px solid transparent;
+    background-color: transparent;
+    width: 43px;
+    cursor:pointer;
+    outline: none;
 }
 
 /* --- Room Section --- */
 
-.room__section-bigcontainer {
+.room__navigation {
     padding: 25px 32px 24px;
 }
 
