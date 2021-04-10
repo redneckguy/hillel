@@ -39,13 +39,18 @@ a {
 .header {
     border-bottom: 1px solid #E0E0E0;
     margin-bottom: 48px;
+    font-size: 12px;
 }
 
 /* --- Contact Section --- */
 
 .contact__block {
     padding: 4px 32px 3px;
-    background-color: #F4F4F4;    
+    background-color: #F4F4F4;
+    line-height: 2.75;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9; 
 }
 
 .contact__container {
@@ -54,12 +59,7 @@ a {
 }
 
 .contact__wrap {
-    font-size: 12px;
-    line-height: 2.75;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     display: inline-block;
-    opacity: 0.9;
     float: right;
 }
 
@@ -155,10 +155,6 @@ a {
     letter-spacing: 2px;
 }
 
-.room__showrooms-link {
-
-}
-
 .room__showrooms-text {
     margin-left: 16px;
     padding-top: 2px;
@@ -186,16 +182,23 @@ a {
     padding: 0 6px;
 }
 
-.primepicture__image {
+.primepicture__banner {
     max-width: 1327px;
+    width: 100%;
+    height: 746px;
     margin: 0 auto;
     line-height: 0;
+    background-color: #798070;
+    background-image: url(../images/primepicture.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* --- Design inspires Section --- */
 
 .designinsp__margin {
-    margin-bottom: 210px;
+    margin-bottom: 208px;
 }
 
 .designinsp__container {
@@ -206,6 +209,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 85px 0 55px;
+    line-height: 0;
 }
 
 .designinsp__title {
@@ -213,18 +217,16 @@ a {
     font-size: 48px;
     line-height: 1.21;
     color: #1A1A1A;
-    margin-right: 132px;
+    float: left;
+    padding-top: 2px;
 }
 
 .designinsp__descr {
     max-width: 569px;
     font-size: 24px;
     line-height: 1.67;
-}
-
-.designinsp__title,
-.designinsp__descr {
-    display: inline-block;
+    float: right;
+    padding-top: 13px;
 }
 
 /* --- 4 rooms Section --- */
@@ -242,15 +244,12 @@ a {
     margin: 0 auto;
 }
 
-.fourrooms__pictures-level {
+.fourrooms__picture-n-info {
+    display: inline-block;
     padding-bottom: 32px;
 }
 
-.fourrooms__picture-n-info {
-    display: inline-block;
-}
-
-.fourrooms__picture-n-info:first-child {
+.fourrooms__picture-n-info:nth-child(odd) {
     margin-right: 20px;
 }
 
