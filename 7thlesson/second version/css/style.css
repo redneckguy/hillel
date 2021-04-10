@@ -44,13 +44,13 @@ a {
 /* --- Contact Section --- */
 
 .contact__block {
-    padding: 4px 33.5px 3px;
-    background-color: #F4F4F4;
+    padding: 4px 32px 3px;
+    background-color: #F4F4F4;    
 }
 
 .contact__container {
     max-width: 1373px;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .contact__wrap {
@@ -97,42 +97,57 @@ a {
     margin: 0 auto;
 }
 
-.room__logonav-wrap {
-    max-width: 1296px;
-    float: left;
-}
-
 .room__logo-wrap {
-    max-width: 399px;
-    padding-left: 88px;
-    padding-right: 261px;
+    padding-left: 89px;
     line-height: 0;
     float: left;
 }
 
-.room__logo-link {
-
-}
-
 .room__logo-img {
-
+    max-width: 50px;
+    max-height: 50px;
 }
 
-.room__list-nav {
-    padding-top: 18px;
+.room__nav {
+    max-width: 974px;
+    width: 100%;
+    font-size: 0;
+    float: right;
+}
+
+.room__select {
     float: left;
+    padding-top: 18px;
 }
 
-.room__list {
+.room__showrooms {
+    float: right;
+    padding-top: 12px;
+}
+
+.room__select,
+.room__showrooms,
+.room__select-words,
+.room__showrooms-list  {
+    display: inline-block;
     font-size: 0;
 }
 
-.room__list-words {
-    display: inline-block;
+.room__select-words,
+.room__showrooms-list  {
+    vertical-align: middle;
 }
 
-.room__list-link,
-.room__showrooms-words-link {
+.room__select-words {
+    margin-right: 105px;
+}
+
+.room__select-words:nth-child(2) {
+    margin-right: 124px;
+}
+
+.room__select-link,
+.room__showrooms-link {
     color: black;
     text-transform: uppercase;
     font-size: 12px;
@@ -140,48 +155,23 @@ a {
     letter-spacing: 2px;
 }
 
-.room__showrooms {
-    max-width: 565px;
-    padding-left: 360px;
-    float: left;
-}
-
-.room__showrooms-maptag-wrap {
-    padding-top: 13px;
-    float: left;
-}
-
-.room__showrooms-maptag-link {
+.room__showrooms-link {
 
 }
 
-.room__showrooms-maptag-img {
-
+.room__showrooms-text {
+    margin-left: 16px;
+    padding-top: 2px;
 }
 
-.room__showrooms-words-wrap {
-    padding: 18px 4px 0;
-    float: left;
+.room__showrooms-list {
+    margin-left: 49px;
 }
 
-.room__showrooms-words-link {
-
-}
-
-.room__showrooms-basket-wrap {
-    padding-top: 12px;
-    padding-left: 44px;
-    float: right;
-    
-    
-}
-
-.room__showrooms-basket-link {
-    
-}
-
-.room__showrooms-basket-img {
-    
+.room__showrooms-img,
+.room__showrooms-text {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* ________ MAIN SECTION ________ */
