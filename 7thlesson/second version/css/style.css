@@ -1,11 +1,6 @@
 * {
     box-sizing: border-box;
 }
- 
-body::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -217,7 +212,7 @@ a {
 /* --- Rooms Section --- */
 
 .rooms__container {
-    padding: 0 70px;
+    padding: 0 62px;
     margin-bottom: 212px;
 }
 
@@ -341,18 +336,19 @@ a {
 
 /* --- Modular Section --- */
 
-.modular__container {
-    padding: 0 125px;
+.modular {
+    padding: 0 175px;
     margin-bottom: 213px;
 }
 
-.modular {
+.modular__wrap,
+.modular__list {
     max-width: 1090px;
     margin: 0 auto;
     line-height: 0;
 }
 
-.modular:first-child {
+.modular__wrap {
     margin-bottom: 43px;
 }
 
@@ -363,7 +359,7 @@ a {
     margin-bottom: 23.5px;
 }
 
-.modular__getintch {
+.modular__actions {
     color: #46856E;
     font-size: 14px;
     line-height: 0.86;
@@ -374,18 +370,18 @@ a {
 
 /* --- Moduls Section --- */
 
-.mods__part {
+.modular__item {
     max-width: 323px;
     line-height: 0;
     float: left;
     margin-bottom: 25px;
 }
 
-.mods__part:not(:last-child) {
+.modular__item:not(:last-child) {
     margin-right: 40px;
 }
 
-.mods__part:nth-child(2) {
+.modular__item:nth-child(2) {
     margin-right: 41px;
 }
 
