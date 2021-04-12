@@ -368,7 +368,7 @@ a {
     padding-bottom: 12.5px;
 }
 
-/* --- Moduls Section --- */
+/* --- Modular items Section --- */
 
 .modular__item {
     max-width: 323px;
@@ -385,52 +385,52 @@ a {
     margin-right: 41px;
 }
 
-.mod__wrap-img {
+.modular__item-wrap-img {
     text-align: center;
     margin-bottom: 26px;
 }
 
-.mod__img {
+.modular__item-img {
     width: 162px;
     height: 121px;
 }
 
-.mod__img-toster {
+.modular__item-img-toster {
     margin-top: 16px;
     margin-right: 54px;
 }
 
-.mod__img-timer {
+.modular__item-img-timer {
     margin-top: 8px;
     margin-right: 49px;
     margin-bottom: 8px;
 }
 
-.mod__img-cube {
+.modular__item-img-cube {
     margin-right: 1px;
     margin-bottom: 16px;
 }
 
-.mod__title {
+.modular__item-title {
     color: #1A1A1A;
     font-size: 24px;
     line-height: 1;
     margin-bottom: 18px;
 }
 
-.mod__text {
+.modular__item-text {
     font-size: 16px;
     line-height: 1.5;
 }
 
-.mod__text.mod__text-toster {
+.modular__item-text.modular__item-text-toster {
     padding-right: 7px;
 }
 
-.mod__text.mod__text-timer {
+.modular__item-text.modular__item-text-timer {
     padding-right: 25px;
 }
 
-.mod__text.mod__text-cube {
+.modular__item-text.modular__item-text-cube {
     padding-right: 14px;
 }
