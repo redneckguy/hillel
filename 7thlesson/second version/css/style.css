@@ -296,37 +296,65 @@ a {
     background-size: cover;
 }
 
-.arrowleft {
+.buttonleft,
+.buttonright {
+    cursor: pointer;
+    background-color: transparent;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 23px;
+    height: 42px;
+    vertical-align: top;
+    outline: none;
+}
+
+.buttonleft:hover,
+.buttonright:hover,
+.buttonleft:active,
+.buttonright:active {
+    filter: invert(43%) sepia(24%) saturate(662%) hue-rotate(107deg) brightness(101%) contrast(90%);
+}
+
+.buttonleft {
+    background-image: url(../images/arrowleft.svg);
     margin: 328px 0 330px 104px;
     float: left;
 }
 
-.arrowright {
+.buttonright {
+    background-image: url(../images/arrowright.svg);
     margin: 328px 104px 330px 0;
     float: right;
 }
+
 
 .dots__container {
     text-align: center;
     line-height: 0;
     margin-bottom: 83px;
+    font-size: 0;
 }
 
-.slidermove {
+.buttonslidermove {
     cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0;
     background-color: #E5E5E5;
+    border: none;
     border-radius: 50%;
-    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align: top;
+    outline: none;
 }
 
-.slidermove:first-child {
+.buttonslidermove:first-of-type,
+.buttonslidermove:hover,
+.buttonslidermove:active {
     background-color: #46856E;
 }
 
-.slidermove:not(:last-child) {
+.buttonslidermove:not(:last-child) {
     margin-right: 12px;
 }
 
