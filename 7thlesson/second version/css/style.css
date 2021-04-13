@@ -296,8 +296,8 @@ a {
     background-size: cover;
 }
 
-.buttonleft,
-.buttonright {
+.slider__buttonleft,
+.slider__buttonright {
     cursor: pointer;
     background-color: transparent;
     background-position:center;
@@ -310,27 +310,27 @@ a {
     outline: none;
 }
 
-.buttonleft:hover,
-.buttonright:hover,
-.buttonleft:active,
-.buttonright:active {
+.slider__buttonleft:hover,
+.slider__buttonright:hover,
+.slider__buttonleft:active,
+.slider__buttonright:active {
     filter: invert(43%) sepia(24%) saturate(662%) hue-rotate(107deg) brightness(101%) contrast(90%);
 }
 
-.buttonleft {
+.slider__buttonleft {
     background-image: url(../images/arrowleft.svg);
     margin: 328px 0 330px 104px;
     float: left;
 }
 
-.buttonright {
+.slider__buttonright {
     background-image: url(../images/arrowright.svg);
     margin: 328px 104px 330px 0;
     float: right;
 }
 
 
-.dots__container {
+.sliderdots__container {
     text-align: center;
     line-height: 0;
     margin-bottom: 83px;
