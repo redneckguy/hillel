@@ -113,22 +113,22 @@ a {
 
 .room__select,
 .showrooms,
-.room__select-words,
+.room__select-text,
 .showrooms-list  {
     display: inline-block;
     font-size: 0;
 }
 
-.room__select-words,
+.room__select-text,
 .showrooms-list  {
     vertical-align: middle;
 }
 
-.room__select-words {
+.room__select-text {
     margin-right: 105px;
 }
 
-.room__select-words:nth-child(2) {
+.room__select-text:nth-child(2) {
     margin-right: 124px;
 }
 
@@ -246,7 +246,7 @@ a {
 
 /* --- Choose room --- */
 
-.chooseroom__ltrs {
+.chooseroom__wrap {
     max-width: 941px;
     margin: 0 auto 125px;
     text-align: center;
@@ -376,7 +376,7 @@ a {
     margin-right: 41px;
 }
 
-.modular__item-wrap-img {
+.modular__item-imgwrap {
     text-align: center;
     margin-bottom: 26px;
 }
@@ -386,18 +386,18 @@ a {
     height: 121px;
 }
 
-.modular__item-img-toster {
+.img-toster {
     margin-top: 16px;
     margin-right: 54px;
 }
 
-.modular__item-img-timer {
+.img-timer {
     margin-top: 8px;
     margin-right: 49px;
     margin-bottom: 8px;
 }
 
-.modular__item-img-cube {
+.img-cube {
     margin-right: 1px;
     margin-bottom: 16px;
 }
@@ -414,14 +414,14 @@ a {
     line-height: 1.5;
 }
 
-.modular__item-text.modular__item-text-toster {
+.modular__item-text.text-toster {
     padding-right: 7px;
 }
 
-.modular__item-text.modular__item-text-timer {
+.modular__item-text.text-timer {
     padding-right: 25px;
 }
 
-.modular__item-text.modular__item-text-cube {
+.modular__item-text.text-cube {
     padding-right: 14px;
 }
