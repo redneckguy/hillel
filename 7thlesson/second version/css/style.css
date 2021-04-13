@@ -161,7 +161,6 @@ a {
 /* --- Prime Picture Section --- */
 
 .primepicture {
-    padding: 0 6px;
     margin-bottom: 80px;
 }
 
@@ -181,7 +180,6 @@ a {
 /* --- Design inspires Section --- */
 
 .designinsp__container {
-    padding: 0 70px;
     margin-bottom: 208px;
 }
 
@@ -211,8 +209,7 @@ a {
 
 /* --- Rooms Section --- */
 
-.rooms__container {
-    padding: 0 62px;
+.rooms {
     margin-bottom: 212px;
 }
 
@@ -221,12 +218,12 @@ a {
     margin: 0 auto;
 }
 
-.rooms__block {
+.rooms__item {
     display: inline-block;
     padding-bottom: 32px;
 }
 
-.rooms__block:nth-child(odd) {
+.rooms__item:nth-child(odd) {
     margin-right: 20px;
 }
 
@@ -286,7 +283,7 @@ a {
 
 /* --- Slider Section --- */
 
-.slider__container {
+.slider {
     margin: 0 auto 24px;
     line-height: 0;
     background-color: #aab5b9;
@@ -337,7 +334,7 @@ a {
     font-size: 0;
 }
 
-.buttonslidermove {
+.button-slider-move {
     cursor: pointer;
     background-color: #E5E5E5;
     border: none;
@@ -348,13 +345,13 @@ a {
     outline: none;
 }
 
-.buttonslidermove:first-of-type,
-.buttonslidermove:hover,
-.buttonslidermove:active {
+.button-slider-move:first-of-type,
+.button-slider-move:hover,
+.button-slider-move:active {
     background-color: #46856E;
 }
 
-.buttonslidermove:not(:last-child) {
+.button-slider-move:not(:last-child) {
     margin-right: 12px;
 }
 
