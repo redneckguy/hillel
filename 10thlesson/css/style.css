@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     padding: 0 15px;
 }
@@ -16,20 +20,47 @@ body {
 .selection {
     background-color: white;
     text-align: center;
+    position: relative;
 }
 
 .selection-item {
     display: inline-block;
-    padding: 20px 40px;
-    transition: all 0.1s;
-}
-
-.selection-item:hover,
-.selection-item:active {
-    background-color:#E0E0E0;
+    padding: 20px 0;
+    
 }
 
 .selection-link {
-    text-decoration: none;
+    padding: 20px 40px;
     color: 	#383838;
+    transition: all 0.1s;
+}
+
+.selection-link:hover,
+.selection-link:active {
+    background-color:#E0E0E0;
+}
+
+.portfolio {
+    /* visibility: hidden; */
+    position: absolute;
+    top:100%;
+    background-color: #383838;
+    overflow: hidden;
+}
+
+.portfolio-item {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.portfolio-link {
+    padding: 19px 40px;
+    color: #E0E0E0;
+    transition: all 0.2s;
+}
+
+.portfolio-link:hover,
+.portfolio-link:active {
+    background-color:#E0E0E0;
+    color: #3D3D3D;
 }
