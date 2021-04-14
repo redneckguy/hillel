@@ -1,5 +1,5 @@
 body {
-    background-color: beige;
+    background-color: #f5f5dc;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -61,12 +61,11 @@ a {
     overflow: hidden;
     max-width: 210px;
     width: 100%;
+    z-index: 2;
 }
 
 .inner-item {
     text-align: left;
-    width: 211px;
-    height: 56px;
 }
 
 .inner-item:hover,
@@ -86,4 +85,10 @@ a {
     vertical-align: middle;
     padding: 20px 40px;
     color: #E0E0E0;
+}
+
+.block  {
+    background-color: #F08B59;
+    height: 20vw;
+    width: 100%;
 }
