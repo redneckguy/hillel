@@ -30,19 +30,21 @@ a {
     font-size: 16px;
 }
 
+.selection-item:hover,
+.selection-item:active,
+.selection-link:hover,
+.selection-link:active {
+    background-color: #383838;
+}
+
+.selection-item:hover .selection-link {
+    color: #E0E0E0;
+}
+
 .selection-link {
     padding: 20px 40px;
     color: 	#383838;
     transition: all 0.2s ease;
-}
-
-.selection-link:hover,
-.selection-link:active {
-    background-color:#E0E0E0;
-}
-
-.selection-portfolio:hover .inner-selection.portfolio {
-    visibility: visible;
 }
 
 .selection-home:hover .inner-selection.home {
@@ -50,6 +52,10 @@ a {
 }
 
 .selection-about:hover .inner-selection.about {
+    visibility: visible;
+}
+
+.selection-portfolio:hover .inner-selection.portfolio {
     visibility: visible;
 }
 
@@ -87,7 +93,7 @@ a {
     color: #E0E0E0;
 }
 
-.block  {
+.text  {
     background-color: #F08B59;
     height: 20vw;
     width: 100%;
