@@ -1,0 +1,35 @@
+body {
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.menu {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.selection {
+    background-color: white;
+    text-align: center;
+}
+
+.selection-item {
+    display: inline-block;
+    padding: 20px 40px;
+    transition: all 0.1s;
+}
+
+.selection-item:hover,
+.selection-item:active {
+    background-color:#E0E0E0;
+}
+
+.selection-link {
+    text-decoration: none;
+    color: 	#383838;
+}
