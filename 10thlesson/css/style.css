@@ -1,6 +1,6 @@
 body {
     background-color: #f5f5dc;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -31,19 +31,19 @@ a {
 }
 
 .selection-item:hover,
-.selection-item:active,
+.selection-item:focus,
 .selection-link:hover,
-.selection-link:active {
+.selection-link:focus {
     background-color: #383838;
 }
 
 .selection-item:hover .selection-link {
-    color: #E0E0E0;
+    color: #e0e0e0;
 }
 
 .selection-link {
     padding: 20px 40px;
-    color: 	#383838;
+    color: #383838;
     transition: all 0.2s ease;
 }
 
@@ -62,7 +62,7 @@ a {
 .inner-selection {
     visibility: hidden;
     position: absolute;
-    top:100%;
+    top: 100%;
     background-color: #383838;
     overflow: hidden;
     max-width: 210px;
@@ -75,26 +75,25 @@ a {
 }
 
 .inner-item:hover,
-.inner-item:active {
-    background-color:#E0E0E0;
-    color: #3D3D3D;
+.inner-item:focus {
+    background-color: #e0e0e0;
+    color: #3d3d3d;
     cursor: pointer;
 }
 
 .inner-item:hover .inner-link,
-.inner-item:active .inner-link {
-    color: #3D3D3D;
+.inner-item:focus .inner-link {
+    color: #3d3d3d;
 }
 
 .inner-link {
     display: block;
     vertical-align: middle;
     padding: 20px 40px;
-    color: #E0E0E0;
+    color: #e0e0e0;
 }
 
-.text  {
-    background-color: #F08B59;
-    height: 20vw;
+.text {
+    background-color: #f08b59;
     width: 100%;
 }
