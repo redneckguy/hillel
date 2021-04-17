@@ -13,8 +13,13 @@ a {
 
 .menu {
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
+}
+
+.menu,
+.inner-selection,
+.text {
+    width: 100%;
 }
 
 .selection {
@@ -32,42 +37,36 @@ a {
 
 .selection-item:hover,
 .selection-item:focus,
-.selection-link:hover,
-.selection-link:focus {
+.inner-selection {
     background-color: #383838;
 }
 
-.selection-item:hover .selection-link {
+.selection-item:hover .selection-link,
+.inner-link {
     color: #e0e0e0;
 }
 
+.selection-item:hover .inner-selection {
+    visibility: visible;
+}
+
 .selection-link {
-    padding: 20px 40px;
     color: #383838;
     transition: all 0.2s ease;
 }
 
-.selection-home:hover .inner-selection.home {
-    visibility: visible;
-}
-
-.selection-about:hover .inner-selection.about {
-    visibility: visible;
-}
-
-.selection-portfolio:hover .inner-selection.portfolio {
-    visibility: visible;
+.selection-link,
+.inner-link {
+    padding: 20px 40px;
 }
 
 .inner-selection {
     visibility: hidden;
     position: absolute;
     top: 100%;
-    background-color: #383838;
     overflow: hidden;
     max-width: 210px;
-    width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .inner-item {
@@ -77,10 +76,11 @@ a {
 .inner-item:hover,
 .inner-item:focus {
     background-color: #e0e0e0;
-    color: #3d3d3d;
     cursor: pointer;
 }
 
+.inner-item:hover,
+.inner-item:focus,
 .inner-item:hover .inner-link,
 .inner-item:focus .inner-link {
     color: #3d3d3d;
@@ -89,11 +89,8 @@ a {
 .inner-link {
     display: block;
     vertical-align: middle;
-    padding: 20px 40px;
-    color: #e0e0e0;
 }
 
 .text {
     background-color: #f08b59;
-    width: 100%;
 }
