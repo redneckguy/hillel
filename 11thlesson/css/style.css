@@ -21,6 +21,16 @@ a {
     height: 0;
 }
 
+.box {
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1206px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* ------------------------ */
 /* ---- HEADER SECTION ---- */
 /* ------------------------ */
@@ -188,3 +198,7 @@ a {
     font-size: 17px;
     padding: 11px 41.5px;
 }
+
+/* -------------------------------- */
+/* ---- INVESTING FOR EVERYONE ---- */
+/* -------------------------------- */
