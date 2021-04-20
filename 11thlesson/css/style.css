@@ -97,34 +97,54 @@ a {
     display: inline-block;
 }
 
-.selection-item {
+/* .selection-item {
     margin-right: 18px;
     padding: 10px 15px;
+    position: relative;
+} */
+
+.selection-item {
+    margin-right: 20px;
+    padding: 10px 0;
     position: relative;
 }
 
 .selection-item:hover .selection-arrow,
+.selection-item:focus .selection-arrow,
 .login-login:hover,
-.inner-item:hover {
+.login-login:focus,
+.inner-item:hover,
+.inner-item:focus {
     transition: all 0.2s ease;
 }
 
-.selection-item:hover .selection-arrow {
-    margin-bottom: 2px;
+.selection-item:hover .selection-arrow,
+.selection-item:focus .selection-arrow {
+    /* margin-bottom: 2px; */
+    top: 41%;
 }
+
+/* .selection-link {
+    color: inherit;
+    font-size: 17px;
+    line-height: 1.56;
+    letter-spacing: 0.25px;
+} */
 
 .selection-link {
     color: inherit;
     font-size: 17px;
     line-height: 1.56;
     letter-spacing: 0.25px;
+    padding: 10px 15px;
+    padding-right: 37px;
 }
 
 .link-font {
     font-size: 18px;
 }
 
-.selection-arrow {
+/* .selection-arrow {
     margin-bottom: 6px;
     margin-left: 7px;
 }
@@ -139,11 +159,30 @@ a {
 
 .support-margin {
     margin-right: 21px;
+} */
+
+.selection-arrow {
+    position: absolute;
+    top: 33%;
+    left: 80%;
+}
+
+.second-arrow {
+    left: 74%;
+}
+
+.third-arrow {
+    left: 85%;
+}
+
+.support-margin {
+    margin-right: -1px;
 }
 
 /* _______ Inner selection _______ */
 
-.selection-item:hover .inner-selection {
+.selection-item:hover .inner-selection,
+.selection-item:focus .inner-selection {
     visibility: visible;
     opacity: 1;
 }
@@ -162,8 +201,17 @@ a {
 }
 
 .selection-item:hover,
+.selection-item:focus,
+.selection-link:hover,
+.selection-link:focus,
 .inner-item:hover,
+.inner-item:focus,
+.inner-link:hover,
+.inner-link:focus,
 .login-login:hover,
+.login-login:focus,
+.login-link:hover,
+.login-link:focus,
 .login-signup {
     background-color: #00c805;
 }
@@ -281,8 +329,15 @@ a {
     margin-right: 7px;
 }
 
-.investing-desc:hover {
+.investing-desc:hover,
+.investing-desc:focus {
     text-shadow: 0px 4px 7px rgba(48,48,48,0.42);
+}
+
+.investing-desc:hover::before,
+.investing-desc:focus::before {
+    margin-right: 10px;
+    transition: all .2s ease;
 }
 
 /* _______ Schedule _______ */
@@ -476,4 +531,9 @@ a {
     background-size: cover;
     vertical-align: top;
     margin-left: 1px;
+}
+
+.investors-link:hover::after{
+    margin-left: 5px;
+    transition: all .2s ease;
 }
