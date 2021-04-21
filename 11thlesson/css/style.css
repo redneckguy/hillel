@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -55,7 +59,7 @@ a {
 }
 
 .text-hover-shadow {
-    text-shadow: 0px 4px 7px rgba(48,48,48,0.42);
+    text-shadow: 0px 4px 7px rgba(48, 48, 48, 0.42);
 }
 
 /* ------------------------ */
@@ -214,7 +218,7 @@ a {
 .login-link:focus,
 .login-signup {
     background-color: #00c805;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .inner-link {
@@ -261,8 +265,11 @@ a {
 
 .investing {
     background-color: #c3f53c;
+}
+
+.investing-background {
     background-image: url(../images/investingBanner.png);
-    background-position: 84.3% 59%;
+    background-position: 100% 60%;
     background-repeat: no-repeat;
     background-size: initial;
 }
@@ -332,13 +339,13 @@ a {
 
 .investing-desc:hover,
 .investing-desc:focus {
-    text-shadow: 0px 4px 7px rgba(48,48,48,0.42);
+    text-shadow: 0px 4px 7px rgba(48, 48, 48, 0.42);
 }
 
 .investing-desc:hover::before,
 .investing-desc:focus::before {
     margin-right: 10px;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 /* _______ Schedule _______ */
@@ -534,7 +541,62 @@ a {
     margin-left: 1px;
 }
 
-.investors-link:hover::after{
+.investors-link:hover::after {
     margin-left: 5px;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
+
+/* --------------------------------------- */
+/* ---- Introducing Fractional Shares ---- */
+/* --------------------------------------- */
+
+.introducing {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    background-image: url(../images/figures.png);
+    background-position: right;
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+
+.introducing-container {
+    padding-top: 48px;
+    padding-bottom: 106px;
+}
+
+.introducing-title {
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 1.3;
+    letter-spacing: 0.32px;
+    color: inherit;
+    margin-bottom: 18px;
+}
+
+.introducing-subtitle {
+    font-size: 17px;
+    line-height: 1.65;
+    letter-spacing: 0.25px;
+    color: #6f787e;
+    margin-bottom: 48px;
+}
+
+.introducing-columns-wrapper {
+
+}
+
+.introducing-column-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.25px;
+    color: inherit;
+}
+
+.introducing-column-text {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.25px;
+}
+
