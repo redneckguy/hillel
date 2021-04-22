@@ -546,9 +546,9 @@ button {
     transition: all 0.2s ease;
 }
 
-/* --------------------------------------- */
-/* ---- Introducing Fractional Shares ---- */
-/* --------------------------------------- */
+/* ----------------------------------------------- */
+/* ---- INTRODUCING FRACTIONAL SHARES SECTION ---- */
+/* ----------------------------------------------- */
 
 .introducing {
     margin: 0 auto;
@@ -616,7 +616,7 @@ button {
 }
 
 /* ----------------------------------- */
-/* ---- Learn As You Grow section ---- */
+/* ---- LEARN AS YOU GROW SECTION ---- */
 /* ----------------------------------- */
 
 .learn {
@@ -820,7 +820,6 @@ button {
 
 .products-bottom-links-wrap {
     position: absolute;
-    /* bottom: -123%; */
     bottom: -392px;
     width: 100%;
 }
@@ -847,3 +846,12 @@ button {
 .products-desc-link {
     font-size: 17px;
 }
+
+/* ------------------------ */
+/* ---- FOOTER SECTION ---- */
+/* ------------------------ */
+
+.footer {
+    background-color: #000;
+}
+
