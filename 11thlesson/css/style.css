@@ -161,8 +161,7 @@ button {
     font-size: 17px;
     line-height: 1.56;
     letter-spacing: 0.25px;
-    padding: 10px 15px;
-    padding-right: 37px;
+    padding: 10px 37px 10px 15px;
 }
 
 .link-font {
@@ -202,7 +201,7 @@ button {
     overflow: hidden;
     background-color: #fff;
     top: 100%;
-    left: 0%;
+    left: 0;
     width: 100%;
     min-width: 175px;
     z-index: 1;
