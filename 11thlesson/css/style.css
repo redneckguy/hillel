@@ -11,11 +11,6 @@ body {
     color: #000;
 }
 
-/* !!!!HIDE BEFORE SUBMITTING!!!! */
-body::-webkit-scrollbar {
-    display: none;
-}
-
 a {
     text-decoration: none;
 }
@@ -128,7 +123,7 @@ button {
     text-transform: capitalize;
 }
 
-.positioning {
+.position-rel {
     position: relative;
 }
 
@@ -210,13 +205,16 @@ button {
     transition: all 0.2s ease;
 }
 
-.header-nav-item:nth-child(even) .header-nav-link::after {
+.header-nav-item:nth-child(even) .header-nav-link::after,
+.header-nav-item:nth-child(4) .header-nav-link::after {
     margin-top: 5px;
+}
+
+.header-nav-item:nth-child(even) .header-nav-link::after {
     margin-left: 8px;
 }
 
 .header-nav-item:nth-child(4) .header-nav-link::after {
-    margin-top: 5px;
     margin-left: 11px;
 }
 
