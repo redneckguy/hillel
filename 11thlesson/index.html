@@ -12,10 +12,10 @@
     <title>Robinhood</title>
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <a class="myBtn" title="Go to top" href="#top">
         Top
-    </button>
-    <header class="header">
+    </a>
+    <header class="header" id="top">
         <div class="header-container clearfix">
             <a href="/" class="headerlogo-link">
                 <img src="images/robinLogo.svg" alt="robin_logo">
@@ -26,7 +26,6 @@
                         <a href="#products" class="header-nav-link link-font">
                             Products
                         </a>
-                        <img class="header-nav-arrow" src="images/navigationArrow.svg" alt="arrow">
                         <ul class="inner-header-nav">
                             <li class="inner-header-nav-item">
                                 <a href="#" class="inner-header-nav-link">
@@ -49,7 +48,6 @@
                         <a href="#learn" class="header-nav-link">
                             Learn
                         </a>
-                        <img class="header-nav-arrow second-arrow" src="images/navigationArrow.svg" alt="arrow">
                         <ul class="inner-header-nav">
                             <li class="inner-header-nav-item">
                                 <a href="#" class="inner-header-nav-link">
@@ -77,7 +75,6 @@
                         <a href="#whoweare" class="header-nav-link">
                             Who we are
                         </a>
-                        <img class="header-nav-arrow third-arrow" src="images/navigationArrow.svg" alt="arrow">
                         <ul class="inner-header-nav">
                             <li class="inner-header-nav-item">
                                 <a href="#" class="inner-header-nav-link">
@@ -110,7 +107,7 @@
     </header>
     <main>
         <section class="investing box container-border">
-            <div class="container investing-background">
+            <div class="container positioning">
                 <div class="investing-wrap">
                     <h1 class="investing-title">
                         Investing for Everyone
@@ -125,6 +122,7 @@
                         Commissions & Free Stock Disclosures
                     </a>
                 </div>
+                <img class="investing-img" src="images/investingBanner.png" alt="investing banner">
             </div>
         </section>
         <div class="schedule box container-border">
@@ -132,8 +130,7 @@
                 See our <a class="shedule-link" href="#">fee schedule</a> to learn more about cost.
             </p>
         </div>
-        <!-- With img and float -->
-        <!-- <section class="investors container-border">
+        <section class="investors container-border">
             <div class="container investors-container clearfix">
                 <img class="investors-image" src="/images/cafe.jpg" alt="cafe">
                 <div class="investors-wrap">
@@ -145,35 +142,6 @@
                             See the campaign
                         </a>
                     </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- With image and position -->
-        <!-- <section class="investors container-border">
-            <div class="investors-container">
-                <img class="investors-image" src="/images/cafe.jpg" alt="cafe">
-                <div class="investors-wrap">
-                    <h2 class="investors-title">
-                        We are all investors.
-                    </h2>
-                    <div class="investors-link-wrap">
-                        <a class="investors-link text" href="#">
-                            See the campaign
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-         <!-- With background and position -->
-         <section class="investors container-border">
-            <div id="whoweare" class="investors-container">
-                <div class="investors-wrap">
-                    <h2 class="investors-title">
-                        We are all investors.
-                    </h2>
-                    <a class="investors-link text" href="#">
-                        See the campaign
-                    </a>
                 </div>
             </div>
         </section>
@@ -437,20 +405,5 @@
             </div>
         </div>
     </footer>
-    <script>
-        var mybutton = document.getElementById("myBtn");
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
 </html>

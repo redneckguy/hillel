@@ -2,15 +2,19 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #000;
 }
 
-/* REMOVE BEFORE SUBMITTING!!!! */
-/* body::-webkit-scrollbar {
+/* !!!!HIDE BEFORE SUBMITTING!!!! */
+body::-webkit-scrollbar {
     display: none;
-} */
+}
 
 a {
     text-decoration: none;
@@ -20,12 +24,11 @@ button {
     border: none;
 }
 
-#myBtn {
-    display: none;
+.myBtn {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 3;
+    z-index: 2;
     font-size: 18px;
     outline: none;
     background-color: #00bc16;
@@ -33,11 +36,11 @@ button {
     cursor: pointer;
     width: 60px;
     height: 60px;
-    padding: 5px;
+    padding: 21px 14px;
     border-radius: 50%;
 }
 
-#myBtn:hover {
+.myBtn:hover {
     background-color: #555;
 }
 
@@ -125,6 +128,10 @@ button {
     text-transform: capitalize;
 }
 
+.positioning {
+    position: relative;
+}
+
 /* ------------------------ */
 /* ---- HEADER SECTION ---- */
 /* ------------------------ */
@@ -158,7 +165,6 @@ button {
 }
 
 .header-nav-item {
-    margin-right: 20px;
     padding: 10px 0;
     position: relative;
     display: inline-block;
@@ -176,34 +182,50 @@ button {
     top: 41%;
 }
 
+.support-margin {
+    margin-right: 3px;
+}
+
 .header-nav-link {
     color: inherit;
     font-size: 17px;
     line-height: 1.56;
     letter-spacing: 0.25px;
-    padding: 10px 37px 10px 15px;
+    padding: 10px 33px 10px 15px;
+}
+
+.header-nav-item:nth-child(even) .header-nav-link::after,
+.header-nav-item:nth-child(1) .header-nav-link::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background-image: url(../images/navigationArrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: top;
+    margin-top: 6px;
+    margin-left: 7px;
+    transition: all 0.2s ease;
+}
+
+.header-nav-item:nth-child(even) .header-nav-link::after {
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.header-nav-item:nth-child(4) .header-nav-link::after {
+    margin-top: 5px;
+    margin-left: 11px;
+}
+
+.header-nav-item:hover .header-nav-link::after {
+    margin-top: 9px;
 }
 
 .link-font {
     font-size: 18px;
-}
-
-.header-nav-arrow {
-    position: absolute;
-    top: 33%;
-    left: 80%;
-}
-
-.second-arrow {
-    left: 74%;
-}
-
-.third-arrow {
-    left: 85%;
-}
-
-.support-margin {
-    margin-right: -1px;
 }
 
 /* _______ Inner header-nav _______ */
@@ -224,7 +246,7 @@ button {
     left: 0;
     width: 100%;
     min-width: 175px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header-nav-item:hover,
@@ -274,12 +296,11 @@ button {
     background-color: #c3f53c;
 }
 
-/* make image background or as img and center as position? */
-.investing-background {
-    background-image: url(../images/investingBanner.png);
-    background-position: 100% 60%;
-    background-repeat: no-repeat;
-    background-size: initial;
+.investing-img {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 0;
 }
 
 .investing-wrap {
@@ -287,6 +308,8 @@ button {
     width: 100%;
     padding: 94px 0 108px;
     font-weight: 700;
+    position: relative;
+    z-index: 1;
 }
 
 .investing-title {
@@ -334,12 +357,10 @@ button {
 }
 
 /* -------------------------------- */
-/* ---- WE ARE ALL INVESTORS ---- */
+/* ---- WE ARE ALL INVESTORS ------ */
 /* -------------------------------- */
 
-/* ------ With img and float -------*/
-
-/* .investors {
+.investors {
     padding: 0 13px;
     line-height: 0;
 }
@@ -349,7 +370,6 @@ button {
 }
 
 .investors-image {
-    height: 453px;
     float: left;
     margin-right: 11px;
 }
@@ -373,118 +393,6 @@ button {
 .investors-link {
     color: inherit;
     font-weight: 700;
-}
-
-.investors-link::after {
-    content: "";
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    background-image: url(../images/arrowTextRight.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    vertical-align: top;
-    margin-left: 1px;
-} */
-
-/* ------ With image and position -------*/
-
-/* .investors {
-    padding: 0 13px;
-    line-height: 0;
-}
-
-.investors-container {
-    max-width: 1414px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.investors-image {
-    height: 453px;
-    margin-right: 11px;
-}
-
-.investors-wrap {
-    max-width: 500px;
-    width: 100%;
-    padding-top: 166px;
-    padding-bottom: 173px;
-    display: inline-block;
-    position: absolute;
-}
-
-.investors-title {
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 1.34;
-    letter-spacing: 1.75px;
-    margin-bottom: 26px;
-}
-
-.investors-link {
-    color: inherit;
-    font-weight: 700;
-}
-
-.investors-link::after {
-    content: "";
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    background-image: url(../images/arrowTextRight.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    vertical-align: top;
-    margin-left: 1px;
-} */
-
-/* ------ With background and position -------*/
-
-.investors {
-    padding: 0 13px;
-    line-height: 0;
-}
-
-.investors-container {
-    max-width: 1414px;
-    width: 100%;
-    margin: 0 auto;
-    height: 453px;
-    position: relative;
-    background-image: url(../images/cafe.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: initial;
-}
-
-.investors-wrap {
-    max-width: 500px;
-    width: 100%;
-    padding-top: 166px;
-    padding-bottom: 173px;
-    display: inline-block;
-    position: absolute;
-    right: 96px;
-}
-
-.investors-title,
-.investors-link {
-    font-weight: 700;
-}
-
-.investors-title {
-    font-size: 45px;
-    line-height: 1.34;
-    letter-spacing: 1.75px;
-    margin-bottom: 26px;
-}
-
-.investors-link {
-    color: inherit;
 }
 
 .investors-link::after {
@@ -661,12 +569,11 @@ button {
 
 .products {
     background-color: #f0ebe6;
-    height: 771px;
 }
 
 .products-padding {
     padding-top: 83px;
-    padding-bottom: 60px;
+    padding-bottom: 513px;
     position: relative;
 }
 
@@ -758,7 +665,7 @@ button {
     padding: 0 37px;
     position: absolute;
     z-index: 2;
-    bottom: -241px;
+    bottom: 212px;
     transition: all 0.2s ease;
 }
 
@@ -775,7 +682,7 @@ button {
 
 .products-bottom-links-wrap {
     position: absolute;
-    bottom: -392px;
+    bottom: 61px;
     width: 100%;
 }
 
@@ -919,18 +826,10 @@ button {
     line-height: 1.6;
     letter-spacing: 0.1px;
     color: #ffffff;
-    margin-bottom: 26px;
-}
-
-.footer-bottom-part-text:nth-child(2) {
-    margin-bottom: 22px;
-}
-
-.footer-bottom-part-text:nth-child(3) {
     margin-bottom: 24px;
 }
 
-.footer-bottom-part-text:nth-child(4) {
+.footer-bottom-part-text:last-of-type {
     margin-bottom: 33px;
 }
 
@@ -939,7 +838,6 @@ button {
     line-height: 1.72;
     letter-spacing: 0.1px;
     color: #00c805;
-    padding: 0 18px;
 }
 
 .footer-bottom-part-link:hover {

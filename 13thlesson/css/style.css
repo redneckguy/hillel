@@ -1,0 +1,35 @@
+.block {
+    background-color:bisque;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 780px;
+    width: 100%;
+}
+
+.item {
+    background-color:cadetblue;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+}
