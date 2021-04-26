@@ -1,35 +1,32 @@
-.block {
-    background-color:bisque;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-.item-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    max-width: 780px;
-    width: 100%;
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Semibold.woff') format('woff'),
+        url('../fonts/Lato-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
-.item {
-    background-color:cadetblue;
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 400px;
+body {
+    font-family: 'Lato';
+    font-weight: normal;
 }
 
-.nav-item {
-    display: flex;
-    justify-content: space-between;
-}
