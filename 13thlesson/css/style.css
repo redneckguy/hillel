@@ -152,6 +152,7 @@ a {
     flex-direction: row;
     align-items: center;
     margin-right: 13px;
+    flex-wrap: wrap;
 }
 
 .lang__selector-wrap {
