@@ -1,3 +1,5 @@
+/* FONTS */
+
 @font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-Bold.woff') format('woff'),
@@ -28,14 +30,162 @@
 body {
     font-family: 'Lato';
     font-weight: normal;
+    color: #000;
 }
 
-/* *HIDE SCROLLBAR */
+/* TODO HIDE SCROLLBAR */
 body::-webkit-scrollbar {
     display: none;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1110px;
+    max-width: 1130px;
+    padding: 0 10px;
 }
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 27px 11px 28px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+.button:hover,
+.button:focus {
+    filter: brightness(85%);
+}
+
+/* ------------------------ */
+/* ---- HEADER SECTION ---- */
+/* ------------------------ */
+
+.header {
+    max-width: 1440px;
+    height: 782px;
+    margin: 0 auto;
+    /* ? how to add grey color with blend mode pass-through to the picture and add gradient above? */
+    /* background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), linear-gradient(to top, rgba(196, 196, 196, 0.1), rgba(196, 196, 196, 0.1)), url(../images/topBanner.jpg); */
+    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(../images/topBanner.jpg);
+}
+
+.header__container {
+    padding-top: 49px;
+}
+
+/* ---- NAVIGATION BAR ---- */
+
+.header__navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 1px;
+}
+
+/* --- CloudBudget part --- */
+
+.header__logo-link {
+    display: flex;
+    flex-direction: row;
+    margin-left: 11.45px;
+    align-items: center
+}
+
+.header__logo-link:hover,
+.header__logo-link:focus {
+    filter: brightness(85%);
+}
+
+.header__logo-img {
+    margin-right: 8.5px;
+}
+
+.header__logo-text {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.23;
+    color: #fff;
+}
+
+/* --- Navigation links part --- */
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 39px;
+    padding-bottom: 3px;
+}
+
+.header__nav-item {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    padding: 0 10px
+}
+
+.header__nav-link {
+    color: inherit;
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+    font-weight: 700;
+}
+
+/* --- Selector and Login part --- */
+
+.header__login-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 13px;
+}
+
+.lang__selector-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-right: 28px;
+    padding-top: 3px;
+}
+
+.lang-selector__label {
+    margin-right: 11px;
+    padding-bottom: 2px;
+}
+
+.lang-selector {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 46px;
+    padding-bottom: 3px;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+}
+
+.lang-selector__item {
+    background-color: transparent;
+}
+
+.lang-selector__arrow {
+    margin-left: -15px;
+    padding-bottom: 2px;
+}
+
