@@ -1,0 +1,14 @@
+.button {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 27px 11px 28px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+.button:hover,
+.button:focus {
+    filter: drop-shadow(0px 0px .4px #fff);
+}

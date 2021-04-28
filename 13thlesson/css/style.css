@@ -165,18 +165,20 @@ a {
 .lang-selector__label {
     margin-right: 11px;
     padding-bottom: 2px;
+    position: relative;
 }
 
 .lang-selector {
     background-color: transparent;
     border: none;
+    font-family: inherit;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.22;
     color: #fff;
     text-transform: uppercase;
     width: 46px;
-    padding-bottom: 3px;
-    -webkit-appearance: none;
+    padding-bottom: 4px;
+    appearance: none;
     cursor: pointer;
     outline: none;
 }
@@ -196,4 +198,24 @@ a {
     margin-left: -15px;
     padding-bottom: 2px;
 }
+
+/* *arrow just in case using after */
+/* .lang-selector__label::after {
+content: "";
+position: absolute;
+width: 13px;
+height: 8px;
+background-color: #fff;
+clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+top: 13.7px;
+left: 74.3px;
+}
+
+.lang__selector-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-right: 27px;
+    padding-top: 3px;
+} */
+
 
