@@ -69,7 +69,6 @@ a {
 
 .header {
     max-width: 1440px;
-    height: 782px;
     margin: 0 auto;
     background-image: url(../images/topBanner.jpg);
     background-color: #c4c4c4;
@@ -92,7 +91,7 @@ a {
 
 .header__container {
     padding-top: 49px;
-    padding-bottom: 187px;
+    padding-bottom: 208px;
 }
 
 /* ---- NAVIGATION BAR ---- */
