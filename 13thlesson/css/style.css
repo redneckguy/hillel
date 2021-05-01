@@ -1,34 +1,34 @@
 /* FONTS */
 
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Bold.woff') format('woff'),
-        url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.woff") format("woff"),
+        url("../fonts/Lato-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Semibold.woff') format('woff'),
-        url('../fonts/Lato-Semibold.ttf') format('truetype');
+    font-family: "Lato";
+    src: url("../fonts/Lato-Semibold.woff") format("woff"),
+        url("../fonts/Lato-Semibold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Regular.woff') format('woff'),
-        url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.woff") format("woff"),
+        url("../fonts/Lato-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 body {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-weight: normal;
     color: #000;
 }
@@ -56,11 +56,30 @@ a {
     padding: 10px 27px 11px 28px;
     border: 1px solid #fff;
     border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Lato";
+}
+
+.button__signup {
+    font-weight: 600;
+    color: #ed4c5c;
+    background-color: #fff;
+    padding: 17px 53px 16px 52px;
+    font-style: normal;
+    border: none;
 }
 
 .button:hover,
 .button:focus {
-    filter: drop-shadow(0px 0px .4px #fff);
+    filter: drop-shadow(0px 0px 0.4px #fff);
+}
+
+.button__signup:hover,
+.button__signup:focus {
+    background-color: #f1f1f1;
 }
 
 /* ------------------------ */
@@ -86,12 +105,16 @@ a {
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+    background-image: linear-gradient(
+        90deg,
+        rgba(213, 32, 71, 0.8) 0%,
+        rgba(238, 61, 27, 0.8) 100%
+    );
 }
 
 .header__container {
-    padding-top: 49px;
-    padding-bottom: 208px;
+    padding-top: 50px;
+    padding-bottom: 187px;
 }
 
 /* ---- NAVIGATION BAR ---- */
@@ -102,7 +125,6 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1px;
     margin-bottom: 167px;
     position: relative;
     z-index: 2;
@@ -114,12 +136,12 @@ a {
     display: flex;
     flex-direction: row;
     margin-left: 11.45px;
-    align-items: center
+    align-items: center;
 }
 
 .header__logo-link:hover,
 .header__logo-link:focus {
-    filter: drop-shadow(0px 0px .4px #fff);
+    filter: drop-shadow(0px 0px 0.4px #fff);
 }
 
 .header__logo-img {
@@ -149,7 +171,7 @@ a {
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-    padding: 0 10px
+    padding: 0 10px;
 }
 
 .header__nav-link {
@@ -158,7 +180,7 @@ a {
 
 .header__nav-link:hover,
 .header__nav-link:focus {
-    text-shadow: 0 0 .4px #FFF, 0 0 .4px #FFF;
+    text-shadow: 0 0 0.4px #fff, 0 0 0.4px #fff;
 }
 
 /* --- Selector and Login part --- */
@@ -203,7 +225,7 @@ a {
 .lang-selector:focus,
 .lang-selector__arrow:hover,
 .lang-selector__arrow:focus {
-    filter: drop-shadow(0px 0px .4px #fff);
+    filter: drop-shadow(0px 0px 0.4px #fff);
 }
 
 .lang-selector__item {
@@ -251,7 +273,7 @@ left: 74.3px;
     line-height: 1.2;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 39px;
 }
 
@@ -262,7 +284,65 @@ left: 74.3px;
     text-align: center;
     max-width: 490px;
     width: 100%;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0 auto;
-    margin-bottom: 67px;
+    margin-bottom: 55px;
 }
+
+/* -------------- */
+/* ---- MAIN ---- */
+/* -------------- */
+
+/* --------------------------------- */
+/* ---- MANAGEMENT SOFT SECTION ---- */
+/* --------------------------------- */
+
+.management-soft__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.management-soft__text {
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+.management-soft__link {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #ed4c5c;
+}
+
+.management-soft__image-button {
+    width: 66px;
+    height: 66px;
+    background-color: #ed4c5c;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.management-soft__image-button::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 12.1px;
+    border-color: transparent transparent transparent #fff;
+    /* position: relative;
+    top: 3px;
+    left: 2px; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-30%, -50%);
+}
+
+.management-soft__image-img {
+    width: auto;
+    border-radius: 15px;
+}
+
