@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 
 .container {
     margin: 0 auto;
-    max-width: 1130px;
+    max-width: 1110px;
     padding: 0 10px;
 }
 
@@ -61,6 +61,7 @@ a {
     font-weight: normal;
     font-style: normal;
     font-family: "Lato";
+    transition: all .2s ease;
 }
 
 .button__signup {
@@ -70,6 +71,7 @@ a {
     padding: 17px 53px 16px 52px;
     font-style: normal;
     border: none;
+    transition: all .2s ease;
 }
 
 .button:hover,
@@ -135,8 +137,9 @@ a {
 .header__logo-link {
     display: flex;
     flex-direction: row;
-    margin-left: 11.45px;
+    margin-left: 1.45px;
     align-items: center;
+    transition: all .2s ease;
 }
 
 .header__logo-link:hover,
@@ -176,6 +179,7 @@ a {
 
 .header__nav-link {
     color: inherit;
+    transition: all .2s ease;
 }
 
 .header__nav-link:hover,
@@ -189,7 +193,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 13px;
+    margin-right: 3px;
     flex-wrap: wrap;
 }
 
@@ -219,6 +223,7 @@ a {
     appearance: none;
     cursor: pointer;
     outline: none;
+    transition: all .2s ease;
 }
 
 .lang-selector:hover,
@@ -235,6 +240,7 @@ a {
 .lang-selector__arrow {
     margin-left: -15px;
     padding-bottom: 2px;
+    transition: all .2s ease;
 }
 
 /* *arrow just in case using after */
@@ -297,21 +303,63 @@ left: 74.3px;
 /* ---- MANAGEMENT SOFT SECTION ---- */
 /* --------------------------------- */
 
+.management-soft {
+    line-height: none;
+    font-size: 0;
+    padding-top: 94px;
+    padding-bottom: 95px;
+}
+
+.management-soft__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.management-soft__descr-wrap {
+    max-width: 445px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 46px;
+    margin-right: 125px;
+}
+
 .management-soft__title {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.2;
+    max-width: 445px;
+    width: 100%;
+    margin-bottom: 45px;
 }
 
 .management-soft__text {
     font-size: 14px;
     line-height: 1.43;
+    max-width: 445px;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 19px;
 }
 
 .management-soft__link {
     font-size: 14px;
     line-height: 1.43;
     color: #ed4c5c;
+    transition: all .2s ease;    
+}
+
+.management-soft__link:hover,
+.management-soft__link:focus {
+    color: #c4c4c4;
+    text-shadow: 0px .5px .5px #ED4C5C;
+}
+
+.management-soft__image-wrap {
+    position: relative;
 }
 
 .management-soft__image-button {
@@ -321,7 +369,21 @@ left: 74.3px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease;
+}
+
+.management-soft__image-button:hover,
+.management-soft__image-button:focus {
+    background-color: #f1f1f1;
+}
+
+.management-soft__image-button:hover::before,
+.management-soft__image-button:focus::before {
+    border-color: transparent transparent transparent #ed4c5c;
 }
 
 .management-soft__image-button::before {
@@ -330,19 +392,31 @@ left: 74.3px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 7px 0 7px 12.1px;
+    border-width: 8px 0 8px 11.9px;
     border-color: transparent transparent transparent #fff;
     /* position: relative;
-    top: 3px;
-    left: 2px; */
+    top: 2px;
+    left: 1.45px; */
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-30%, -50%);
+    transform: translate(-38%, -50%);
+    transition: all .2s ease;
 }
 
 .management-soft__image-img {
     width: auto;
     border-radius: 15px;
+    position: relative;
 }
+
+/* ? img as background */
+/* .management-soft__image-img__bg {
+    background-image: url(../images/managment-soft.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 445px;
+    height: 311px;
+    border-radius: 15px; */
 
