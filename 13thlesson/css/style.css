@@ -354,8 +354,8 @@ left: 74.3px;
 
 .management-soft__link:hover,
 .management-soft__link:focus {
-    color: #c4c4c4;
-    text-shadow: 0px .5px .5px #ED4C5C;
+    color: #f16573;
+    text-decoration: underline;
 }
 
 .management-soft__image-wrap {
@@ -418,5 +418,118 @@ left: 74.3px;
     background-position: center;
     width: 445px;
     height: 311px;
+    background-color: #c4c4c4;
     border-radius: 15px; */
 
+/* -------------------------- */
+/* ---- FEATURES SECTION ---- */
+/* -------------------------- */
+
+.features {
+    background-color: #FAFAFA;
+}
+
+.features__container {
+    padding-top: 63px;
+    padding-bottom: 124px;
+}
+
+.features__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.features__cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features__card {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.features__card-background {
+    width: 350px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    background-color: #c4c4c4;
+}
+
+.background1 {
+    background-image: url(../images/moneyInHands.jpg);
+}
+
+.background2 {
+    background-image: url(../images/girlWithWatch.jpg);
+}
+
+.background3 {
+    background-image: url(../images/passage.jpg);
+}
+
+.features__card-wraper {
+    max-width: 293px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 24px;
+    /* position: relative;
+    bottom: 93px; */
+    margin-top: -93px;
+}
+
+.features__card-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.23;
+    text-align: center;
+    color: #101010;
+    max-width: 229px;
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+.features__card-text {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: #101010;
+    max-width: 229px;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.features__card-link {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: #ED4C5C;
+    transition: all .2s ease;
+}
+
+.features__card-link:hover,
+.features__card-link:focus {
+    color: #f16573;
+    text-decoration: underline;
+}
