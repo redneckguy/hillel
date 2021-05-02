@@ -533,3 +533,78 @@ left: 74.3px;
     color: #f16573;
     text-decoration: underline;
 }
+
+/* -------------------------- */
+/* ---- TECHNOLOGY SECTION ---- */
+/* -------------------------- */
+
+.technology {
+    padding-top: 63px;
+    padding-bottom: 104px;
+}
+
+.technology__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.technology__cards-wrap {
+
+}
+
+.technology__card-wrapper {
+    max-width: 255px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    counter-reset: card-counter;
+}
+
+.technology__card-icon {
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 120px;
+    margin-right: 1px;
+}
+
+.technology__card-figcap {
+    counter-increment: card-counter;
+}
+
+.technology__card-figcap::before {
+    content: "0" counter(card-counter);
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 120px;
+    text-align: center;
+    color: rgba(16, 16, 16, 0.08);
+    position: relative;
+    top: 61px;
+    width: 117px;
+    height: 120px;
+}
+
+.technology__card-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.23;
+    color: #101010;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.technology__card-text {
+    font-size: 12px;
+    line-height: 1.17;
+    max-width: 191px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 26px;
+    margin-left: 4px;
+}
