@@ -548,11 +548,14 @@ left: 74.3px;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 3px;
+    margin-bottom: 64px;
 }
 
 .technology__cards-wrap {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .technology__card-wrapper {
@@ -567,10 +570,10 @@ left: 74.3px;
 }
 
 .technology__card-icon {
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 120px;
     margin-right: 1px;
+    text-align: center;
+    position: relative;
+    padding-top: 59px;
 }
 
 .technology__card-figcap {
@@ -581,13 +584,12 @@ left: 74.3px;
     content: "0" counter(card-counter);
     font-weight: bold;
     font-size: 100px;
-    line-height: 120px;
+    line-height: 1.2;
     text-align: center;
     color: rgba(16, 16, 16, 0.08);
-    position: relative;
-    top: 61px;
-    width: 117px;
-    height: 120px;
+    position: absolute;
+    transform: translate(-50%,0);
+    z-index: 1;
 }
 
 .technology__card-title {
@@ -608,3 +610,4 @@ left: 74.3px;
     margin-bottom: 26px;
     margin-left: 4px;
 }
+
