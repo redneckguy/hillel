@@ -535,7 +535,7 @@ left: 74.3px;
 }
 
 /* -------------------------- */
-/* ---- TECHNOLOGY SECTION ---- */
+/* ---- TECHNOLOGY SECTION -- */
 /* -------------------------- */
 
 .technology {
@@ -642,4 +642,54 @@ left: 74.3px;
     text-align: center;
     margin-bottom: 26px;
     margin-left: 4px;
+}
+
+/* ------------------------- */
+/* ---- FOCUSED SECTION ---- */
+/* ------------------------- */
+
+.focused {
+    background-color: #ED4C5C;
+    padding-top: 94px;
+    padding-bottom: 95px;
+}
+
+.focused-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.focused__text-wrap {
+    max-width: 445px;
+    width: 100%;
+    margin-right: 81px;
+    margin-top: 12px;
+}
+
+.focused__text-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.focused__text-desc {
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: justify;
+    color: #FFFFFF;
+    margin-bottom: 44px;
+}
+
+.focused__text-icons {
+    max-width: 134px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -2px;
 }
