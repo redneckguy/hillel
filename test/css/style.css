@@ -58,11 +58,12 @@ a {
     width: 80px;
     height: 80px;
     margin-right: 1px;
-    padding-top: 59px;
+    /* padding-top: 59px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: -61px;
 }
 
 .technology__card-icon--secure {
@@ -80,7 +81,7 @@ a {
 
 .technology__card-figcap {
     counter-increment: card-counter;
-    position: relative;
+    /* position: relative; */
 }
 
 .technology__card-figcap::before {
@@ -90,8 +91,8 @@ a {
     line-height: 1.2;
     text-align: center;
     color: rgba(16, 16, 16, 0.08);
-    position: absolute;
-    transform: translate(-50%, 0);
+    /* position: absolute;
+    transform: translate(-50%, 0); */
     z-index: -1;
 }
 
