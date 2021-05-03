@@ -61,7 +61,7 @@ a {
     font-weight: normal;
     font-style: normal;
     font-family: "Lato";
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .button__signup {
@@ -71,7 +71,7 @@ a {
     padding: 17px 53px 16px 52px;
     font-style: normal;
     border: none;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .button:hover,
@@ -139,7 +139,7 @@ a {
     flex-direction: row;
     margin-left: 1.45px;
     align-items: center;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .header__logo-link:hover,
@@ -179,7 +179,7 @@ a {
 
 .header__nav-link {
     color: inherit;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .header__nav-link:hover,
@@ -223,7 +223,7 @@ a {
     appearance: none;
     cursor: pointer;
     outline: none;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .lang-selector:hover,
@@ -240,7 +240,7 @@ a {
 .lang-selector__arrow {
     margin-left: -15px;
     padding-bottom: 2px;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 /* *arrow just in case using after */
@@ -349,7 +349,7 @@ left: 74.3px;
     font-size: 14px;
     line-height: 1.43;
     color: #ed4c5c;
-    transition: all .2s ease;    
+    transition: all 0.2s ease;
 }
 
 .management-soft__link:hover,
@@ -373,7 +373,7 @@ left: 74.3px;
     z-index: 1;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .management-soft__image-button:hover,
@@ -401,7 +401,7 @@ left: 74.3px;
     left: 50%;
     top: 50%;
     transform: translate(-38%, -50%);
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .management-soft__image-img {
@@ -426,7 +426,7 @@ left: 74.3px;
 /* -------------------------- */
 
 .features {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
 }
 
 .features__container {
@@ -483,7 +483,7 @@ left: 74.3px;
 .features__card-wraper {
     max-width: 293px;
     width: 100%;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
@@ -524,8 +524,8 @@ left: 74.3px;
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
-    color: #ED4C5C;
-    transition: all .2s ease;
+    color: #ed4c5c;
+    transition: all 0.2s ease;
 }
 
 .features__card-link:hover,
@@ -556,6 +556,7 @@ left: 74.3px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: card-counter;
 }
 
 .technology__card-wrapper {
@@ -566,18 +567,40 @@ left: 74.3px;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    counter-reset: card-counter;
 }
 
-.technology__card-icon {
+.technology__card-wrapper:hover .technology__card-figcap::before,
+.technology__card-wrapper:focus .technology__card-figcap::before {
+    z-index: 1;
+}
+
+.technology__card-icon-wrap {
+    width: 80px;
+    height: 80px;
     margin-right: 1px;
-    text-align: center;
-    position: relative;
     padding-top: 59px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.technology__card-icon--secure {
+    padding-bottom: 2px;
+}
+
+.technology__card-icon--pdf {
+    padding-bottom: 6px;
+    margin-left: 2px;
+}
+
+.technology__card-icon--csv {
+    padding-bottom: 2px;
 }
 
 .technology__card-figcap {
     counter-increment: card-counter;
+    position: relative;
 }
 
 .technology__card-figcap::before {
@@ -588,8 +611,8 @@ left: 74.3px;
     text-align: center;
     color: rgba(16, 16, 16, 0.08);
     position: absolute;
-    transform: translate(-50%,0);
-    z-index: 1;
+    transform: translate(-50%, 0);
+    z-index: -1;
 }
 
 .technology__card-title {
@@ -601,6 +624,16 @@ left: 74.3px;
     margin-bottom: 11px;
 }
 
+.technology__card-title:hover,
+.technology__card-title:focus {
+    color: #ed4c5c;
+    text-decoration: underline;
+}
+
+.technology__card-title--pdf {
+    margin-right: 1px;
+}
+
 .technology__card-text {
     font-size: 12px;
     line-height: 1.17;
@@ -610,4 +643,3 @@ left: 74.3px;
     margin-bottom: 26px;
     margin-left: 4px;
 }
-
