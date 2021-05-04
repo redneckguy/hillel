@@ -1,0 +1,17 @@
+.flexrowwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flexrowwrapcenter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flexrownowrap {
+    display: flex;
+    flex-direction: row;
+}

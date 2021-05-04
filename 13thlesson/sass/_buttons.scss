@@ -1,14 +1,32 @@
 .button {
     text-transform: uppercase;
-    color: #fff;
+    color: $white-color;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.22;
     padding: 10px 27px 11px 28px;
-    border: 1px solid #fff;
+    border: 1px solid $white-color;
     border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Lato";
+    transition: all 0.2s ease;
+}
+
+.button__signup {
+    font-weight: 600;
+    color: $red;
+    background-color: $white-color;
+    padding: 17px 53px 16px 52px;
+    border: none;
+    transition: all 0.2s ease;
 }
 
 .button:hover,
 .button:focus {
-    filter: drop-shadow(0px 0px .4px #fff);
+    filter: drop-shadow(0px 0px 0.4px $white-color);
+}
+
+.button__signup:hover,
+.button__signup:focus {
+    background-color: $light-grey;
 }

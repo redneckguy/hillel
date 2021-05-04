@@ -40,8 +40,8 @@ body::-webkit-scrollbar {
 
 .container {
     margin: 0 auto;
-    max-width: 1110px;
     padding: 0 10px;
+    max-width: 1110px;
 }
 
 a {
@@ -49,19 +49,16 @@ a {
 }
 
 .button {
-    text-transform: uppercase;
-    color: #fff;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.22;
+    color: #fff;
+    font-family: "Lato";
+    text-transform: uppercase;
     padding: 10px 27px 11px 28px;
     border: 1px solid #fff;
     border-radius: 6px;
     background-color: transparent;
     cursor: pointer;
-    font-weight: normal;
-    font-style: normal;
-    font-family: "Lato";
-    transition: all 0.2s ease;
 }
 
 .button__signup {
@@ -69,8 +66,11 @@ a {
     color: #ed4c5c;
     background-color: #fff;
     padding: 17px 53px 16px 52px;
-    font-style: normal;
     border: none;
+}
+
+.button,
+.button__signup {
     transition: all 0.2s ease;
 }
 
@@ -82,6 +82,34 @@ a {
 .button__signup:hover,
 .button__signup:focus {
     background-color: #f1f1f1;
+}
+
+/* TEST STYLES */
+
+.cardtitle {
+    font-size: 18px;
+    line-height: 1.23;
+}
+
+.cardtext {
+    font-size: 12px;
+    line-height: 1.17;
+}
+
+.font1417 {
+    font-size: 14px;
+    line-height: 1.22;
+}
+
+.fonttitle {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.fontsubtitle {
+    font-size: 14px;
+    line-height: 1.43;
 }
 
 /* ------------------------ */
@@ -137,8 +165,8 @@ a {
 .header__logo-link {
     display: flex;
     flex-direction: row;
-    margin-left: 1.45px;
     align-items: center;
+    margin-left: 1.45px;
     transition: all 0.2s ease;
 }
 
@@ -152,11 +180,11 @@ a {
 }
 
 .header__logo-text {
-    text-transform: uppercase;
-    font-weight: 600;
     font-size: 18px;
     line-height: 1.23;
     color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* --- Navigation links part --- */
@@ -170,10 +198,10 @@ a {
 }
 
 .header__nav-item {
-    text-transform: uppercase;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.22;
     color: #fff;
+    text-transform: uppercase;
     padding: 0 10px;
 }
 
@@ -192,9 +220,9 @@ a {
 .header__login-wrap {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin-right: 3px;
-    flex-wrap: wrap;
 }
 
 .lang__selector-wrap {
@@ -211,14 +239,14 @@ a {
 }
 
 .lang-selector {
-    background-color: transparent;
-    border: none;
-    font-family: inherit;
     font-size: 14px;
     line-height: 1.22;
     color: #fff;
+    font-family: inherit;
     text-transform: uppercase;
     width: 46px;
+    background-color: transparent;
+    border: none;
     padding-bottom: 4px;
     appearance: none;
     cursor: pointer;
@@ -265,32 +293,32 @@ left: 74.3px;
 /* --- Header title part --- */
 
 .title__wrap {
+    text-align: center;
     max-width: 578px;
     width: 100%;
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    text-align: center;
 }
 
 .title__title {
-    font-weight: bold;
     font-size: 72px;
     line-height: 1.2;
+    color: #fff;
     letter-spacing: 0.05em;
+    font-weight: bold;
     text-transform: uppercase;
-    color: #ffffff;
     margin-bottom: 39px;
 }
 
 .title__text {
-    font-weight: 600;
     font-size: 24px;
     line-height: 1.5;
+    color: #fff;
+    font-weight: 600;
     text-align: center;
     max-width: 490px;
     width: 100%;
-    color: #ffffff;
     margin: 0 auto;
     margin-bottom: 55px;
 }
@@ -304,7 +332,7 @@ left: 74.3px;
 /* --------------------------------- */
 
 .management-soft {
-    line-height: none;
+    line-height: 0;
     font-size: 0;
     padding-top: 94px;
     padding-bottom: 95px;
@@ -318,19 +346,19 @@ left: 74.3px;
 }
 
 .management-soft__descr-wrap {
-    max-width: 445px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 445px;
+    width: 100%;
     padding-top: 46px;
     margin-right: 125px;
 }
 
 .management-soft__title {
-    font-weight: 600;
     font-size: 36px;
     line-height: 1.2;
+    font-weight: 600;
     max-width: 445px;
     width: 100%;
     margin-bottom: 45px;
@@ -339,9 +367,9 @@ left: 74.3px;
 .management-soft__text {
     font-size: 14px;
     line-height: 1.43;
+    text-align: justify;
     max-width: 445px;
     width: 100%;
-    text-align: justify;
     margin-bottom: 19px;
 }
 
@@ -435,9 +463,9 @@ left: 74.3px;
 }
 
 .features__title {
-    font-weight: 600;
     font-size: 36px;
     line-height: 1.2;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 75px;
 }
@@ -450,12 +478,12 @@ left: 74.3px;
 }
 
 .features__card {
-    max-width: 350px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    max-width: 350px;
+    width: 100%;
 }
 
 .features__card-background {
@@ -481,27 +509,27 @@ left: 74.3px;
 }
 
 .features__card-wraper {
-    max-width: 293px;
-    width: 100%;
-    background: #ffffff;
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    max-width: 293px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     padding-top: 33px;
     padding-bottom: 24px;
+    margin-top: -93px;
     /* position: relative;
     bottom: 93px; */
-    margin-top: -93px;
 }
 
 .features__card-title {
-    font-weight: bold;
     font-size: 18px;
     line-height: 1.23;
+    font-weight: bold;
     text-align: center;
     color: #101010;
     max-width: 229px;
@@ -512,19 +540,19 @@ left: 74.3px;
 .features__card-text {
     font-size: 12px;
     line-height: 1.5;
-    text-align: center;
     color: #101010;
+    text-align: center;
     max-width: 229px;
     width: 100%;
     margin-bottom: 26px;
 }
 
 .features__card-link {
-    font-weight: bold;
     font-size: 12px;
     line-height: 1.5;
-    text-align: center;
+    font-weight: bold;
     color: #ed4c5c;
+    text-align: center;
     transition: all 0.2s ease;
 }
 
@@ -544,9 +572,9 @@ left: 74.3px;
 }
 
 .technology__title {
-    font-weight: 600;
     font-size: 36px;
     line-height: 1.2;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 64px;
 }
@@ -560,13 +588,13 @@ left: 74.3px;
 }
 
 .technology__card-wrapper {
-    max-width: 255px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+    max-width: 255px;
+    width: 100%;
 }
 
 .technology__card-wrapper:hover .technology__card-figcap::before,
@@ -575,14 +603,14 @@ left: 74.3px;
 }
 
 .technology__card-icon-wrap {
-    width: 80px;
-    height: 80px;
-    margin-right: 1px;
-    padding-top: 59px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-right: 1px;
+    padding-top: 59px;
 }
 
 .technology__card-icon--secure {
@@ -605,21 +633,21 @@ left: 74.3px;
 
 .technology__card-figcap::before {
     content: "0" counter(card-counter);
-    font-weight: bold;
     font-size: 100px;
     line-height: 1.2;
-    text-align: center;
+    font-weight: bold;
     color: rgba(16, 16, 16, 0.08);
+    text-align: center;
     position: absolute;
     transform: translate(-50%, 0);
     z-index: -1;
 }
 
 .technology__card-title {
-    font-weight: bold;
     font-size: 18px;
     line-height: 1.23;
     color: #101010;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 11px;
 }
@@ -637,9 +665,9 @@ left: 74.3px;
 .technology__card-text {
     font-size: 12px;
     line-height: 1.17;
+    text-align: center;
     max-width: 191px;
     width: 100%;
-    text-align: center;
     margin-bottom: 26px;
     margin-left: 4px;
 }
@@ -670,9 +698,9 @@ left: 74.3px;
 }
 
 .focused__text-title {
-    font-weight: 600;
     font-size: 36px;
     line-height: 1.2;
+    font-weight: 600;
     color: #ffffff;
     margin-bottom: 45px;
 }
@@ -680,26 +708,26 @@ left: 74.3px;
 .focused__text-desc {
     font-size: 14px;
     line-height: 1.43;
-    text-align: justify;
     color: #ffffff;
+    text-align: justify;
     margin-bottom: 44px;
 }
 
 .focused__text-icons-wrap {
-    max-width: 134px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 134px;
+    width: 100%;
     margin-left: -2px;
 }
 
 .focused__text-link {
-    font-size: 0;
-    line-height: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0;
+    line-height: 0;
 }
 
 .focused__text-link:hover .focused__text-icon,
@@ -730,9 +758,9 @@ left: 74.3px;
 }
 
 .contact__text-title {
-    font-weight: 600;
     font-size: 36px;
     line-height: 1.2;
+    font-weight: 600;
     margin-bottom: 53px;
 }
 
@@ -745,13 +773,13 @@ left: 74.3px;
 .contact__form {
     display: flex;
     flex-direction: column;
-    max-width: 540px;
-    width: 100%;
-    font-family: "Lato";
-    font-weight: normal;
     font-size: 16px;
     line-height: 1.19;
     color: rgba(19, 39, 67, 0.5);
+    font-family: "Lato";
+    font-weight: normal;
+    max-width: 540px;
+    width: 100%;
 }
 
 .contact__form-input-wrap {
@@ -763,14 +791,14 @@ left: 74.3px;
 }
 
 .contact__form-input {
-    width: 193px;
-    border-radius: 6px;
-    border: 1px solid #333333;
     font-size: inherit;
     line-height: inherit;
     color: inherit;
     font-family: inherit;
     font-weight: inherit;
+    width: 193px;
+    border-radius: 6px;
+    border: 1px solid #333333;
     padding: 20px 30px 19px 30px;
 }
 
@@ -783,14 +811,14 @@ left: 74.3px;
 }
 
 .contact__form-input--tel {
-    width: 193px;
-    border-radius: 6px;
-    border: 1px solid #333333;
     font-size: inherit;
     line-height: inherit;
     color: inherit;
     font-family: inherit;
     font-weight: inherit;
+    width: 193px;
+    border-radius: 6px;
+    border: 1px solid #333333;
     padding: 20px 315px 19px 30px;
     margin-bottom: 24px;
 }
@@ -804,15 +832,15 @@ left: 74.3px;
 }
 
 .contact__form-select {
-    max-width: 540px;
-    width: 100%;
-    border-radius: 6px;
-    border: 1px solid #333333;
     font-size: inherit;
     line-height: inherit;
     color: inherit;
     font-family: inherit;
     font-weight: inherit;
+    max-width: 540px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #333333;
     padding: 20px 390px 19px 30px;
     margin-bottom: 27px;
     appearance: none;
@@ -829,16 +857,16 @@ left: 74.3px;
 }
 
 .contact__form-button {
+    font-size: 14px;
+    line-height: 1.22;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Lato";
     background: #ED4C5C;
     border: 1.5px solid #ED4C5C;
     box-sizing: border-box;
     border-radius: 6px;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: #FFFFFF;
     padding: 15.5px 32.5px 14.5px 32.5px;
-    font-family: "Lato";
     cursor: pointer;
     transition: all .2s ease;
 }
@@ -893,10 +921,10 @@ left: 74.3px;
 }
 
 .footer__card-title {
-    font-weight: 700;
     font-size: 18px;
     line-height: 1.23;
     color: #101010;
+    font-weight: 700;
     margin-bottom: 34px;
 }
 
@@ -924,12 +952,12 @@ left: 74.3px;
 }
 
 .footer__card-social {
-    max-width: 66px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 66px;
+    width: 100%;
 }
 
 .footer__card-text {
@@ -947,13 +975,13 @@ left: 74.3px;
 /* -- footer list -- */
 
 .footer__card-list-item {
+    font-size: 12px;
+    line-height: 1.59;
+    color: #000000;
     font-family: "Lato";
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 1.59;
     text-transform: capitalize;
-    color: #000000;
 }
 
 .footer__card-list-link {
