@@ -840,4 +840,154 @@ left: 74.3px;
     padding: 15.5px 32.5px 14.5px 32.5px;
     font-family: "Lato";
     cursor: pointer;
+    transition: all .2s ease;
+}
+
+.contact__form-button:hover {
+    background-color: #f1f1f1;
+    color: #ED4C5C;
+}
+
+/* ---------------- */
+/* ---- FOOTER ---- */
+/* ---------------- */
+
+.footer {
+    background-color: #FAFAFA;
+}
+
+.footer__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 106px;
+}
+
+.footer-container {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.footer__card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 254px;
+    width: 100%;
+}
+
+.footer__wrap .footer__card-wrap:not(:last-child) {
+    margin-right: 30px;
+}
+
+.footer__wrap .footer__card-wrap:first-child {
+    margin-left: 1px;
+}
+
+.footer__wrap .footer__card-wrap:nth-child(3) {
+    margin-right: 34px;
+}
+
+.footer__wrap .footer__card-wrap:last-child {
+    max-width: 220px;
+}
+
+.footer__card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.23;
+    color: #101010;
+    margin-bottom: 34px;
+}
+
+.footer__card-title--3rd {
+    margin-left: 0.5px;
+}
+
+.footer__card-title--services {
+    margin-bottom: 28px;
+}
+
+.footer__card-contact {
+    font-size: 12px;
+    line-height: 1.17;
+    color: #101010;
+    margin-bottom: 11px;
+}
+
+.footer__card-contact:hover {
+    text-decoration: underline;
+}
+
+.footer__card-wrap .footer__card-contact:last-of-type {
+    margin-bottom: 19px;
+}
+
+.footer__card-social {
+    max-width: 66px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__card-text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #101010;
+}
+
+.visa-mastercard-img {
+    width: 216px;
+    margin-left: 6px;
+    margin-top: -1px;
+}
+
+/* -- footer list -- */
+
+.footer__card-list-item {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.59;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.footer__card-list-link {
+    color: inherit;
+}
+
+.footer__card-list-link:hover,
+.footer__card-list-link:focus {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 1.17;
+    color: #101010;
+    margin-left: -4px;
+}
+
+.copyright-link {
+    color: inherit;
+}
+
+.copyright-link:hover {
+    text-decoration: underline;
+}
+
+.footer__card-social--facebook:hover {
+    filter: invert(44%) sepia(13%) saturate(2199%) hue-rotate(182deg) brightness(86%) contrast(97%);
+}
+
+.footer__card-social--linkedin:hover {
+    filter: invert(26%) sepia(80%) saturate(1436%) hue-rotate(175deg) brightness(103%) contrast(104%);
+}
+
+.footer__card-social--twitter:hover {
+    filter: invert(61%) sepia(69%) saturate(4249%) hue-rotate(179deg) brightness(99%) contrast(98%);
 }
