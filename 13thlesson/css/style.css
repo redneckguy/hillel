@@ -632,9 +632,7 @@ left: 74.3px;
 }
 
 .technology__card-figcap::before,
-.technology__card-text
-
-.technology__card-figcap::before {
+.technology__card-text .technology__card-figcap::before {
     content: "0" counter(card-counter);
     font-size: 100px;
     line-height: 1.2;
@@ -785,7 +783,7 @@ left: 74.3px;
 .contact__form-input::placeholder,
 .contact__form-input--tel,
 .contact__form-input--tel::placeholder,
-.contact__form-select  {
+.contact__form-select {
     font-size: inherit;
     line-height: inherit;
     color: inherit;
