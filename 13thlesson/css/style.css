@@ -27,6 +27,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Lato";
     font-weight: normal;
@@ -373,6 +377,7 @@ left: 74.3px;
 
 .management-soft__link {
     color: #ed4c5c;
+    text-transform: capitalize;
 }
 
 .management-soft__link:hover,
@@ -458,6 +463,7 @@ left: 74.3px;
 .features__title {
     text-align: center;
     margin-bottom: 75px;
+    text-transform: capitalize;
 }
 
 .features__cards-wrap,
@@ -543,6 +549,7 @@ left: 74.3px;
     font-weight: bold;
     color: #ed4c5c;
     transition: all 0.2s ease;
+    text-transform: capitalize;
 }
 
 .features__card-link:hover,
@@ -568,6 +575,7 @@ left: 74.3px;
 
 .technology__title {
     margin-bottom: 64px;
+    text-transform: capitalize;
 }
 
 .technology__cards-wrap,
@@ -750,6 +758,7 @@ left: 74.3px;
 
 .contact__text-title {
     margin-bottom: 53px;
+    text-transform: capitalize;
 }
 
 .contact__text-desc {
@@ -782,6 +791,7 @@ left: 74.3px;
     color: inherit;
     font-family: inherit;
     font-weight: inherit;
+    text-transform: capitalize;
 }
 
 .contact__form-input,
@@ -950,6 +960,7 @@ left: 74.3px;
 .footer__card-list-link,
 .copyright-link {
     color: inherit;
+    text-transform: capitalize;
 }
 
 .footer__card-list-link:hover,
