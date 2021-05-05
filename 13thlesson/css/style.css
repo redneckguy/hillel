@@ -730,15 +730,20 @@ left: 74.3px;
     padding-bottom: 123px;
 }
 
-.contact-wrap {
+.contact-wrap,
+.contact__form-input-wrap,
+.contact__form {
     display: flex;
+}
+
+.contact-wrap,
+.contact__form-input-wrap {
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .contact__text-wrap {
     max-width: 434px;
-    width: 100%;
     margin-left: 11px;
     margin-right: 125px;
 }
@@ -752,7 +757,6 @@ left: 74.3px;
 }
 
 .contact__form {
-    display: flex;
     flex-direction: column;
     font-size: 16px;
     line-height: 1.19;
@@ -764,64 +768,45 @@ left: 74.3px;
 }
 
 .contact__form-input-wrap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 24px;
 }
 
-.contact__form-input {
+.contact__form-input,
+.contact__form-input::placeholder,
+.contact__form-input--tel,
+.contact__form-input--tel::placeholder,
+.contact__form-select  {
     font-size: inherit;
     line-height: inherit;
     color: inherit;
     font-family: inherit;
     font-weight: inherit;
+}
+
+.contact__form-input,
+.contact__form-input--tel {
     width: 193px;
+}
+
+.contact__form-input,
+.contact__form-input--tel,
+.contact__form-select {
     border-radius: 6px;
     border: 1px solid #333333;
+}
+
+.contact__form-input {
     padding: 20px 30px 19px 30px;
 }
 
-.contact__form-input::placeholder {
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-}
-
 .contact__form-input--tel {
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    width: 193px;
-    border-radius: 6px;
-    border: 1px solid #333333;
     padding: 20px 315px 19px 30px;
     margin-bottom: 24px;
 }
 
-.contact__form-input--tel::placeholder {
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-}
-
 .contact__form-select {
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
     max-width: 540px;
-    width: 100%;
-    border-radius: 6px;
-    border: 1px solid #333333;
     padding: 20px 390px 19px 30px;
     margin-bottom: 27px;
     appearance: none;
@@ -862,10 +847,19 @@ left: 74.3px;
     background-color: #fafafa;
 }
 
-.footer__wrap {
+.footer__wrap,
+.footer__card-social,
+.footer__card-wrap {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+}
+
+.footer__wrap,
+.footer__card-social {
+    flex-direction: row;
+}
+
+.footer__wrap {
     margin-bottom: 106px;
 }
 
@@ -875,8 +869,6 @@ left: 74.3px;
 }
 
 .footer__card-wrap {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     max-width: 254px;
     width: 100%;
@@ -922,21 +914,13 @@ left: 74.3px;
     margin-bottom: 11px;
 }
 
-.footer__card-contact:hover {
-    text-decoration: underline;
-}
-
 .footer__card-wrap .footer__card-contact:last-of-type {
     margin-bottom: 19px;
 }
 
 .footer__card-social {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 66px;
-    width: 100%;
 }
 
 .footer__card-text {
@@ -963,25 +947,20 @@ left: 74.3px;
     text-transform: capitalize;
 }
 
-.footer__card-list-link {
+.footer__card-list-link,
+.copyright-link {
     color: inherit;
 }
 
 .footer__card-list-link:hover,
-.footer__card-list-link:focus {
+.footer__card-list-link:focus,
+.copyright-link:hover,
+.footer__card-contact:hover {
     text-decoration: underline;
 }
 
 .copyright {
     margin-left: -4px;
-}
-
-.copyright-link {
-    color: inherit;
-}
-
-.copyright-link:hover {
-    text-decoration: underline;
 }
 
 .footer__card-social--facebook:hover {
