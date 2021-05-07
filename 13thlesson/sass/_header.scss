@@ -2,7 +2,7 @@
     max-width: 1440px;
     margin: 0 auto;
     background-image: url(../images/topBanner.jpg);
-    background-color: #c4c4c4;
+    background-color: $middle-grey;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,8 +18,8 @@
         z-index: 1;
         background-image: linear-gradient(
             90deg,
-            rgba(213, 32, 71, 0.8) 0%,
-            rgba(238, 61, 27, 0.8) 100%
+            $bg-color1 0%,
+            $bg-color2 100%
         );
     }
 
@@ -43,7 +43,7 @@
 
         &:hover,
         &:focus {
-            filter: drop-shadow(0px 0px 0.4px #fff);
+            @extend %whiteshadow;
         }
     }
 
@@ -76,7 +76,7 @@
 
         &:hover,
         &:focus {
-            text-shadow: 0 0 0.4px $white, 0 0 0.4px $white;
+            @extend %textWhiteShadow;
         }
     }
 
@@ -125,7 +125,6 @@
 
     &__drop,
     &__arrow {
-
         &:hover,
         &:focus {
             @extend %whiteshadow;
@@ -147,7 +146,7 @@
     position: absolute;
     width: 13px;
     height: 8px;
-    background-color: #fff;
+    background-color: $white;
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
     top: 13.7px;
     left: 74.3px;
@@ -163,7 +162,7 @@
 
     &__title,
     &__text {
-        color: #fff;
+        color: $white;
     }
 
     &__wrap {
