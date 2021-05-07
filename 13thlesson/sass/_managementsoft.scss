@@ -1,0 +1,110 @@
+.management-soft {
+    line-height: 0;
+    font-size: 0;
+    padding-top: 94px;
+    padding-bottom: 95px;
+
+    &__container {
+        @extend %flexRowWrap;
+        justify-content: flex-start;
+    }
+
+    &__descr-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 445px;
+        padding-top: 46px;
+        margin-right: 125px;
+    }
+
+    &__title {
+        @extend %fonttitle;
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        @extend %fontsubttl;
+        text-align: justify;
+        margin-bottom: 19px;
+    }
+
+    &__link {
+        @extend %fontsubttl;
+        transition: all 0.2s ease;
+        color: $red;
+        text-transform: capitalize;
+
+        &:focus,
+        &:hover {
+            color: $light-red;
+            text-decoration: underline;
+        }
+    }
+
+    &__image-button,
+    &__image-button::before {
+        transition: all 0.2s ease;
+    }
+
+    &__image-wrap {
+        position: relative;
+    }
+
+    &__image-button {
+        width: 66px;
+        height: 66px;
+        background-color: $red;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        &:hover,
+        &:focus {
+            background-color: $light-grey;
+        }
+
+        &:hover::before,
+        &:focus::before {
+            border-color: transparent transparent transparent $red;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 8px 0 8px 11.9px;
+            border-color: transparent transparent transparent $white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-38%, -50%);
+            // position: relative;
+            // top: 2px;
+            // left: 1.45px;
+        }
+    }
+
+    &__image-img {
+        width: auto;
+        border-radius: 15px;
+        position: relative;
+    }
+}
+
+//  ? img as background 
+// &__image-img__bg {
+//     background-image: url(../images/managment-soft.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     width: 445px;
+//     height: 311px;
+//     background-color: $middle-grey;
+//     border-radius: 15px; 

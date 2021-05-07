@@ -132,27 +132,26 @@
     }
 }
 
-/* *arrow just in case using after */
-/* 
-&__wrap {
-    @extend %flexRowNoWrap;
-    margin-right: 27px;
-    padding-top: 3px;
-}
+// arrow just in case using after
 
-&__label {
-    &::after {
-    content: "";
-    position: absolute;
-    width: 13px;
-    height: 8px;
-    background-color: $white;
-    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-    top: 13.7px;
-    left: 74.3px;
-    }
-}
- */
+// &__wrap {
+//     @extend %flexRowNoWrap;
+//     margin-right: 27px;
+//     padding-top: 3px;
+// }
+
+// &__label {
+//     &::after {
+//     content: "";
+//     position: absolute;
+//     width: 13px;
+//     height: 8px;
+//     background-color: $white;
+//     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+//     top: 13.7px;
+//     left: 74.3px;
+//     }
+// }
 
 .title {
     &__wrap,
