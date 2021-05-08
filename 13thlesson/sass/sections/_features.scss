@@ -1,5 +1,5 @@
 .features {
-    background-color: #fafafa;
+    background-color: $middle-white;
 
     &__container {
         padding-top: 63px;
@@ -29,7 +29,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 8px;
-            background-color: #c4c4c4;
+            background-color: $middle-grey;
         }
 
         .background1 {
@@ -49,8 +49,8 @@
             align-content: center;
             max-width: 293px;
             width: 100%;
-            background: #ffffff;
-            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+            background: $white;
+            box-shadow: 0px 5px 30px rgba($black, 0.1);
             border-radius: 8px;
             padding-top: 33px;
             padding-bottom: 24px;
@@ -75,19 +75,19 @@
         }
 
         &-text {
-            color: #101010;
+            color: $middle-black;
             margin-bottom: 26px;
         }
 
         &-link {
             font-weight: bold;
-            color: #ed4c5c;
+            color: $red;
             transition: all 0.2s ease;
             text-transform: capitalize;
 
             &:hover,
             :focus {
-                color: #f16573;
+                color: $light-red;
                 text-decoration: underline;
             }
         }
