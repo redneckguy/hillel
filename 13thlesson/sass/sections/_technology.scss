@@ -1,0 +1,89 @@
+.technology {
+    padding-top: 63px;
+    padding-bottom: 104px;
+
+    &__title {
+        @extend %fonttitle;
+        text-align: center;
+        margin-bottom: 64px;
+        text-transform: capitalize;
+    }
+
+    &__cards-wrap {
+        @extend %flexRowWrap;
+        justify-content: space-between;
+        counter-reset: card-counter;
+    }
+
+    &__card-wrapper {
+        @extend %flexWrapColCntr;
+        align-content: center;
+        max-width: 255px;
+        width: 100%;
+
+        &:hover .technology__card-figcap::before,
+        &:focus .technology__card-figcap::before {
+            z-index: 1;
+        }
+    }
+
+    &__card-figcap {
+        counter-increment: card-counter;
+        position: relative;
+
+        &::before {
+            text-align: center;
+            @extend %contentCounter;
+        }
+    }
+
+    &__card-icon-wrap {
+        @extend %flexRowWrap;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        margin-right: 1px;
+        padding-top: 59px;
+    }
+
+    &__card-icon {
+        &--secure,
+        &--csv {
+            padding-bottom: 2px;
+        }
+
+        &--pdf {
+            padding-bottom: 6px;
+            margin-left: 2px;
+        }
+    }
+
+    &__card-title {
+        &--pdf {
+            margin-right: 1px;
+        }
+
+        @extend %cardtitle;
+        margin-bottom: 11px;
+
+        &:hover,
+        &:focus {
+            color: $red;
+            text-decoration: underline;
+        }
+    }
+
+    &__card-text {
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.17;
+        max-width: 191px;
+        width: 100%;
+        margin-bottom: 26px;
+        margin-left: 4px;
+
+        .technology__card-figcap::before {
+            @extend %contentCounter;
+        }
+    }
+}

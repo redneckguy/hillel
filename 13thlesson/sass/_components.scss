@@ -9,3 +9,14 @@
 %textWhiteShadow {
     text-shadow: 0 0 0.4px $white, 0 0 0.4px $white;
 }
+
+%contentCounter {
+    content: "0" counter(card-counter);
+    font-size: 100px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: rgba($light-black, 0.08);
+    position: absolute;
+    transform: translate(-50%, 0);
+    z-index: -1;
+}
