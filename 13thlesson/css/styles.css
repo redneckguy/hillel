@@ -116,7 +116,7 @@ a {
   color: #fff;
 }
 
-.header__logo-text {
+.header__logo-text, .features__card-title {
   font-size: 18px;
   line-height: 1.23;
   color: #101010;
@@ -129,10 +129,16 @@ a {
   line-height: 1.43;
 }
 
-.management-soft__title {
+.management-soft__title, .features__title {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 600;
+}
+
+.features__card-text, .features__card-link {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .button {
@@ -161,7 +167,7 @@ a {
   background-color: #f1f1f1;
 }
 
-.header__nav, .management-soft__container {
+.header__nav, .management-soft__container, .features__cards-wrap {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -183,6 +189,13 @@ a {
 .lang-selector__wrap {
   display: flex;
   flex-direction: row;
+}
+
+.features__card, .features__card-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -405,4 +418,87 @@ a {
   width: auto;
   border-radius: 15px;
   position: relative;
+}
+
+.features {
+  background-color: #fafafa;
+}
+
+.features__container {
+  padding-top: 63px;
+  padding-bottom: 124px;
+}
+
+.features__title {
+  text-align: center;
+  margin-bottom: 75px;
+  text-transform: capitalize;
+}
+
+.features__cards-wrap {
+  justify-content: space-between;
+}
+
+.features__card {
+  max-width: 350px;
+}
+
+.features__card-background {
+  width: 350px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  background-color: #c4c4c4;
+}
+
+.features__card .background1 {
+  background-image: url(../images/moneyInHands.jpg);
+}
+
+.features__card .background2 {
+  background-image: url(../images/girlWithWatch.jpg);
+}
+
+.features__card .background3 {
+  background-image: url(../images/passage.jpg);
+}
+
+.features__card-wraper {
+  align-content: center;
+  max-width: 293px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding-top: 33px;
+  padding-bottom: 24px;
+  margin-top: -93px;
+}
+
+.features__card-title, .features__card-text {
+  max-width: 229px;
+}
+
+.features__card-title {
+  margin-bottom: 17px;
+}
+
+.features__card-text {
+  color: #101010;
+  margin-bottom: 26px;
+}
+
+.features__card-link {
+  font-weight: bold;
+  color: #ed4c5c;
+  transition: all 0.2s ease;
+  text-transform: capitalize;
+}
+
+.features__card-link:hover,
+.features__card-link :focus {
+  color: #f16573;
+  text-decoration: underline;
 }
