@@ -31,7 +31,7 @@
     }
 
     &__text-icons-wrap {
-        @extend %flexRowNoWrap;
+        display: flex;
         justify-content: space-between;
         max-width: 134px;
         width: 100%;

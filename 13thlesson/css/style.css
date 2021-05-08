@@ -122,11 +122,6 @@ table {
   font-display: swap;
 }
 
-/* TODO HIDE SCROLLBAR */
-body::-webkit-scrollbar {
-  display: none;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -212,26 +207,18 @@ a {
 
 .header__nav, .management-soft__container, .features__cards-wrap, .technology__cards-wrap, .technology__card-icon-wrap, .contact .contact-wrap, .contact__form-input-wrap, .footer__wrap, .footer__card-social {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .header__navbar, .header__login-wrap, .focused .focused-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
 
 .header__logo-link, .focused__text-link {
   display: flex;
-  flex-direction: row;
   align-items: center;
-}
-
-.lang-selector__wrap, .focused__text-icons-wrap {
-  display: flex;
-  flex-direction: row;
 }
 
 .features__card, .features__card-wraper, .technology__card-wrapper {
@@ -242,12 +229,11 @@ a {
 }
 
 .header {
-  max-width: 1440px;
   margin: 0 auto;
   background-image: url(../images/topBanner.jpg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   position: relative;
 }
@@ -309,6 +295,7 @@ a {
 }
 
 .lang-selector__wrap {
+  display: flex;
   margin-right: 28px;
   padding-top: 3px;
 }
@@ -652,6 +639,7 @@ a {
 }
 
 .focused__text-icons-wrap {
+  display: flex;
   justify-content: space-between;
   max-width: 134px;
   width: 100%;

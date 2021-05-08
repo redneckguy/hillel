@@ -1,10 +1,9 @@
 .header {
-    max-width: 1440px;
     margin: 0 auto;
     background-image: url(../images/topBanner.jpg);
     background-color: $middle-grey;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     position: relative;
 
@@ -88,7 +87,7 @@
 
 .lang-selector {
     &__wrap {
-        @extend %flexRowNoWrap;
+        display: flex;
         margin-right: 28px;
         padding-top: 3px;
     }
@@ -135,7 +134,7 @@
 // arrow just in case using after
 
 // &__wrap {
-//     @extend %flexRowNoWrap;
+//     display: flex;
 //     margin-right: 27px;
 //     padding-top: 3px;
 // }

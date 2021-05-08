@@ -1,25 +1,17 @@
 %flexRowWrap {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
 %flexRowWrapCenter {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
 
 %flexRowCenter {
     display: flex;
-    flex-direction: row;
     align-items: center;
-}
-
-%flexRowNoWrap {
-    display: flex;
-    flex-direction: row;
 }
 
 %flexWrapColCntr {
