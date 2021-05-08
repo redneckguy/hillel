@@ -135,12 +135,12 @@ a {
   text-align: center;
 }
 
-.management-soft__text, .management-soft__link {
+.management-soft__text, .management-soft__link, .focused__text-desc {
   font-size: 14px;
   line-height: 1.43;
 }
 
-.management-soft__title, .features__title, .technology__title {
+.management-soft__title, .features__title, .technology__title, .focused__text-title {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 600;
@@ -184,20 +184,20 @@ a {
   flex-wrap: wrap;
 }
 
-.header__navbar, .header__login-wrap {
+.header__navbar, .header__login-wrap, .focused .focused-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.header__logo-link {
+.header__logo-link, .focused__text-link {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.lang-selector__wrap {
+.lang-selector__wrap, .focused__text-icons-wrap {
   display: flex;
   flex-direction: row;
 }
@@ -588,4 +588,50 @@ a {
   width: 100%;
   margin-bottom: 26px;
   margin-left: 4px;
+}
+
+.focused {
+  background-color: #ed4c5c;
+  padding-top: 94px;
+  padding-bottom: 95px;
+}
+
+.focused .focused-container {
+  justify-content: flex-start;
+}
+
+.focused__text-wrap {
+  max-width: 445px;
+  margin-right: 81px;
+  margin-top: 12px;
+}
+
+.focused__text-title, .focused__text-desc {
+  color: #fff;
+}
+
+.focused__text-title {
+  margin-bottom: 45px;
+}
+
+.focused__text-desc {
+  text-align: justify;
+  margin-bottom: 44px;
+}
+
+.focused__text-icons-wrap {
+  justify-content: space-between;
+  max-width: 134px;
+  width: 100%;
+  margin-left: -2px;
+}
+
+.focused__text-link {
+  font-size: 0;
+  line-height: 0;
+}
+
+.focused__text-link:hover .focused__text-icon,
+.focused__text-link:focus .focused__text-icon {
+  filter: brightness(95%);
 }
