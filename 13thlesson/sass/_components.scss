@@ -20,3 +20,17 @@
     transform: translate(-50%, 0);
     z-index: -1;
 }
+
+%fontinherit {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-transform: capitalize;
+}
+
+%formBorder {
+    border-radius: 6px;
+    border: 1px solid $dark-grey;
+}
