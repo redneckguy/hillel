@@ -1,0 +1,130 @@
+.footer {
+    background-color: $middle-white;
+
+    .footer-container {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    &__wrap {
+        @extend %flexRowWrap;
+        margin-bottom: 106px;
+    }
+
+    &__card-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 254px;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &:first-child {
+            margin-left: 1px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 34px;
+        }
+
+        &:last-child {
+            max-width: 220px;
+        }
+
+        .footer__card-contact:last-of-type {
+            margin-bottom: 19px;
+        }
+    }
+
+    &__card-title {
+        @extend %cardtitle;
+        text-align: left;
+        margin-bottom: 34px;
+
+        &--3rd {
+            margin-left: 0.5px;
+        }
+
+        &--services {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__card-text {
+        font-size: 12px;
+        line-height: 1.5;
+        color: $middle-black;
+    }
+
+    &__card-social {
+        @extend %flexRowWrap;
+        justify-content: space-between;
+        max-width: 66px;
+
+        &--facebook:hover {
+            @extend %facebookColor;
+        }
+
+        &--linkedin:hover {
+            @extend %linkedinColor;
+        }
+
+        &--twitter:hover {
+            @extend %twitterColor;
+        }
+    }
+
+    &__card-contact {
+        @extend %footerFont;
+        margin-bottom: 11px;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    &__card-list-item {
+        font-size: 12px;
+        line-height: 1.59;
+        color: $black;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: normal;
+        text-transform: capitalize;
+    }
+
+    &__card-list-link {
+        color: inherit;
+        text-transform: capitalize;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    .copyright {
+        @extend %footerFont;
+        margin-left: -4px;
+    }
+
+    .copyright-link {
+        color: inherit;
+        text-transform: capitalize;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    .visa-mastercard-img {
+        width: 216px;
+        margin-left: 6px;
+        margin-top: -1px;
+    }
+}

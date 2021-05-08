@@ -34,3 +34,18 @@
     border-radius: 6px;
     border: 1px solid $dark-grey;
 }
+
+%facebookColor {
+    filter: invert(44%) sepia(13%) saturate(2199%) hue-rotate(182deg)
+        brightness(86%) contrast(97%);
+}
+
+%linkedinColor {
+    filter: invert(26%) sepia(80%) saturate(1436%) hue-rotate(175deg)
+        brightness(103%) contrast(104%);
+}
+
+%twitterColor {
+    filter: invert(61%) sepia(69%) saturate(4249%) hue-rotate(179deg)
+        brightness(99%) contrast(98%);
+}
