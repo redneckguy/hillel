@@ -1,11 +1,204 @@
 .header {
-    background: #FFF5F5;
+    background: #fff5f5;
     position: relative;
-    height: 954.59px;      // TODO REMOVE HEIGHT!!!
     @extend %wave;
 
     .header-container {
         padding-top: 40px;
-        
+        padding-bottom: 230px;
+        background-image: url(../../images/headerGraph.svg),
+            url(../../images/headerGraph2pink.svg),
+            url(../../images/headerGuy.png),
+            url(../../images/headerGreenExclipse.svg),
+            url(../../images/headerGradCloud.png);
+        background-repeat: no-repeat;
+        background-position: 933px 270px, 1290px 270px, 650px 116px, 901px 258px,
+            831px 384px;
+    }
+
+    &__bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 158px;
+    }
+
+    &__bar-logo {
+        font-family: "Lato";
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 1.49;
+        letter-spacing: 1.1px;
+        color: $primary-black;
+        text-transform: uppercase;
+        padding-top: 2px;
+        @extend %linksHover;
+    }
+
+    &__bar-logo-link {
+        color: inherit;
+        transition: all 0.2s ease;
+    }
+
+    &__bar-nav-wrap {
+        margin-right: 57px;
+    }
+
+    &__bar-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__bar-nav-item {
+        text-transform: capitalize;
+        font-size: 18px;
+        line-height: 1.62;
+        padding: 0 25px;
+    }
+
+    &__bar-nav-link {
+        color: inherit;
+        position: relative;
+        transition: all 0.2s ease;
+        @extend %linksHover;
+
+        &:hover::after,
+        &:focus::after {
+            display: inline-block;
+            opacity: 100%;
+        }
+    }
+
+    &__bar-nav-link::after {
+        display: none;
+        opacity: 0;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $light-blue;
+        border-radius: 2px;
+        display: inline-block;
+        position: absolute;
+        z-index: 5;
+        bottom: -7px;
+        left: 0;
+        transition: all 0.2s ease;
+    }
+
+    .button {
+        margin-right: 1px;
+        @include links($white, 15px 30px, $white, $white, $white);
+        background-color: $light-blue;
+        border: none;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.62;
+        position: relative;
+        transition: all 0.2s ease;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 0.4s;
+            background-color: $light-blue;
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba($primary-black, 0.2);
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 5px rgba($primary-black, 0.2);
+        }
+    }
+
+    &__content {
+        max-width: 550px;
+    }
+
+    &__content-title {
+        font-family: Lato;
+        font-weight: bold;
+        font-size: 69px;
+        line-height: 1.21;
+        color: $primary-black;
+        margin-bottom: 25px;
+
+        .ideas {
+            color: $light-blue;
+        }
+    }
+
+    &__content-text {
+        max-width: 496px;
+        font-size: 18px;
+        line-height: 1.62;
+        margin-bottom: 35px;
+    }
+
+    .watch-video {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 211px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.62;
+        text-transform: capitalize;
+        color: $primary-black;
+
+        &__button {
+            width: 70px;
+            height: 70px;
+            background-color: $white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0px 0px 30px #ffe6e6;
+
+            &:hover,
+            &:focus {
+                background-color: $light-blue;
+
+                .watch-video__button-arrow,
+                .watch-video__button-arrow {
+                    filter: invert(100%) sepia(100%) saturate(2%)
+                        hue-rotate(69deg) brightness(106%) contrast(101%);
+                }
+            }
+        }
+
+        &__button-arrow {
+            position: absolute;
+            top: 50%;
+            left: 54%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__link {
+            color: inherit;
+            @extend %linksHover;
+        }
     }
 }

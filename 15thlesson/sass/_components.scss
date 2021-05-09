@@ -13,11 +13,19 @@
     .wave-bottom svg {
         position: relative;
         display: block;
-        width: calc(135% + 1.3px);
-        height: 56px;
+        width: calc(162% + 1.3px);
+        height: 77px;
     }
     
     .wave-bottom .shape-fill {
         fill: #ffffff;
+    }
+}
+
+%linksHover {
+    &:hover,
+    &:focus {
+        color: $light-blue;
+        text-shadow: 0 0 0.5px $light-blue, 0 0 0.5px $light-blue;
     }
 }

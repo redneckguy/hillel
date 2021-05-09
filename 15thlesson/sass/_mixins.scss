@@ -1,11 +1,10 @@
-@mixin links($link, $padding, $font-weight, $font-size, $font-family, $visited, $hover, $active) {
+@mixin links($link, $padding, $visited, $hover, $active) {
     & {
         color: $link;
         padding: $padding;
-        
-        font-weight: $font-weight;
-        font-size: $font-size;
-        font-family: $font-family;
+        border-radius: 5px;
+        text-transform: capitalize;
+        cursor: pointer;
 
         &:visited {
             color: $visited;
