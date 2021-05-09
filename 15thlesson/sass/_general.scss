@@ -1,0 +1,24 @@
+// TODO hide scrollbar
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins';
+    font-weight: normal;
+    color: $main-text;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1140px;
+}
+
+a {
+    text-decoration: none;
+}

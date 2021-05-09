@@ -1,0 +1,11 @@
+.header {
+    background: #FFF5F5;
+    position: relative;
+    height: 954.59px;      // TODO REMOVE HEIGHT!!!
+    @extend %wave;
+
+    .header-container {
+        padding-top: 40px;
+        
+    }
+}

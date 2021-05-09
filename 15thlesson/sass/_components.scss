@@ -1,0 +1,23 @@
+%wave {
+    .wave-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        background-color: #FFF5F5;
+    }
+    
+    .wave-bottom svg {
+        position: relative;
+        display: block;
+        width: calc(135% + 1.3px);
+        height: 56px;
+    }
+    
+    .wave-bottom .shape-fill {
+        fill: #ffffff;
+    }
+}

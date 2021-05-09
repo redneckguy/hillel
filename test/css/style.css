@@ -7,7 +7,7 @@ a {
     text-decoration: none;
 }
 
-.custom-shape-divider-bottom-1620546718 {
+.wave-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -18,14 +18,14 @@ a {
     background-color: #ffffff;
 }
 
-.custom-shape-divider-bottom-1620546718 svg {
+.wave-bottom svg {
     position: relative;
     display: block;
     width: calc(136% + 1.3px);
     height: 39px;
 }
 
-.custom-shape-divider-bottom-1620546718 .shape-fill {
+.wave-bottom .shape-fill {
     fill: #a82e2e;
 }
 

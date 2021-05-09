@@ -1,0 +1,21 @@
+@mixin links($link, $padding, $font-weight, $font-size, $font-family, $visited, $hover, $active) {
+    & {
+        color: $link;
+        padding: $padding;
+        
+        font-weight: $font-weight;
+        font-size: $font-size;
+        font-family: $font-family;
+
+        &:visited {
+            color: $visited;
+        }
+        &:hover {
+            color: $hover;
+        }
+        &:active,
+        &:focus {
+            color: $active;
+        }
+    }
+}
