@@ -14,15 +14,20 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
+    font-size: 18px;
+    line-height: 1.62;
     color: $main-text;
 }
 
 .container {
     margin: 0 auto;
-    // padding: 0 10px;
-    padding: 0 230px;
-    // max-width: 1140px;
     max-width: 1600px;
+}
+
+.inner-container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1160px;
 }
 
 a {

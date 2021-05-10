@@ -33,9 +33,25 @@
 %sectionTitle {
     color: $primary-black;
     font-family: Lato;
-    font-style: normal;
     font-weight: 500;
     font-size: 43px;
     line-height: 1.4;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+%subTitle {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.49;
+    color: $primary-black;
+    text-transform: capitalize;
+}
+
+%cardDesc {
+    font-size: 16px;
+    line-height: 1.63;
     text-align: center;
 }

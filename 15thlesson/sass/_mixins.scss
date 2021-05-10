@@ -103,7 +103,7 @@
 @mixin progressbar-row-number($color) {
     position: absolute;
     bottom: 180%;
-    left: 97%;
+    left: 92%;
     // transform: translate(-25%, -100%);
     color: $color;
     font-family: Lato;
@@ -111,4 +111,11 @@
     font-weight: 500;
     font-size: 25px;
     line-height: 1.49;
+}
+
+@mixin sectionDesk($max-width) {
+    max-width: $max-width;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
 }

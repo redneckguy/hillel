@@ -1,0 +1,52 @@
+.features {
+    &__title {
+        @extend %sectionTitle;
+    }
+
+    &__desk {
+        @include sectionDesk(874px);
+        margin-bottom: 74px;
+    }
+
+    &__cards--wrap {
+
+    }
+
+    &__card-wrapper {
+        position: relative;
+        max-width: 263px;
+        border: 1px solid rgba(5, 12, 38, 0.05);
+        border-radius: 10px;
+        padding-top: 207px;
+    }
+
+    &__card-circle {
+        position: absolute;
+        top: 27.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: rgba(255, 96, 96, 0.1);
+    }
+
+    &__card-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__card-title {
+        @extend %subTitle;
+        text-align: center;
+        margin-bottom: 15px;
+        text-transform: none;
+    }
+
+    &__card-desc {
+        @extend %cardDesc;
+        margin-bottom: 25px;
+    }
+}

@@ -3,7 +3,7 @@
     position: relative;
     @extend %wave;
 
-    .header-container {
+    .container {
         padding-top: 40px;
         padding-bottom: 230px;
         background-image: url(../../images/headerGraph.svg),
@@ -58,8 +58,6 @@
 
     &__bar-nav-item {
         text-transform: capitalize;
-        font-size: 18px;
-        line-height: 1.62;
         padding: 0 25px;
     }
 
@@ -90,7 +88,7 @@
         transition: all 0.2s ease;
     }
 
-    // * CONACT BUTTON
+    // * CONTACT BUTTON
 
     .button {
         margin-right: 1px;
@@ -121,8 +119,6 @@
 
     &__content-text {
         max-width: 496px;
-        font-size: 18px;
-        line-height: 1.62;
         margin-bottom: 35px;
     }
 
@@ -136,8 +132,6 @@
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 1.62;
         text-transform: capitalize;
         color: $primary-black;
 
