@@ -7,7 +7,7 @@
         overflow: hidden;
         line-height: 0;
         transform: rotate(180deg);
-        background-color: #FFF5F5;
+        background-color: $light-pink;
     }
     
     .wave-bottom svg {
@@ -18,7 +18,7 @@
     }
     
     .wave-bottom .shape-fill {
-        fill: #ffffff;
+        fill: $white;
     }
 }
 

@@ -3,12 +3,16 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     color: $main-text;
 }
@@ -17,10 +21,11 @@ body {
     margin: 0 auto;
     // padding: 0 10px;
     padding: 0 230px;
-    max-width: 1140px;
-    // max-width: 1600px;
+    // max-width: 1140px;
+    max-width: 1600px;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }

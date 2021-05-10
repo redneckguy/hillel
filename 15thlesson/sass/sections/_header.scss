@@ -1,5 +1,5 @@
 .header {
-    background: #fff5f5;
+    background: $light-pink;
     position: relative;
     @extend %wave;
 
@@ -16,6 +16,8 @@
             831px 384px;
     }
 
+    // * HEADER BAR
+
     &__bar {
         display: flex;
         flex-wrap: wrap;
@@ -23,6 +25,8 @@
         align-items: center;
         margin-bottom: 158px;
     }
+
+    // * LOGO
 
     &__bar-logo {
         font-family: "Lato";
@@ -40,6 +44,8 @@
         color: inherit;
         transition: all 0.2s ease;
     }
+
+    // * NAVIGATION
 
     &__bar-nav-wrap {
         margin-right: 57px;
@@ -78,57 +84,23 @@
         height: 2px;
         background-color: $light-blue;
         border-radius: 2px;
-        display: inline-block;
         position: absolute;
-        z-index: 5;
         bottom: -7px;
         left: 0;
         transition: all 0.2s ease;
     }
 
+    // * CONACT BUTTON
+
     .button {
         margin-right: 1px;
-        @include links($white, 15px 30px, $white, $white, $white);
-        background-color: $light-blue;
-        border: none;
+        @include links($white, $white, $white);
         font-family: Poppins;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 1.62;
         position: relative;
-        transition: all 0.2s ease;
-
-        &::after {
-            content: "";
-            display: inline-block;
-            height: 100%;
-            width: 100%;
-            border-radius: 5px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            transition: all 0.4s;
-            background-color: $light-blue;
-        }
-
-        &:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 10px rgba($primary-black, 0.2);
-
-            &::after {
-                transform: scaleX(1.4) scaleY(1.6);
-                opacity: 0;
-            }
-        }
-
-        &:active,
-        &:focus {
-            outline: none;
-            transform: translateY(-1px);
-            box-shadow: 0 2px 5px rgba($primary-black, 0.2);
-        }
     }
+
+    // * CONTENT PART
 
     &__content {
         max-width: 550px;
@@ -154,6 +126,8 @@
         margin-bottom: 35px;
     }
 
+    // * WATCH VIDEO
+
     .watch-video {
         display: flex;
         justify-content: space-between;
@@ -168,6 +142,7 @@
         color: $primary-black;
 
         &__button {
+            @include buttonAfter(50%, $white);
             width: 70px;
             height: 70px;
             background-color: $white;
@@ -179,8 +154,6 @@
 
             &:hover,
             &:focus {
-                background-color: $light-blue;
-
                 .watch-video__button-arrow,
                 .watch-video__button-arrow {
                     filter: invert(100%) sepia(100%) saturate(2%)
