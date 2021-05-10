@@ -29,3 +29,13 @@
         text-shadow: 0 0 0.5px $light-blue, 0 0 0.5px $light-blue;
     }
 }
+
+%sectionTitle {
+    color: $primary-black;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 1.4;
+    text-align: center;
+}
