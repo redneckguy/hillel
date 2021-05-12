@@ -162,12 +162,12 @@ a {
 }
 
 .header__bar-logo:hover, .header__bar-nav-link:hover, .header .watch-video__link:hover, .header__bar-logo:focus, .header__bar-nav-link:focus, .header .watch-video__link:focus {
-  color: #3988FF;
-  text-shadow: 0 0 0.5px #3988FF, 0 0 0.5px #3988FF;
+  color: #3988ff;
+  text-shadow: 0 0 0.5px #3988ff, 0 0 0.5px #3988ff;
 }
 
 .creativity__title, .features__title, .services__title {
-  color: #050C26;
+  color: #050c26;
   font-family: Lato;
   font-weight: 500;
   font-size: 43px;
@@ -182,7 +182,7 @@ a {
   font-weight: 500;
   font-size: 25px;
   line-height: 1.49;
-  color: #050C26;
+  color: #050c26;
   text-transform: capitalize;
 }
 
@@ -219,7 +219,7 @@ a {
   font-size: 25px;
   line-height: 1.49;
   letter-spacing: 1.1px;
-  color: #050C26;
+  color: #050c26;
   text-transform: uppercase;
   padding-top: 2px;
 }
@@ -260,7 +260,7 @@ a {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #3988FF;
+  background-color: #3988ff;
   border-radius: 2px;
   position: absolute;
   bottom: -7px;
@@ -282,7 +282,7 @@ a {
   text-transform: capitalize;
   cursor: pointer;
   border: none;
-  background-color: #3988FF;
+  background-color: #3988ff;
   font-size: 18px;
   line-height: 1.62;
   transition: all 0.2s ease;
@@ -300,7 +300,7 @@ a {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-  background-color: #3988FF;
+  background-color: #3988ff;
 }
 
 .header .button:hover {
@@ -334,12 +334,12 @@ a {
   font-weight: bold;
   font-size: 69px;
   line-height: 1.21;
-  color: #050C26;
+  color: #050c26;
   margin-bottom: 25px;
 }
 
 .header__content-title .ideas {
-  color: #3988FF;
+  color: #3988ff;
 }
 
 .header__content-text {
@@ -356,7 +356,7 @@ a {
   font-style: normal;
   font-weight: 500;
   text-transform: capitalize;
-  color: #050C26;
+  color: #050c26;
 }
 
 .header .watch-video__button {
@@ -471,7 +471,7 @@ a {
 
 .creativity .filler1 {
   position: relative;
-  background-color: #E41A1A;
+  background-color: #e41a1a;
   height: 15px;
   border-radius: 15px;
   width: 80%;
@@ -481,7 +481,7 @@ a {
   position: absolute;
   bottom: 180%;
   left: 92%;
-  color: #E41A1A;
+  color: #e41a1a;
   font-family: Lato;
   font-style: normal;
   font-weight: 500;
@@ -498,7 +498,7 @@ a {
 
 .creativity .filler2 {
   position: relative;
-  background-color: #DA5A12;
+  background-color: #da5a12;
   height: 15px;
   border-radius: 15px;
   width: 90%;
@@ -508,7 +508,7 @@ a {
   position: absolute;
   bottom: 180%;
   left: 92%;
-  color: #DA5A12;
+  color: #da5a12;
   font-family: Lato;
   font-style: normal;
   font-weight: 500;
@@ -525,7 +525,7 @@ a {
 
 .creativity .filler3 {
   position: relative;
-  background-color: #5BBB10;
+  background-color: #5bbb10;
   height: 15px;
   border-radius: 15px;
   width: 75%;
@@ -535,7 +535,7 @@ a {
   position: absolute;
   bottom: 180%;
   left: 92%;
-  color: #5BBB10;
+  color: #5bbb10;
   font-family: Lato;
   font-style: normal;
   font-weight: 500;
@@ -552,7 +552,7 @@ a {
 
 .creativity .filler4 {
   position: relative;
-  background-color: #15C1CC;
+  background-color: #15c1cc;
   height: 15px;
   border-radius: 15px;
   width: 80%;
@@ -562,7 +562,7 @@ a {
   position: absolute;
   bottom: 180%;
   left: 92%;
-  color: #15C1CC;
+  color: #15c1cc;
   font-family: Lato;
   font-style: normal;
   font-weight: 500;
@@ -660,7 +660,7 @@ a {
   text-transform: capitalize;
   cursor: pointer;
   border: none;
-  background-color: #3988FF;
+  background-color: #3988ff;
   font-size: 18px;
   line-height: 1.62;
   transition: all 0.2s ease;
@@ -678,7 +678,7 @@ a {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-  background-color: #3988FF;
+  background-color: #3988ff;
 }
 
 .features__card-btn:hover {
@@ -712,6 +712,7 @@ a {
   background-position: 1100px -1px;
   background-repeat: no-repeat;
   background-size: auto;
+  padding-bottom: 81px;
 }
 
 .services__title {
@@ -728,6 +729,12 @@ a {
   margin-left: 0;
 }
 
+.services__cards-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .services__card-wrapper {
   display: flex;
   padding: 40px;
@@ -735,7 +742,46 @@ a {
   max-width: 360px;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.services__card-wrapper.background1 {
   background-image: url(../images/servicesWebDev.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.services__card-wrapper.background2 {
+  background-image: url(../images/servicesProdBrand.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.services__card-wrapper.background3 {
+  background-image: url(../images/servicesWebstSoltn.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.services__card-wrapper.background4 {
+  background-image: url(../images/servicesCleanCode.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.services__card-wrapper.background5 {
+  background-image: url(../images/servicesDigMark.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.services__card-wrapper.background6 {
+  background-image: url(../images/servicesCustSuprt.jpg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -751,12 +797,21 @@ a {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(104px);
-  transition: all .05s ease;
+  transition: all 0.05s ease;
 }
 
-.services__card-wrapper:hover::before {
+.services__card-wrapper:hover::before, .services__card-wrapper:focus::before {
   background-color: transparent;
   backdrop-filter: unset;
+}
+
+.services__card-wrapper:hover .services__inner-card-wrapper, .services__card-wrapper:focus .services__inner-card-wrapper {
+  background: linear-gradient(180deg, #d93059 0%, #d95b7a 100%);
+  color: #fff;
+}
+
+.services__card-wrapper:hover .services__inner-card-wrapper .services__inner-card-title, .services__card-wrapper:focus .services__inner-card-wrapper .services__inner-card-title {
+  color: #fff;
 }
 
 .services__inner-card-wrapper {
@@ -764,13 +819,13 @@ a {
   flex-direction: column;
   align-items: center;
   width: 280px;
-  background-color: #F3F3F3;
+  background: #f3f3f3;
   border-radius: 10px;
   position: relative;
   z-index: 1;
   padding-top: 63px;
+  padding-bottom: 61px;
   margin: auto;
-  height: 333px;
 }
 
 .services__inner-card-title {
@@ -790,10 +845,26 @@ a {
   display: flex;
 }
 
-.services__inner-card-arrow {
-  margin: auto;
+.services__inner-card-circle:hover, .services__inner-card-circle:focus {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: -1px 6px 16px -10px rgba(79, 79, 79, 0.97);
 }
 
-.services__inner-card-arrow:hover, .services__inner-card-arrow:focus {
+.services__inner-card-circle:hover .services__inner-card-arrow, .services__inner-card-circle:focus .services__inner-card-arrow {
   filter: invert(64%) sepia(63%) saturate(6673%) hue-rotate(203deg) brightness(103%) contrast(104%);
+  transform: translateY(3.5px);
+}
+
+.services__inner-card-circle:active {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: -1px 6px 12px -10px rgba(79, 79, 79, 0.97);
+}
+
+.services__inner-card-circle:active .services__inner-card-arrow {
+  filter: invert(64%) sepia(63%) saturate(6673%) hue-rotate(203deg) brightness(103%) contrast(104%);
+  transform: translateY(2px);
+}
+
+.services__inner-card-arrow {
+  margin: auto;
 }

@@ -1,18 +1,24 @@
 $main-text: #575859;
-$primary-black: #050C26;
-$light-blue: #3988FF;
+$primary-black: #050c26;
+$light-blue: #3988ff;
 $white: #fff;
-$video-arrow: #1B45DA;
+$black: #000;
+$video-arrow: #1b45da;
 $light-pink: #fff5f5;
 
-$progress-bar-web: #E41A1A;
-$progress-bar-uiux: #DA5A12;
-$progress-bar-graphic: #5BBB10;
-$progress-bar-photo: #15C1CC;
+$progress-bar-web: #e41a1a;
+$progress-bar-uiux: #da5a12;
+$progress-bar-graphic: #5bbb10;
+$progress-bar-photo: #15c1cc;
 
-$features-quality: rgba(#FF6060, 0.1);
-$features-friendly: rgba(#F353AA, 0.1);
-$features-notif: rgba(#C548FF, 0.1);
-$features-support: rgba(#4F9EFC, 0.1);
+$features-quality: rgba(#ff6060, 0.1);
+$features-friendly: rgba(#f353aa, 0.1);
+$features-notif: rgba(#c548ff, 0.1);
+$features-support: rgba(#4f9efc, 0.1);
 
-$fill-light-blue: invert(64%) sepia(63%) saturate(6673%) hue-rotate(203deg) brightness(103%) contrast(104%);
+$fill-light-blue: invert(64%) sepia(63%) saturate(6673%) hue-rotate(203deg)
+    brightness(103%) contrast(104%);
+
+$inner-card-start: #d93059;
+$inner-card-end: #d95b7a;
+$inner-card-wrapper-bg: #f3f3f3;

@@ -1,11 +1,11 @@
 .services {
-
     .container {
         background-image: url(../images/servicesDots.svg);
         // background-position: top right;
         background-position: 1100px -1px;
         background-repeat: no-repeat;
         background-size: auto;
+        padding-bottom: 81px;
     }
 
     &__title {
@@ -21,29 +21,47 @@
     }
 
     &__cards-wrap {
-
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     &__card-wrapper {
         display: flex;
-
         padding: 40px;
-
         position: relative;
         max-width: 360px;
         border-radius: 10px;
         overflow: hidden;
+        margin-bottom: 60px;
 
-        background-image: url(../images/servicesWebDev.jpg);
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: center;
-        
+        &.background1 {
+            @include card-wrapper-bg(url(../images/servicesWebDev.jpg));
+        }
+
+        &.background2 {
+            @include card-wrapper-bg(url(../images/servicesProdBrand.jpg));
+        }
+
+        &.background3 {
+            @include card-wrapper-bg(url(../images/servicesWebstSoltn.jpg));
+        }
+
+        &.background4 {
+            @include card-wrapper-bg(url(../images/servicesCleanCode.jpg));
+        }
+
+        &.background5 {
+            @include card-wrapper-bg(url(../images/servicesDigMark.jpg));
+        }
+
+        &.background6 {
+            @include card-wrapper-bg(url(../images/servicesCustSuprt.jpg));
+        }
 
         // &-img {
-        //     border-radius: 10px;                
+        //     border-radius: 10px;
         // }
-
 
         &::before {
             content: "";
@@ -53,36 +71,45 @@
             top: 0;
             left: 0;
             z-index: 1;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba($black, 0.6);
             backdrop-filter: blur(104px);
-            transition: all .05s ease;
-        }  
-
-        &:hover {
-            &::before {
-                background-color:transparent;
-                backdrop-filter: unset;
-            } 
+            transition: all 0.05s ease;
         }
-    
+
+        &:hover,
+        &:focus {
+            &::before {
+                background-color: transparent;
+                backdrop-filter: unset;
+            }
+
+            .services__inner-card-wrapper {
+                background: linear-gradient(
+                    180deg,
+                    $inner-card-start 0%,
+                    $inner-card-end 100%
+                );
+                color: $white;
+
+                .services__inner-card-title {
+                    color: $white;
+                }
+            }
+        }
     }
 
     &__inner-card-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         width: 280px;
-        background-color: #F3F3F3;
+        background: $inner-card-wrapper-bg;
         border-radius: 10px;
         position: relative;
         z-index: 1;
-
         padding-top: 63px;
-
+        padding-bottom: 61px;
         margin: auto;
-
-        height: 333px;
     }
 
     &__inner-card-title {
@@ -102,14 +129,30 @@
         border-radius: 50%;
         background-color: $white;
         display: flex;
+
+        &:hover,
+        &:focus {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: -1px 6px 16px -10px rgba(79, 79, 79, 0.97);
+
+            .services__inner-card-arrow {
+                filter: $fill-light-blue;
+                transform: translateY(3.5px);
+            }
+        }
+
+        &:active {
+            transform: translateY(-1px) scale(1.01);
+            box-shadow: -1px 6px 12px -10px rgba(79, 79, 79, 0.97);
+
+            .services__inner-card-arrow {
+                filter: $fill-light-blue;
+                transform: translateY(2px);
+            }
+        }
     }
 
     &__inner-card-arrow {
         margin: auto;
-
-        &:hover,
-        &:focus {
-            filter: $fill-light-blue;
-        }
     }
 }
