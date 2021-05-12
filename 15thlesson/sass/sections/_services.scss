@@ -68,14 +68,48 @@
     }
 
     &__inner-card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         width: 280px;
         background-color: #F3F3F3;
         border-radius: 10px;
         position: relative;
         z-index: 1;
 
+        padding-top: 63px;
+
         margin: auto;
 
         height: 333px;
+    }
+
+    &__inner-card-title {
+        @extend %subTitle;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    &__inner-card-desc {
+        @extend %cardDesc;
+        margin-bottom: 39px;
+    }
+
+    &__inner-card-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $white;
+        display: flex;
+    }
+
+    &__inner-card-arrow {
+        margin: auto;
+
+        &:hover,
+        &:focus {
+            filter: $fill-light-blue;
+        }
     }
 }
