@@ -868,3 +868,58 @@ a {
 .services__inner-card-arrow {
   margin: auto;
 }
+
+.pricing__offers {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.pricing__plan {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  color: #050c26;
+}
+
+.pricing__cards-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing__card-wrapper {
+  max-width: 360px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 30px rgba(153, 153, 153, 0.14);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pricing__card-top {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.14);
+  display: flex;
+  padding: 46px 0 45px 0;
+}
+
+.pricing__card-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.49;
+  text-align: center;
+  color: #050c26;
+  margin: auto;
+}
+
+.pricing__card-title.basic {
+  text-transform: uppercase;
+}
