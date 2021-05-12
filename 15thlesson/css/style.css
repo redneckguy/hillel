@@ -887,6 +887,40 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #050c26;
+  margin-bottom: 30px;
+}
+
+.pricing__form {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 353px;
+  border: 1px solid #1B45DA;
+  border-radius: 5px;
+  padding: 9px;
+}
+
+.pricing__form-btn {
+  color: #575859;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.pricing__form-btn__input {
+  display: none;
+}
+
+.pricing__form-btn__label {
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 20px;
+}
+
+.pricing__form-btn__input:checked ~ .pricing__form-btn__label {
+  color: #fff;
+  border-radius: 5px;
+  background-color: #3988ff;
+  padding: 10px 20px;
 }
 
 .pricing__cards-wrap {

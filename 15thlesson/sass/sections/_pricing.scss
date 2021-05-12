@@ -18,6 +18,40 @@
         text-align: center;
         text-transform: uppercase;
         color: $primary-black;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 353px;
+        border: 1px solid #1B45DA;
+        border-radius: 5px;
+        padding: 9px;
+    }
+
+    &__form-btn {
+        color: $main-text;
+        border-radius: 5px;
+        padding: 10px 0;
+
+        &__input {
+            display: none;
+        }
+
+        &__label {
+            cursor: pointer;
+            text-transform: capitalize;
+            padding: 20px;
+        }
+
+        &__input:checked ~ &__label {
+            color: $white;
+            border-radius: 5px;
+            background-color: $light-blue;
+            padding: 10px 20px;
+        }
     }
 
     &__cards-wrap {
