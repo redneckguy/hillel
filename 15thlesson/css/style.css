@@ -938,11 +938,23 @@ a {
   overflow: hidden;
 }
 
+.pricing__card-wrapper:hover .pricing__card-top {
+  background: linear-gradient(180deg, #D95374 0%, #D32852 100%);
+  border-bottom: 1px solid #D32852;
+}
+
+.pricing__card-wrapper:hover .pricing__card-top .pricing__card-title {
+  color: #fff;
+}
+
+.pricing__card-wrapper:hover .pricing__card-bottom {
+  background: linear-gradient(180deg, #D9315A 0%, #F3678A 100%);
+}
+
 .pricing__card-top {
   border-bottom: 1px solid rgba(153, 153, 153, 0.14);
   display: flex;
-  padding: 46px 0 45px 0;
-  margin-bottom: 40px;
+  padding: 46px 0 44px 0;
 }
 
 .pricing__card-title {
@@ -964,6 +976,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
 }
 
 .pricing__card-price {
