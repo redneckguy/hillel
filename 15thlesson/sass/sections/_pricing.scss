@@ -76,6 +76,7 @@
         border-bottom: 1px solid rgba($pricing-black, 0.14);
         display: flex;
         padding: 46px 0 45px 0;
+        margin-bottom: 40px;
     }
 
     &__card-title {
@@ -94,6 +95,12 @@
         }
     }
 
+    &__card-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__card-price {
         font-family: Lato;
         font-weight: 500;
@@ -101,12 +108,56 @@
         line-height: 1.4;
         text-align: center;
         color: $primary-black;
+        margin-bottom: 15px;
 
         span {
             font-family: Poppins;
             font-weight: normal;
             font-size: 18px;
             line-height: 1.62;
+            margin-right: -3px;
         }
+    }
+
+    &__card-term {
+        font-size: 18px;
+        line-height: 1.62;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__card-options {
+
+    }
+
+    &__card-option {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: capitalize;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__card-btn {
+        background-color: transparent;
+        border: 1px solid $light-blue;
+        border-radius: 5px;
+        color: $light-blue;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.52;
+        text-transform: capitalize;
+        padding: 14px 29px;
+        margin-bottom: 40px;
     }
 }

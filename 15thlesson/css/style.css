@@ -942,6 +942,7 @@ a {
   border-bottom: 1px solid rgba(153, 153, 153, 0.14);
   display: flex;
   padding: 46px 0 45px 0;
+  margin-bottom: 40px;
 }
 
 .pricing__card-title {
@@ -959,6 +960,12 @@ a {
   text-transform: uppercase;
 }
 
+.pricing__card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .pricing__card-price {
   font-family: Lato;
   font-weight: 500;
@@ -966,6 +973,7 @@ a {
   line-height: 1.4;
   text-align: center;
   color: #050c26;
+  margin-bottom: 15px;
 }
 
 .pricing__card-price span {
@@ -973,4 +981,44 @@ a {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.62;
+  margin-right: -3px;
+}
+
+.pricing__card-term {
+  font-size: 18px;
+  line-height: 1.62;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing__card-option {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.pricing__card-option:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.pricing__card-option:last-child {
+  margin-bottom: 30px;
+}
+
+.pricing__card-btn {
+  background-color: transparent;
+  border: 1px solid #3988ff;
+  border-radius: 5px;
+  color: #3988ff;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.52;
+  text-transform: capitalize;
+  padding: 14px 29px;
+  margin-bottom: 40px;
 }
