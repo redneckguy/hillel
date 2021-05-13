@@ -869,6 +869,10 @@ a {
   margin: auto;
 }
 
+.pricing {
+  margin-bottom: 140px;
+}
+
 .pricing__offers {
   font-weight: 500;
   font-size: 20px;
