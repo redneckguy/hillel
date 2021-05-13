@@ -29,6 +29,7 @@
         border: 1px solid #1B45DA;
         border-radius: 5px;
         padding: 9px;
+        margin-bottom: 60px;
     }
 
     &__form-btn {
@@ -50,7 +51,10 @@
             color: $white;
             border-radius: 5px;
             background-color: $light-blue;
-            padding: 10px 20px;
+            padding: 12px 21px;
+            // font-family: Poppins;
+            // font-size: 18px;
+            // line-height: 1.62;
         }
     }
 
@@ -79,7 +83,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 25px;
-        line-height: 1.49;
+        line-height: 1.52;
         text-align: center;
         color: $primary-black;
         margin: auto;
@@ -87,6 +91,22 @@
 
         &.basic {
             text-transform: uppercase;
+        }
+    }
+
+    &__card-price {
+        font-family: Lato;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 1.4;
+        text-align: center;
+        color: $primary-black;
+
+        span {
+            font-family: Poppins;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 1.62;
         }
     }
 }

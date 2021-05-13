@@ -898,6 +898,7 @@ a {
   border: 1px solid #1B45DA;
   border-radius: 5px;
   padding: 9px;
+  margin-bottom: 60px;
 }
 
 .pricing__form-btn {
@@ -920,7 +921,7 @@ a {
   color: #fff;
   border-radius: 5px;
   background-color: #3988ff;
-  padding: 10px 20px;
+  padding: 12px 21px;
 }
 
 .pricing__cards-wrap {
@@ -948,7 +949,7 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
-  line-height: 1.49;
+  line-height: 1.52;
   text-align: center;
   color: #050c26;
   margin: auto;
@@ -956,4 +957,20 @@ a {
 
 .pricing__card-title.basic {
   text-transform: uppercase;
+}
+
+.pricing__card-price {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.4;
+  text-align: center;
+  color: #050c26;
+}
+
+.pricing__card-price span {
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.62;
 }
