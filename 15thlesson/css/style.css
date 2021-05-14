@@ -1192,3 +1192,7 @@ a {
   line-height: 1.63;
   text-transform: capitalize;
 }
+
+.footer {
+  background-color: #050c26;
+}
