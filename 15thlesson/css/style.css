@@ -1069,9 +1069,6 @@ a {
 }
 
 .reviews__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 1140px;
   padding: 45px 68px;
   border: 1px solid rgba(5, 12, 38, 0.1);
@@ -1082,8 +1079,50 @@ a {
   background-position: center;
 }
 
+.reviews .slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reviews .slider__buttons {
+  margin: 0 auto;
+  max-width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews .slider__btn {
+  background: #3988ff;
+  opacity: 0.1;
+  border-radius: 20px;
+  border: none;
+  width: 20px;
+  height: 11px;
+  cursor: pointer;
+}
+
+.reviews .slider__btn:first-child {
+  width: 40px;
+  opacity: 1;
+}
+
+.reviews .slider__btn:hover {
+  width: 40px;
+  opacity: 1;
+}
+
 .reviews .review {
   margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.reviews .review:hover .review__desc {
+  color: #050c26;
+}
+
+.reviews .review:hover .review__person-picture {
+  box-shadow: inset 0px 0px 0px 1px #3988ff;
 }
 
 .reviews .review__desc {
@@ -1093,7 +1132,6 @@ a {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.62;
-  color: #050c26;
   position: relative;
   margin-top: 14px;
   margin-left: 46.33px;
@@ -1123,6 +1161,21 @@ a {
 
 .reviews .review__person-picture {
   margin-right: 30px;
+  width: 90px;
+  height: 90px;
+  box-shadow: inset 0px 0px 0px 1px #050c26;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.reviews .review__person-picture.picture1 {
+  background-image: url(../../images/reviewsCorey.png);
+}
+
+.reviews .review__person-picture.picture2 {
+  background-image: url(../../images/reviewsJacob.png);
 }
 
 .reviews .review__person-name {

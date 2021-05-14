@@ -15,9 +15,6 @@
     }
 
     &__wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         max-width: 1140px;
         padding: 45px 68px;
         border: 1px solid rgba($primary-black, 0.1);
@@ -28,8 +25,53 @@
         background-position: center;
     }
 
+    .slider {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__buttons {
+            margin: 0 auto;
+            max-width: 110px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__btn {
+            background: $light-blue;
+            opacity: 0.1;
+            border-radius: 20px;
+            border: none;
+            width: 20px;
+            height: 11px;
+            cursor: pointer;
+
+            &:first-child {
+                width: 40px;
+                opacity: 1;
+            }
+
+            &:hover {
+                width: 40px;
+                opacity: 1;
+            }
+        }
+    }
+
     .review {
         margin-bottom: 50px;
+        cursor: pointer;
+
+        &:hover {
+            .review__desc {
+                color: $primary-black;
+            }
+            
+            .review__person-picture {
+                box-shadow: inset 0px 0px 0px 1px $light-blue;
+            }
+        }
+             
 
         &__desc {
             max-width: 371px;
@@ -38,7 +80,6 @@
             font-weight: 500;
             font-size: 18px;
             line-height: 1.62;
-            color: $primary-black;
             position: relative;
             margin-top: 14px;
             margin-left: 46.33px;
@@ -68,6 +109,21 @@
 
         &__person-picture {
             margin-right: 30px;
+            width: 90px;
+            height: 90px;
+            box-shadow: inset 0px 0px 0px 1px $primary-black;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+        }
+
+        &__person-picture.picture1 {
+            background-image: url(../../images/reviewsCorey.png);
+        }
+
+        &__person-picture.picture2 {
+            background-image: url(../../images/reviewsJacob.png);
         }
 
         &__person-data {
