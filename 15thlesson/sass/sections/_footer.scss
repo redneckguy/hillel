@@ -1,3 +1,133 @@
 .footer {
     background-color: $primary-black;
+    
+    .inner-container {
+        padding-top: 75px;
+    }
+
+    &__top-part {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        margin-bottom: 55px;
+    }
+
+    .innovated {
+        max-width: 318px;
+        margin-right: 71px;
+
+        &__logo {
+            @include logo($white);
+            margin-bottom: 30px;
+        }
+
+        &__desc {
+            font-size: 18px;
+            line-height: 1.62;
+            color: $white;
+            opacity: 0.7;
+            width: 316px;
+            margin-left: 2px;
+        }
+    }
+
+    .verticalnav {
+        margin-right: 72px;
+        max-width: 226px;
+        width: 100%;
+
+        &.support {
+            margin-right: 64px;
+            max-width: 127px;
+            width: 100%;
+
+            .verticalnav__nav-item:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__subtitle {
+            @extend %whiteSubtitle;
+        }
+
+        &__nav-item {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 1.63;
+            opacity: .7;
+            text-transform: capitalize;
+            color: $white;
+
+            &:not(:first-child) {
+                margin-bottom: 13px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__nav-link {
+            line-height: inherit;
+        }
+    }
+
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+
+
+        &__subtitle {
+            @extend %whiteSubtitle;
+        }
+
+        .email {
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.62;
+            color: $white;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        .social-media {
+            max-width: 155px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .subscribe {
+            @include links($white, $white, $white);
+            max-width: 161px;
+        }
+
+        .subscribe {
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.6;
+            color: $white;
+        }
+    }
+
+    &__copyright {
+        border-top: 1px solid rgba($white, 0.1);
+        padding: 30px 0 29px;
+
+        .copyright-desc {
+            font-family: Montserrat;
+            font-size: 18px;
+            line-height: 1.62;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
 }

@@ -127,3 +127,13 @@
     background-size: auto;
     background-position: center;
 }
+
+@mixin logo($color) {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 1.52;
+    letter-spacing: 1.1px;
+    color: $color;
+    text-transform: uppercase;
+}

@@ -103,6 +103,22 @@ table {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -190,6 +206,17 @@ a {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+}
+
+.footer .verticalnav__subtitle, .footer .contact-us__subtitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 25px;
 }
 
 .header {
@@ -1195,4 +1222,180 @@ a {
 
 .footer {
   background-color: #050c26;
+}
+
+.footer .inner-container {
+  padding-top: 75px;
+}
+
+.footer__top-part {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.footer .innovated {
+  max-width: 318px;
+  margin-right: 71px;
+}
+
+.footer .innovated__logo {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 1.52;
+  letter-spacing: 1.1px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.footer .innovated__desc {
+  font-size: 18px;
+  line-height: 1.62;
+  color: #fff;
+  opacity: 0.7;
+  width: 316px;
+  margin-left: 2px;
+}
+
+.footer .verticalnav {
+  margin-right: 72px;
+  max-width: 226px;
+  width: 100%;
+}
+
+.footer .verticalnav.support {
+  margin-right: 64px;
+  max-width: 127px;
+  width: 100%;
+}
+
+.footer .verticalnav.support .verticalnav__nav-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer .verticalnav__nav-item {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.63;
+  opacity: .7;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.footer .verticalnav__nav-item:not(:first-child) {
+  margin-bottom: 13px;
+}
+
+.footer .verticalnav__nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer .verticalnav__nav-item:first-child {
+  margin-bottom: 10px;
+}
+
+.footer .verticalnav__nav-link {
+  line-height: inherit;
+}
+
+.footer .contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .contact-us .email {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.62;
+  color: #fff;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.footer .contact-us .social-media {
+  max-width: 155px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer .contact-us .subscribe {
+  max-width: 161px;
+}
+
+.footer .contact-us .subscribe {
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+  background-color: #3988ff;
+  font-size: 18px;
+  line-height: 1.62;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.footer .contact-us .subscribe::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background-color: #3988ff;
+}
+
+.footer .contact-us .subscribe:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(5, 12, 38, 0.2);
+  color: #fff;
+}
+
+.footer .contact-us .subscribe:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.footer .contact-us .subscribe:active, .footer .contact-us .subscribe:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(5, 12, 38, 0.2);
+  color: #fff;
+}
+
+.footer .contact-us .subscribe:visited {
+  color: #fff;
+}
+
+.footer .contact-us .subscribe {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.footer__copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 0 29px;
+}
+
+.footer__copyright .copyright-desc {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.62;
+  text-align: center;
+  text-transform: capitalize;
 }
