@@ -1,0 +1,33 @@
+.reviews {
+
+    .inner-container {
+        padding-bottom: 140px;
+    }
+
+    .section {
+        &__title {
+            @extend %sectionTitle;
+        }
+    
+        &__desc {
+            @include sectionDesk(715px);
+        }
+    }
+
+    &__wrap {
+        max-width: 1140px;
+        border: 1px solid rgba($primary-black, 0.1);
+        border-radius: 10px;
+        background-image: url(../images/reviewsWaves.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+    }
+
+    .review {
+        &__desc {
+            
+        }
+    }
+}
+

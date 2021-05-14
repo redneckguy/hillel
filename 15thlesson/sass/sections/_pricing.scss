@@ -1,6 +1,8 @@
 .pricing {
 
-    margin-bottom: 140px;
+    .inner-container {
+        padding-bottom: 140px;
+    }
     
     &__offers {
         font-weight: 500;

@@ -166,7 +166,7 @@ a {
   text-shadow: 0 0 0.5px #3988ff, 0 0 0.5px #3988ff;
 }
 
-.creativity__title, .features__title, .services__title {
+.creativity__title, .features__title, .services__title, .reviews .section__title {
   color: #050c26;
   font-family: Lato;
   font-weight: 500;
@@ -869,8 +869,8 @@ a {
   margin: auto;
 }
 
-.pricing {
-  margin-bottom: 140px;
+.pricing .inner-container {
+  padding-bottom: 140px;
 }
 
 .pricing__offers {
@@ -1055,4 +1055,25 @@ a {
   text-transform: capitalize;
   padding: 14px 29px;
   margin-bottom: 40px;
+}
+
+.reviews .inner-container {
+  padding-bottom: 140px;
+}
+
+.reviews .section__desc {
+  max-width: 715px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.reviews__wrap {
+  max-width: 1140px;
+  border: 1px solid rgba(5, 12, 38, 0.1);
+  border-radius: 10px;
+  background-image: url(../images/reviewsWaves.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
