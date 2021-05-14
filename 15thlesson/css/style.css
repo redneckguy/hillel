@@ -985,6 +985,7 @@ a {
   text-align: center;
   color: #050c26;
   margin: auto;
+  text-transform: capitalize;
 }
 
 .pricing__card-title.basic {
