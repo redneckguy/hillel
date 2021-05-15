@@ -1238,11 +1238,11 @@ a {
 }
 
 .reviews .review__person-picture.picture1 {
-  background-image: url(../../images/reviewsCorey.png);
+  background-image: url(../images/reviewsCorey.png);
 }
 
 .reviews .review__person-picture.picture2 {
-  background-image: url(../../images/reviewsJacob.png);
+  background-image: url(../images/reviewsJacob.png);
 }
 
 .reviews .review__person-name {
