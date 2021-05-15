@@ -218,6 +218,12 @@ a {
   margin-bottom: 25px;
 }
 
+.contact-button,
+.watch-video {
+  font-family: Poppins;
+  font-weight: 500;
+}
+
 .header {
   background: #fff5f5;
   position: relative;
@@ -247,11 +253,10 @@ a {
   font-family: "Lato";
   font-weight: 900;
   font-size: 25px;
-  line-height: 1.49;
+  line-height: 1.52;
   letter-spacing: 1.1px;
   color: #050c26;
   text-transform: uppercase;
-  padding-top: 2px;
 }
 
 .logo__link {
@@ -276,12 +281,12 @@ a {
 }
 
 .horisontal-navigation__link:hover::after, .horisontal-navigation__link:focus::after {
-  display: inline-block;
+  visibility: visible;
   opacity: 100%;
 }
 
 .horisontal-navigation__link::after {
-  display: none;
+  visibility: hidden;
   opacity: 0;
   content: "";
   width: 100%;
@@ -296,8 +301,6 @@ a {
 
 .contact-button {
   margin-right: 1px;
-  font-family: Poppins;
-  font-weight: 500;
 }
 
 .contact-button {
@@ -378,8 +381,6 @@ a {
   justify-content: space-between;
   align-items: center;
   max-width: 211px;
-  font-family: Poppins;
-  font-weight: 500;
   text-transform: capitalize;
   color: #050c26;
 }
@@ -1078,6 +1079,37 @@ a {
   text-transform: capitalize;
   padding: 14px 29px;
   margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.pricing-card__btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background-color: #3988ff;
+}
+
+.pricing-card__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(5, 12, 38, 0.2);
+}
+
+.pricing-card__btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.pricing-card__btn:active, .pricing-card__btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(5, 12, 38, 0.2);
 }
 
 .reviews .inner-container {

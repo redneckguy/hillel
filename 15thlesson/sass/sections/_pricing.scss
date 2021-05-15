@@ -182,5 +182,8 @@
         text-transform: capitalize;
         padding: 14px 29px;
         margin-bottom: 40px;
+        cursor: pointer;
+
+        @include buttonAfter(5px, $light-blue);
     }
 }

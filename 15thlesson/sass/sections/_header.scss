@@ -1,3 +1,9 @@
+.contact-button,
+.watch-video {
+    font-family: Poppins;
+    font-weight: 500;
+}
+
 .header {
     background: $light-pink;
     position: relative;
@@ -35,14 +41,7 @@
 // * LOGO
 
 .logo {
-    font-family: "Lato";
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 1.49;
-    letter-spacing: 1.1px;
-    color: $primary-black;
-    text-transform: uppercase;
-    padding-top: 2px;
+    @include logo($primary-black);
     @extend %linksHover;
 
     &__link {
@@ -70,13 +69,13 @@
 
         &:hover::after,
         &:focus::after {
-            display: inline-block;
+            visibility: visible;
             opacity: 100%;
         }
     }
 
     &__link::after {
-        display: none;
+        visibility: hidden;
         opacity: 0;
         content: "";
         width: 100%;
@@ -95,8 +94,7 @@
 .contact-button {
     margin-right: 1px;
     @include blueButton($white, $white, $white);
-    font-family: Poppins;
-    font-weight: 500;
+    
 }
 
 // * CONTENT PART
@@ -130,8 +128,6 @@
     justify-content: space-between;
     align-items: center;
     max-width: 211px;
-    font-family: Poppins;
-    font-weight: 500;
     text-transform: capitalize;
     color: $primary-black;
 
