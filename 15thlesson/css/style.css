@@ -1268,9 +1268,6 @@ a {
 }
 
 .footer .verticalnav__nav-item {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.63;
   opacity: .7;
@@ -1288,10 +1285,6 @@ a {
 
 .footer .verticalnav__nav-item:first-child {
   margin-bottom: 10px;
-}
-
-.footer .verticalnav__nav-link {
-  line-height: inherit;
 }
 
 .footer .contact-us {
