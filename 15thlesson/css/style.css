@@ -261,7 +261,8 @@ a {
 
 .logo__link {
   color: inherit;
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
+  transition-property: text-shadow, color;
 }
 
 .horisontal-navigation {
@@ -277,7 +278,8 @@ a {
 .horisontal-navigation__link {
   color: inherit;
   position: relative;
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
+  transition-property: text-shadow, color;
 }
 
 .horisontal-navigation__link:hover::after, .horisontal-navigation__link:focus::after {
@@ -296,7 +298,8 @@ a {
   position: absolute;
   bottom: -7px;
   left: 0;
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
+  transition-property: visibility, opacity;
 }
 
 .contact-button {
@@ -316,6 +319,7 @@ a {
   background-color: #3988ff;
   cursor: pointer;
   transition: all 0.2s ease;
+  transition-property: transform, box-shadow, opacity;
 }
 
 .contact-button::after {
@@ -328,7 +332,8 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
+  transition: 0.4s;
+  transition-property: transform, box-shadow, opacity;
   background-color: #3988ff;
 }
 
@@ -406,7 +411,8 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
+  transition: 0.4s;
+  transition-property: transform, box-shadow, opacity;
   background-color: #fff;
 }
 
@@ -691,6 +697,7 @@ a {
   background-color: #3988ff;
   cursor: pointer;
   transition: all 0.2s ease;
+  transition-property: transform, box-shadow, opacity;
 }
 
 .feature-card__btn::after {
@@ -703,7 +710,8 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
+  transition: 0.4s;
+  transition-property: transform, box-shadow, opacity;
   background-color: #3988ff;
 }
 
@@ -823,7 +831,8 @@ a {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(104px);
-  transition: all 0.05s ease;
+  transition: .05s ease;
+  transition-property: background-color, backdrop-filter;
 }
 
 .service-card:hover::before, .service-card:focus::before {
@@ -869,6 +878,8 @@ a {
   border-radius: 50%;
   background-color: #fff;
   display: flex;
+  transition: 0.2s ease;
+  transition-property: transform;
 }
 
 .inner-card__circle:hover, .inner-card__circle:focus {
@@ -893,6 +904,8 @@ a {
 
 .inner-card__arrow {
   margin: auto;
+  transition: 0.2s ease;
+  transition-property: transform;
 }
 
 .pricing .inner-container {
@@ -904,7 +917,7 @@ a {
   text-transform: uppercase;
 }
 
-.pricing__offers, .pricing__plan, .pricing__title, .pricing__bottom-price, .pricing__bottom-term, .pricing__bottom-option {
+.pricing__offers, .pricing__plan, .pricing__title, .pricing__bottom-price, .pricing__bottom-term {
   text-align: center;
 }
 
@@ -1058,6 +1071,7 @@ a {
 }
 
 .pricing-card__bottom-option {
+  text-align: center;
   font-family: Poppins;
   font-weight: 500;
   font-size: 20px;
@@ -1094,7 +1108,8 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
+  transition: 0.4s;
+  transition-property: transform, box-shadow, opacity;
   background-color: #3988ff;
 }
 
@@ -1373,6 +1388,7 @@ a {
   background-color: #3988ff;
   cursor: pointer;
   transition: all 0.2s ease;
+  transition-property: transform, box-shadow, opacity;
 }
 
 .footer .contact-us .subscribe::after {
@@ -1385,7 +1401,8 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
+  transition: 0.4s;
+  transition-property: transform, box-shadow, opacity;
   background-color: #3988ff;
 }
 

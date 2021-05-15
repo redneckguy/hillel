@@ -76,7 +76,8 @@
         z-index: 1;
         background-color: $service-card-bg;
         backdrop-filter: blur(104px);
-        transition: all 0.05s ease;
+        transition: .05s ease;
+        transition-property: background-color, backdrop-filter;
     }
 
     &:hover,
@@ -131,6 +132,8 @@
         border-radius: 50%;
         background-color: $white;
         display: flex;
+        transition: 0.2s ease;
+        transition-property: transform;
 
         &:hover,
         &:focus {
@@ -146,6 +149,7 @@
         &:active {
             transform: translateY(-1px) scale(1.01);
             box-shadow: -1px 6px 12px -10px $service-card-btn-shadow;
+            
 
             .inner-card__arrow {
                 filter: $fill-light-blue;
@@ -156,5 +160,7 @@
 
     &__arrow {
         margin: auto;
+        transition: 0.2s ease;
+        transition-property: transform;
     }
 }

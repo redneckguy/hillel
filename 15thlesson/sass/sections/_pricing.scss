@@ -13,8 +13,7 @@
     &__plan,
     &__title,
     &__bottom-price,
-    &__bottom-term,
-    &__bottom-option {
+    &__bottom-term {
         text-align: center;
     }
 
@@ -171,6 +170,7 @@
     }
 
     &__bottom-option {
+        text-align: center;
         font-family: Poppins;
         font-weight: 500;
         font-size: 20px;
