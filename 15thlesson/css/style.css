@@ -1276,6 +1276,10 @@ a {
   margin-bottom: 30px;
 }
 
+.footer .innovated__logo:hover {
+  text-decoration: underline;
+}
+
 .footer .innovated__desc {
   font-size: 18px;
   line-height: 1.62;
@@ -1321,6 +1325,10 @@ a {
   margin-bottom: 10px;
 }
 
+.footer .verticalnav__nav-link:hover, .footer .verticalnav__nav-link:focus {
+  text-decoration: underline;
+}
+
 .footer .contact-us {
   display: flex;
   flex-direction: column;
@@ -1334,6 +1342,10 @@ a {
   color: #fff;
   opacity: 0.7;
   margin-bottom: 10px;
+}
+
+.footer .contact-us .email:hover {
+  text-decoration: underline;
 }
 
 .footer .contact-us .social-media {
@@ -1418,4 +1430,8 @@ a {
   line-height: 1.62;
   text-align: center;
   text-transform: capitalize;
+}
+
+.footer__copyright .copyright-desc a:hover {
+  text-decoration: underline;
 }
