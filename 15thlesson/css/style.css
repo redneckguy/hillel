@@ -919,47 +919,47 @@ a {
   margin-bottom: 30px;
 }
 
-.pricing__form {
+.form {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 353px;
-  border: 1px solid #1B45DA;
+  border: 1px solid #1b45da;
   border-radius: 5px;
   padding: 9px;
   margin-bottom: 60px;
 }
 
-.pricing__form-btn {
+.form__btn {
   color: #575859;
   border-radius: 5px;
   padding: 10px 0;
 }
 
-.pricing__form-btn__input {
+.form__btn-input {
   display: none;
 }
 
-.pricing__form-btn__label {
+.form__btn-label {
   cursor: pointer;
   text-transform: capitalize;
   padding: 20px;
 }
 
-.pricing__form-btn__input:checked ~ .pricing__form-btn__label {
+.form__btn-input:checked ~ .form__btn-label {
   color: #fff;
   border-radius: 5px;
   background-color: #3988ff;
   padding: 12px 21px;
 }
 
-.pricing__cards-wrap {
+.pricing-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.pricing__card-wrapper {
+.pricing-card {
   max-width: 360px;
   width: 100%;
   background-color: #fff;
@@ -968,42 +968,41 @@ a {
   overflow: hidden;
 }
 
-.pricing__card-wrapper:hover {
-  background: linear-gradient(180deg, #D9315A 0%, #F3678A 100%);
+.pricing-card:hover {
+  background: linear-gradient(180deg, #d9315a 0%, #f3678a 100%);
 }
 
-.pricing__card-wrapper:hover .pricing__card-top {
-  background: linear-gradient(180deg, #D95374 0%, #D32852 100%);
+.pricing-card:hover .pricing-card__top {
+  background: linear-gradient(180deg, #d95374 0%, #d32852 100%);
 }
 
-.pricing__card-wrapper:hover .pricing__card-top .pricing__card-title {
+.pricing-card:hover .pricing-card__top .pricing-card__title {
   color: #fff;
 }
 
-.pricing__card-wrapper:hover .pricing__card-bottom {
-  background: linear-gradient(180deg, #D9315A 0%, #F3678A 100%);
-  border-top: 1px solid #D9315A;
+.pricing-card:hover .pricing-card__bottom {
+  background: linear-gradient(180deg, #d9315a 0%, #f3678a 100%);
+  border-top: 1px solid #d9315a;
 }
 
-.pricing__card-wrapper:hover .pricing__card-bottom .pricing__card-price,
-.pricing__card-wrapper:hover .pricing__card-bottom .pricing__card-term,
-.pricing__card-wrapper:hover .pricing__card-bottom .pricing__card-options {
+.pricing-card:hover .pricing-card__bottom .pricing-card__bottom-price,
+.pricing-card:hover .pricing-card__bottom .pricing-card__bottom-term,
+.pricing-card:hover .pricing-card__bottom .pricing-card__bottom-options {
   color: #fff;
 }
 
-.pricing__card-wrapper:hover .pricing__card-btn {
+.pricing-card:hover .pricing-card__btn {
   background-color: #3988ff;
   color: #fff;
 }
 
-.pricing__card-top {
+.pricing-card__top {
   display: flex;
   padding: 46px 0 45px 0;
 }
 
-.pricing__card-title {
+.pricing-card__title {
   font-family: Lato;
-  font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 1.52;
@@ -1013,11 +1012,11 @@ a {
   text-transform: capitalize;
 }
 
-.pricing__card-title.basic {
+.pricing-card__title.basic {
   text-transform: uppercase;
 }
 
-.pricing__card-bottom {
+.pricing-card__bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1025,7 +1024,7 @@ a {
   border-top: 1px solid rgba(153, 153, 153, 0.14);
 }
 
-.pricing__card-price {
+.pricing-card__bottom-price {
   font-family: Lato;
   font-weight: 500;
   font-size: 35px;
@@ -1035,7 +1034,7 @@ a {
   margin-bottom: 15px;
 }
 
-.pricing__card-price span {
+.pricing-card__bottom-price span {
   font-family: Poppins;
   font-weight: normal;
   font-size: 18px;
@@ -1043,14 +1042,14 @@ a {
   margin-right: -3px;
 }
 
-.pricing__card-term {
+.pricing-card__bottom-term {
   font-size: 18px;
   line-height: 1.62;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.pricing__card-option {
+.pricing-card__bottom-option {
   font-family: Poppins;
   font-weight: 500;
   font-size: 20px;
@@ -1059,21 +1058,20 @@ a {
   text-transform: capitalize;
 }
 
-.pricing__card-option:not(:last-child) {
+.pricing-card__bottom-option:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.pricing__card-option:last-child {
+.pricing-card__bottom-option:last-child {
   margin-bottom: 30px;
 }
 
-.pricing__card-btn {
+.pricing-card__btn {
   background-color: transparent;
   border: 1px solid #3988ff;
   border-radius: 5px;
   color: #3988ff;
   font-family: Lato;
-  font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 1.52;

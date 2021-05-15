@@ -1,9 +1,8 @@
 .pricing {
-
     .inner-container {
         padding-bottom: 140px;
     }
-    
+
     &__offers {
         font-weight: 500;
         font-size: 20px;
@@ -24,96 +23,91 @@
         color: $primary-black;
         margin-bottom: 30px;
     }
+}
 
-    &__form {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        max-width: 353px;
-        border: 1px solid #1B45DA;
-        border-radius: 5px;
-        padding: 9px;
-        margin-bottom: 60px;
-    }
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 353px;
+    border: 1px solid $dark-blue;
+    border-radius: 5px;
+    padding: 9px;
+    margin-bottom: 60px;
 
-    &__form-btn {
+    &__btn {
         color: $main-text;
         border-radius: 5px;
         padding: 10px 0;
-
-        &__input {
-            display: none;
-        }
-
-        &__label {
-            cursor: pointer;
-            text-transform: capitalize;
-            padding: 20px;
-        }
-
-        &__input:checked ~ &__label {
-            color: $white;
-            border-radius: 5px;
-            background-color: $light-blue;
-            padding: 12px 21px;
-            // font-family: Poppins;
-            // font-size: 18px;
-            // line-height: 1.62;
-        }
     }
 
-    &__cards-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    &__btn-input {
+        display: none;
     }
 
-    &__card-wrapper {
-        max-width: 360px;
-        width: 100%;
-        background-color: $white;
-        box-shadow: 0px 4px 30px rgba($pricing-black, 0.14);
-        border-radius: 10px;
-        overflow: hidden;
+    &__btn-label {
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: 20px;
+    }
 
-        &:hover {
+    &__btn-input:checked ~ &__btn-label {
+        color: $white;
+        border-radius: 5px;
+        background-color: $light-blue;
+        padding: 12px 21px;
+    }
+}
 
-            background: linear-gradient(180deg, #D9315A 0%, #F3678A 100%);
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-            .pricing__card-top {
-                background: linear-gradient(180deg, #D95374 0%, #D32852 100%);
+.pricing-card {
+    max-width: 360px;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0px 4px 30px $pricing-card-shadow;
+    border-radius: 10px;
+    overflow: hidden;
 
-                .pricing__card-title {
-                    color: $white;
-                }
-            }
+    &:hover {
+        background: $pricing-bottom-bg;
 
-            .pricing__card-bottom {
-                background: linear-gradient(180deg, #D9315A 0%, #F3678A 100%);
-                border-top: 1px solid #D9315A;
+        .pricing-card__top {
+            background: $pricing-top-bg;
 
-                .pricing__card-price,
-                .pricing__card-term,
-                .pricing__card-options {
-                    color: $white;
-                }
-            }
-
-            .pricing__card-btn {
-                background-color: $light-blue;
+            .pricing-card__title {
                 color: $white;
             }
         }
+
+        .pricing-card__bottom {
+            background: $pricing-bottom-bg;
+            border-top: 1px solid $pricing-bottom-dark-red;
+
+            .pricing-card__bottom-price,
+            .pricing-card__bottom-term,
+            .pricing-card__bottom-options {
+                color: $white;
+            }
+        }
+
+        .pricing-card__btn {
+            background-color: $light-blue;
+            color: $white;
+        }
     }
 
-    &__card-top {
+    &__top {
         display: flex;
         padding: 46px 0 45px 0;
     }
 
-    &__card-title {
+    &__title {
         font-family: Lato;
-        font-style: normal;
         font-weight: 500;
         font-size: 25px;
         line-height: 1.52;
@@ -127,15 +121,15 @@
         }
     }
 
-    &__card-bottom {
+    &__bottom {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 39px;
-        border-top: 1px solid rgba($pricing-black, 0.14);
+        border-top: 1px solid $pricing-border-color;
     }
 
-    &__card-price {
+    &__bottom-price {
         font-family: Lato;
         font-weight: 500;
         font-size: 35px;
@@ -153,18 +147,14 @@
         }
     }
 
-    &__card-term {
+    &__bottom-term {
         font-size: 18px;
         line-height: 1.62;
         text-align: center;
         margin-bottom: 40px;
     }
 
-    &__card-options {
-
-    }
-
-    &__card-option {
+    &__bottom-option {
         font-family: Poppins;
         font-weight: 500;
         font-size: 20px;
@@ -180,13 +170,12 @@
         }
     }
 
-    &__card-btn {
+    &__btn {
         background-color: transparent;
         border: 1px solid $light-blue;
         border-radius: 5px;
         color: $light-blue;
         font-family: Lato;
-        font-style: normal;
         font-weight: 500;
         font-size: 25px;
         line-height: 1.52;

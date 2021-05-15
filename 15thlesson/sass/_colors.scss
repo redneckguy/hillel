@@ -3,7 +3,7 @@ $primary-black: #050c26;
 $light-blue: #3988ff;
 $white: #fff;
 $black: #000;
-$video-arrow: #1b45da;
+$dark-blue: #1b45da;
 $light-pink: #fff5f5;
 
 $watch-video-btn-shadow: #ffe6e6;
@@ -30,7 +30,15 @@ $inner-card-start: #d93059;
 $inner-card-end: #d95b7a;
 $inner-card-wrapper-bg: #f3f3f3;
 
+$pricing-bottom-dark-red: #d9315a;
+$pricing-bottom-light-red: #f3678a;
+$pricing-top-dark-red: #d32852;
+$pricing-top-light-red: #d95374;
+$pricing-bottom-bg: linear-gradient(180deg, $pricing-bottom-dark-red 0%, $pricing-bottom-light-red 100%);
+$pricing-top-bg: linear-gradient(180deg, $pricing-top-light-red 0%, $pricing-top-dark-red 100%);
 $pricing-black: #999999;
+$pricing-border-color: rgba($pricing-black, 0.14);
+$pricing-card-shadow: rgba($pricing-black, 0.14);
 
 // * Mixins colors
 
