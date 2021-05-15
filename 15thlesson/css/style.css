@@ -1323,6 +1323,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  font-size: 0;
 }
 
 .footer .contact-us .subscribe {
