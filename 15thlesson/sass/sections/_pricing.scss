@@ -3,23 +3,32 @@
         padding-bottom: 140px;
     }
 
-    &__offers {
+    &__offers,
+    &__plan {
         font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__offers,
+    &__plan,
+    &__title,
+    &__bottom-price,
+    &__bottom-term,
+    &__bottom-option {
+        text-align: center;
+    }
+
+    &__offers {
         font-size: 20px;
         line-height: 1.6;
-        text-align: center;
         letter-spacing: 0.05em;
-        text-transform: uppercase;
         margin-bottom: 15px;
     }
 
     &__plan {
         font-family: Lato;
-        font-weight: 500;
         font-size: 35px;
         line-height: 1.4;
-        text-align: center;
-        text-transform: uppercase;
         color: $primary-black;
         margin-bottom: 30px;
     }
@@ -37,7 +46,6 @@
 
     &__btn {
         color: $main-text;
-        border-radius: 5px;
         padding: 10px 0;
     }
 
@@ -53,9 +61,13 @@
 
     &__btn-input:checked ~ &__btn-label {
         color: $white;
-        border-radius: 5px;
         background-color: $light-blue;
         padding: 12px 21px;
+    }
+
+    &__btn,
+    &__btn-input:checked ~ &__btn-label {
+        border-radius: 5px;
     }
 }
 
@@ -106,12 +118,20 @@
         padding: 46px 0 45px 0;
     }
 
-    &__title {
+    &__title,
+    &__bottom-price,
+    &__btn {
         font-family: Lato;
         font-weight: 500;
+    }
+
+    &__title,
+    &__btn {
         font-size: 25px;
         line-height: 1.52;
-        text-align: center;
+    }
+
+    &__title {
         color: $primary-black;
         margin: auto;
         text-transform: capitalize;
@@ -130,11 +150,8 @@
     }
 
     &__bottom-price {
-        font-family: Lato;
-        font-weight: 500;
         font-size: 35px;
         line-height: 1.4;
-        text-align: center;
         color: $primary-black;
         margin-bottom: 15px;
 
@@ -150,7 +167,6 @@
     &__bottom-term {
         font-size: 18px;
         line-height: 1.62;
-        text-align: center;
         margin-bottom: 40px;
     }
 
@@ -159,7 +175,6 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 1.6;
-        text-align: center;
         text-transform: capitalize;
 
         &:not(:last-child) {
@@ -175,10 +190,6 @@
         border: 1px solid $light-blue;
         border-radius: 5px;
         color: $light-blue;
-        font-family: Lato;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 1.52;
         text-transform: capitalize;
         padding: 14px 29px;
         margin-bottom: 40px;

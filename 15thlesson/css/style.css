@@ -899,23 +899,26 @@ a {
   padding-bottom: 140px;
 }
 
-.pricing__offers {
+.pricing__offers, .pricing__plan {
   font-weight: 500;
+  text-transform: uppercase;
+}
+
+.pricing__offers, .pricing__plan, .pricing__title, .pricing__bottom-price, .pricing__bottom-term, .pricing__bottom-option {
+  text-align: center;
+}
+
+.pricing__offers {
   font-size: 20px;
   line-height: 1.6;
-  text-align: center;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   margin-bottom: 15px;
 }
 
 .pricing__plan {
   font-family: Lato;
-  font-weight: 500;
   font-size: 35px;
   line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
   color: #050c26;
   margin-bottom: 30px;
 }
@@ -933,7 +936,6 @@ a {
 
 .form__btn {
   color: #575859;
-  border-radius: 5px;
   padding: 10px 0;
 }
 
@@ -949,9 +951,13 @@ a {
 
 .form__btn-input:checked ~ .form__btn-label {
   color: #fff;
-  border-radius: 5px;
   background-color: #3988ff;
   padding: 12px 21px;
+}
+
+.form__btn,
+.form__btn-input:checked ~ .form__btn-label {
+  border-radius: 5px;
 }
 
 .pricing-cards {
@@ -1002,12 +1008,17 @@ a {
   padding: 46px 0 45px 0;
 }
 
-.pricing-card__title {
+.pricing-card__title, .pricing-card__bottom-price, .pricing-card__btn {
   font-family: Lato;
   font-weight: 500;
+}
+
+.pricing-card__title, .pricing-card__btn {
   font-size: 25px;
   line-height: 1.52;
-  text-align: center;
+}
+
+.pricing-card__title {
   color: #050c26;
   margin: auto;
   text-transform: capitalize;
@@ -1026,11 +1037,8 @@ a {
 }
 
 .pricing-card__bottom-price {
-  font-family: Lato;
-  font-weight: 500;
   font-size: 35px;
   line-height: 1.4;
-  text-align: center;
   color: #050c26;
   margin-bottom: 15px;
 }
@@ -1046,7 +1054,6 @@ a {
 .pricing-card__bottom-term {
   font-size: 18px;
   line-height: 1.62;
-  text-align: center;
   margin-bottom: 40px;
 }
 
@@ -1055,7 +1062,6 @@ a {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.6;
-  text-align: center;
   text-transform: capitalize;
 }
 
@@ -1072,10 +1078,6 @@ a {
   border: 1px solid #3988ff;
   border-radius: 5px;
   color: #3988ff;
-  font-family: Lato;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 1.52;
   text-transform: capitalize;
   padding: 14px 29px;
   margin-bottom: 40px;
