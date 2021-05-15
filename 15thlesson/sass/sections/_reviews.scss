@@ -1,5 +1,4 @@
 .reviews {
-
     .inner-container {
         padding-bottom: 140px;
     }
@@ -8,16 +7,16 @@
         &__title {
             @extend %sectionTitle;
         }
-    
+
         &__desc {
             @include sectionDesk(715px);
         }
     }
 
-    &__wrap {
+    &__bg {
         max-width: 1140px;
         padding: 45px 68px;
-        border: 1px solid rgba($primary-black, 0.1);
+        border: 1px solid $reviews-border-color;
         border-radius: 10px;
         background-image: url(../images/reviewsWaves.svg);
         background-repeat: no-repeat;
@@ -46,12 +45,9 @@
             height: 11px;
             cursor: pointer;
 
-            &:first-child {
-                width: 40px;
-                opacity: 1;
-            }
-
-            &:hover {
+            &:first-child,
+            &:hover,
+            &:focus {
                 width: 40px;
                 opacity: 1;
             }
@@ -66,12 +62,11 @@
             .review__desc {
                 color: $primary-black;
             }
-            
+
             .review__person-picture {
                 box-shadow: inset 0px 0px 0px 1px $light-blue;
             }
         }
-             
 
         &__desc {
             max-width: 371px;
@@ -90,10 +85,11 @@
                 position: absolute;
                 top: -14px;
                 left: -46px;
-                opacity: .1;
+                opacity: 0.1;
                 width: 41.33px;
                 height: 34.52px;
-                background-image: url(../images/reviewsQuote.svg), url(../images/reviewsQuote.svg);
+                background-image: url(../images/reviewsQuote.svg),
+                    url(../images/reviewsQuote.svg);
                 background-repeat: no-repeat;
                 background-position: 0 0, 21px 0;
                 background-size: auto;
@@ -126,10 +122,6 @@
             background-image: url(../../images/reviewsJacob.png);
         }
 
-        &__person-data {
-
-        }
-
         &__person-name {
             font-weight: 500;
             font-size: 20px;
@@ -146,4 +138,3 @@
         }
     }
 }
-
