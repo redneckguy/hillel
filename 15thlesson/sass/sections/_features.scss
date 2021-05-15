@@ -79,7 +79,7 @@
     }
 
     &__card-btn {
-        @include links($white, $white, $white);
+        @include blueButton($white, $white, $white);
         font-family: Poppins;
         margin-bottom: 26px;
     }

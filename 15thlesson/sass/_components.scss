@@ -1,3 +1,5 @@
+// * Header bottom part wave SVG
+
 %wave {
     .wave-bottom {
         position: absolute;
@@ -22,6 +24,8 @@
     }
 }
 
+// * bold blue text on hovered links
+
 %linksHover {
     &:hover,
     &:focus {
@@ -29,6 +33,8 @@
         text-shadow: 0 0 0.5px $light-blue, 0 0 0.5px $light-blue;
     }
 }
+
+// * SECTION title
 
 %sectionTitle {
     color: $primary-black;
@@ -40,6 +46,8 @@
     margin-bottom: 24px;
 }
 
+// * Title in CARDS
+
 %subTitle {
     font-family: Lato;
     font-style: normal;
@@ -50,15 +58,18 @@
     text-transform: capitalize;
 }
 
+// * text description in CARDS
+
 %cardDesc {
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
 }
 
+
+// * Title for FOOTER navigation and contact us
 %whiteSubtitle {
     font-family: Poppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.6;

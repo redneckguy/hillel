@@ -92,7 +92,7 @@
 
     .button {
         margin-right: 1px;
-        @include links($white, $white, $white);
+        @include blueButton($white, $white, $white);
         font-family: Poppins;
         font-weight: 500;
         position: relative;

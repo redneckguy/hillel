@@ -1,24 +1,26 @@
-@mixin links($visited, $hover, $active) {
+// * FOR BUTTONS button + backbutton for hover effect
+
+@mixin blueButton($visited, $hover, $active) {
     & {
+        position: relative;
         color: $white;
-        padding: 15px 30px;
-        border-radius: 5px;
-        text-transform: capitalize;
-        cursor: pointer;
-        border: none;
-        background-color: $light-blue;
         font-size: 18px;
         line-height: 1.62;
+        text-transform: capitalize;
+        padding: 15px 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: $light-blue;
+        cursor: pointer;
         transition: all 0.2s ease;
-        position: relative;
 
         &::after {
+            position: absolute;
             content: "";
             display: inline-block;
             height: 100%;
             width: 100%;
             border-radius: 5px;
-            position: absolute;
             top: 0;
             left: 0;
             z-index: -1;
@@ -28,7 +30,7 @@
 
         &:hover {
             transform: translateY(-3px);
-            box-shadow: 0 5px 10px rgba($primary-black, 0.2);
+            box-shadow: 0 5px 10px $buttonShadow;
             color: $hover;
 
             &::after {
@@ -41,7 +43,7 @@
         &:focus {
             outline: none;
             transform: translateY(-1px);
-            box-shadow: 0 2px 5px rgba($primary-black, 0.2);
+            box-shadow: 0 2px 5px $buttonShadow;
             color: $active;
         }
 
@@ -50,6 +52,8 @@
         }
     }
 }
+
+// * for disappearing backbutton separate
 
 @mixin buttonAfter($borderRad, $bgcolor) {
     & {
@@ -69,7 +73,7 @@
 
         &:hover {
             transform: translateY(-3px);
-            box-shadow: 0 5px 10px rgba($primary-black, 0.2);
+            box-shadow: 0 5px 10px $buttonShadow;
 
             &::after {
                 transform: scaleX(1.4) scaleY(1.6);
@@ -81,10 +85,14 @@
         &:focus {
             outline: none;
             transform: translateY(-1px);
-            box-shadow: 0 2px 5px rgba($primary-black, 0.2);
+            box-shadow: 0 2px 5px $buttonShadow;
         }
     }
 }
+
+// * ---- PROGRESS BARS ----
+
+// * Container
 
 @mixin progressBarContainer($bgcolor) {
     background-color: $bgcolor;
@@ -93,13 +101,17 @@
     border-radius: 15px;
 }
 
-@mixin progressBarFiller($bgcolor, $width) { 
+// * Filler, shows width
+
+@mixin progressBarFiller($bgcolor, $width) {
     position: relative;
     background-color: $bgcolor;
     height: 15px;
     border-radius: 15px;
     width: $width;
 }
+
+// * Number on top
 
 @mixin progressbar-row-number($color) {
     position: absolute;
@@ -114,6 +126,8 @@
     line-height: 1.49;
 }
 
+// * Section description text and block width
+
 @mixin sectionDesk($max-width) {
     max-width: $max-width;
     text-align: center;
@@ -121,12 +135,16 @@
     margin-bottom: 70px;
 }
 
+// * Background for cards
+
 @mixin card-wrapper-bg($url) {
     background-image: $url;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
 }
+
+// * INNOVATED logo text template
 
 @mixin logo($color) {
     font-family: "Lato";

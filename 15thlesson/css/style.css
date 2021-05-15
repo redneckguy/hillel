@@ -210,7 +210,6 @@ a {
 
 .footer .verticalnav__subtitle, .footer .contact-us__subtitle {
   font-family: Poppins;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.6;
@@ -303,26 +302,26 @@ a {
 }
 
 .header .button {
+  position: relative;
   color: #fff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  text-transform: capitalize;
-  cursor: pointer;
-  border: none;
-  background-color: #3988ff;
   font-size: 18px;
   line-height: 1.62;
+  text-transform: capitalize;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3988ff;
+  cursor: pointer;
   transition: all 0.2s ease;
-  position: relative;
 }
 
 .header .button::after {
+  position: absolute;
   content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
@@ -681,26 +680,26 @@ a {
 }
 
 .features__card-btn {
+  position: relative;
   color: #fff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  text-transform: capitalize;
-  cursor: pointer;
-  border: none;
-  background-color: #3988ff;
   font-size: 18px;
   line-height: 1.62;
+  text-transform: capitalize;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3988ff;
+  cursor: pointer;
   transition: all 0.2s ease;
-  position: relative;
 }
 
 .features__card-btn::after {
+  position: absolute;
   content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
@@ -1331,26 +1330,26 @@ a {
 }
 
 .footer .contact-us .subscribe {
+  position: relative;
   color: #fff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  text-transform: capitalize;
-  cursor: pointer;
-  border: none;
-  background-color: #3988ff;
   font-size: 18px;
   line-height: 1.62;
+  text-transform: capitalize;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3988ff;
+  cursor: pointer;
   transition: all 0.2s ease;
-  position: relative;
 }
 
 .footer .contact-us .subscribe::after {
+  position: absolute;
   content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;

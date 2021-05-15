@@ -106,7 +106,7 @@
         }
 
         .subscribe {
-            @include links($white, $white, $white);
+            @include blueButton($white, $white, $white);
             max-width: 161px;
         }
 
