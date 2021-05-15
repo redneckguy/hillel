@@ -119,10 +119,6 @@ table {
   font-display: swap;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 * {
   box-sizing: border-box;
 }
