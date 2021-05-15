@@ -107,7 +107,7 @@
 
         .subscribe {
             @include blueButton($white, $white, $white);
-            max-width: 161px;
+            align-self: flex-start;
         }
 
         .subscribe {

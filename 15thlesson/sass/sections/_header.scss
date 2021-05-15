@@ -7,8 +7,7 @@
         padding-top: 40px;
         padding-bottom: 230px;
         background-image: url(../images/headerGraph.svg),
-            url(../images/headerGraph2pink.svg),
-            url(../images/headerGuy.png),
+            url(../images/headerGraph2pink.svg), url(../images/headerGuy.png),
             url(../images/headerGreenExclipse.svg),
             url(../images/headerGradCloud.png);
         background-repeat: no-repeat;
@@ -26,42 +25,44 @@
         margin-bottom: 158px;
     }
 
-    // * LOGO
+    // * NAVIGATION
 
-    &__bar-logo {
-        font-family: "Lato";
-        font-weight: 900;
-        font-size: 25px;
-        line-height: 1.49;
-        letter-spacing: 1.1px;
-        color: $primary-black;
-        text-transform: uppercase;
-        padding-top: 2px;
-        @extend %linksHover;
+    &__bar-navigation {
+        margin-right: 56px;
     }
+}
 
-    &__bar-logo-link {
+// * LOGO
+
+.logo {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 1.49;
+    letter-spacing: 1.1px;
+    color: $primary-black;
+    text-transform: uppercase;
+    padding-top: 2px;
+    @extend %linksHover;
+
+    &__link {
         color: inherit;
         transition: all 0.2s ease;
     }
+}
 
-    // * NAVIGATION
+// * NAVIGATION
 
-    &__bar-nav-wrap {
-        margin-right: 57px;
-    }
+.horisontal-navigation {
+    display: flex;
+    flex-wrap: wrap;
 
-    &__bar-nav {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    &__bar-nav-item {
+    &__item {
         text-transform: capitalize;
         padding: 0 25px;
     }
 
-    &__bar-nav-link {
+    &__link {
         color: inherit;
         position: relative;
         transition: all 0.2s ease;
@@ -74,7 +75,7 @@
         }
     }
 
-    &__bar-nav-link::after {
+    &__link::after {
         display: none;
         opacity: 0;
         content: "";
@@ -87,24 +88,23 @@
         left: 0;
         transition: all 0.2s ease;
     }
+}
 
-    // * CONTACT BUTTON
+// * CONTACT BUTTON
 
-    .button {
-        margin-right: 1px;
-        @include blueButton($white, $white, $white);
-        font-family: Poppins;
-        font-weight: 500;
-        position: relative;
-    }
+.contact-button {
+    margin-right: 1px;
+    @include blueButton($white, $white, $white);
+    font-family: Poppins;
+    font-weight: 500;
+}
 
-    // * CONTENT PART
+// * CONTENT PART
 
-    &__content {
-        max-width: 550px;
-    }
+.ideas {
+    max-width: 550px;
 
-    &__content-title {
+    &__title {
         font-family: Lato;
         font-weight: bold;
         font-size: 69px;
@@ -112,60 +112,56 @@
         color: $primary-black;
         margin-bottom: 25px;
 
-        .ideas {
+        .colored {
             color: $light-blue;
         }
     }
 
-    &__content-text {
+    &__text {
         max-width: 496px;
         margin-bottom: 35px;
     }
+}
 
-    // * WATCH VIDEO
+// * WATCH VIDEO
 
-    .watch-video {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 211px;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        text-transform: capitalize;
-        color: $primary-black;
+.watch-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 211px;
+    font-family: Poppins;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $primary-black;
 
-        &__button {
-            @include buttonAfter(50%, $white);
-            width: 70px;
-            height: 70px;
-            background-color: $white;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            position: relative;
-            box-shadow: 0px 0px 30px #ffe6e6;
+    &__button {
+        @include buttonAfter(50%, $white);
+        width: 70px;
+        height: 70px;
+        background-color: $white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0px 0px 30px $watch-video-btn-shadow;
 
-            &:hover,
-            &:focus {
-                .watch-video__button-arrow,
-                .watch-video__button-arrow {
-                    filter: invert(100%) sepia(100%) saturate(2%)
-                        hue-rotate(69deg) brightness(106%) contrast(101%);
-                }
-            }
+        &:hover &-arrow,
+        &:focus &-arrow {
+            filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(69deg)
+                brightness(106%) contrast(101%);
         }
+    }
 
-        &__button-arrow {
-            position: absolute;
-            top: 50%;
-            left: 54%;
-            transform: translate(-50%, -50%);
-        }
+    &__button-arrow {
+        position: absolute;
+        top: 50%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+    }
 
-        &__link {
-            color: inherit;
-            @extend %linksHover;
-        }
+    &__link {
+        color: inherit;
+        @extend %linksHover;
     }
 }
