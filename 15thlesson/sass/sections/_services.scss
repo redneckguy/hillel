@@ -8,122 +8,124 @@
         padding-bottom: 81px;
     }
 
-    &__title {
-        @extend %sectionTitle;
-        text-align: left;
-        max-width: 492px;
-    }
-
-    &__desc {
-        @include sectionDesk(604px);
-        text-align: left;
-        margin-left: 0;
-    }
-
-    &__cards-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    &__card-wrapper {
-        display: flex;
-        padding: 40px;
-        position: relative;
-        max-width: 360px;
-        border-radius: 10px;
-        overflow: hidden;
-        margin-bottom: 60px;
-
-        &.background1 {
-            @include card-wrapper-bg(url(../images/servicesWebDev.jpg));
+    .section {
+        &__title {
+            @extend %sectionTitle;
+            text-align: left;
+            max-width: 492px;
         }
 
-        &.background2 {
-            @include card-wrapper-bg(url(../images/servicesProdBrand.jpg));
-        }
-
-        &.background3 {
-            @include card-wrapper-bg(url(../images/servicesWebstSoltn.jpg));
-        }
-
-        &.background4 {
-            @include card-wrapper-bg(url(../images/servicesCleanCode.jpg));
-        }
-
-        &.background5 {
-            @include card-wrapper-bg(url(../images/servicesDigMark.jpg));
-        }
-
-        &.background6 {
-            @include card-wrapper-bg(url(../images/servicesCustSuprt.jpg));
-        }
-
-        // &-img {
-        //     border-radius: 10px;
-        // }
-
-        &::before {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            background-color: rgba($black, 0.6);
-            backdrop-filter: blur(104px);
-            transition: all 0.05s ease;
-        }
-
-        &:hover,
-        &:focus {
-            &::before {
-                background-color: transparent;
-                backdrop-filter: unset;
-            }
-
-            .services__inner-card-wrapper {
-                background: linear-gradient(
-                    180deg,
-                    $inner-card-start 0%,
-                    $inner-card-end 100%
-                );
-                color: $white;
-
-                .services__inner-card-title {
-                    color: $white;
-                }
-            }
+        &__desc {
+            @include sectionDesk(604px);
+            text-align: left;
+            margin-left: 0;
         }
     }
+}
 
-    &__inner-card-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 280px;
-        background: $inner-card-wrapper-bg;
-        border-radius: 10px;
-        position: relative;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-card {
+    display: flex;
+    padding: 40px;
+    position: relative;
+    max-width: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    &.background1 {
+        @include card-wrapper-bg(url(../images/servicesWebDev.jpg));
+    }
+
+    &.background2 {
+        @include card-wrapper-bg(url(../images/servicesProdBrand.jpg));
+    }
+
+    &.background3 {
+        @include card-wrapper-bg(url(../images/servicesWebstSoltn.jpg));
+    }
+
+    &.background4 {
+        @include card-wrapper-bg(url(../images/servicesCleanCode.jpg));
+    }
+
+    &.background5 {
+        @include card-wrapper-bg(url(../images/servicesDigMark.jpg));
+    }
+
+    &.background6 {
+        @include card-wrapper-bg(url(../images/servicesCustSuprt.jpg));
+    }
+
+    // &-img {
+    //     border-radius: 10px;
+    // }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         z-index: 1;
-        padding-top: 63px;
-        padding-bottom: 61px;
-        margin: auto;
+        background-color: $service-card-bg;
+        backdrop-filter: blur(104px);
+        transition: all 0.05s ease;
     }
 
-    &__inner-card-title {
+    &:hover,
+    &:focus {
+        &::before {
+            background-color: transparent;
+            backdrop-filter: unset;
+        }
+
+        .inner-card {
+            background: linear-gradient(
+                180deg,
+                $inner-card-start 0%,
+                $inner-card-end 100%
+            );
+            color: $white;
+
+            .inner-card__title {
+                color: $white;
+            }
+        }
+    }
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    background: $inner-card-wrapper-bg;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    padding-top: 63px;
+    padding-bottom: 61px;
+    margin: auto;
+
+    &__title {
         @extend %subTitle;
         text-align: center;
         margin-bottom: 21px;
     }
 
-    &__inner-card-desc {
+    &__desc {
         @extend %cardDesc;
         margin-bottom: 39px;
     }
 
-    &__inner-card-circle {
+    &__circle {
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -133,9 +135,9 @@
         &:hover,
         &:focus {
             transform: translateY(-2px) scale(1.02);
-            box-shadow: -1px 6px 16px -10px rgba(79, 79, 79, 0.97);
+            box-shadow: -1px 6px 16px -10px $service-card-btn-shadow;
 
-            .services__inner-card-arrow {
+            .inner-card__arrow {
                 filter: $fill-light-blue;
                 transform: translateY(3.5px);
             }
@@ -143,16 +145,16 @@
 
         &:active {
             transform: translateY(-1px) scale(1.01);
-            box-shadow: -1px 6px 12px -10px rgba(79, 79, 79, 0.97);
+            box-shadow: -1px 6px 12px -10px $service-card-btn-shadow;
 
-            .services__inner-card-arrow {
+            .inner-card__arrow {
                 filter: $fill-light-blue;
                 transform: translateY(2px);
             }
         }
     }
 
-    &__inner-card-arrow {
+    &__arrow {
         margin: auto;
     }
 }

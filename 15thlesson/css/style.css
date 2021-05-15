@@ -182,7 +182,7 @@ a {
   text-shadow: 0 0 0.5px #3988ff, 0 0 0.5px #3988ff;
 }
 
-.creativity .section__title, .features .section__title, .services__title, .reviews .section__title {
+.creativity .section__title, .features .section__title, .services .section__title, .reviews .section__title {
   color: #050c26;
   font-family: Lato;
   font-weight: 500;
@@ -192,7 +192,7 @@ a {
   margin-bottom: 24px;
 }
 
-.progressbar__row-title, .feature-card__title, .services__inner-card-title {
+.progressbar__row-title, .feature-card__title, .inner-card__title {
   font-family: Lato;
   font-style: normal;
   font-weight: 500;
@@ -202,7 +202,7 @@ a {
   text-transform: capitalize;
 }
 
-.feature-card__desc, .services__inner-card-desc {
+.feature-card__desc, .inner-card__desc {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
@@ -740,12 +740,12 @@ a {
   padding-bottom: 81px;
 }
 
-.services__title {
+.services .section__title {
   text-align: left;
   max-width: 492px;
 }
 
-.services__desc {
+.services .section__desc {
   max-width: 604px;
   text-align: center;
   margin: 0 auto;
@@ -754,13 +754,13 @@ a {
   margin-left: 0;
 }
 
-.services__cards-wrap {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.services__card-wrapper {
+.service-card {
   display: flex;
   padding: 40px;
   position: relative;
@@ -770,49 +770,49 @@ a {
   margin-bottom: 60px;
 }
 
-.services__card-wrapper.background1 {
+.service-card.background1 {
   background-image: url(../images/servicesWebDev.jpg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
 }
 
-.services__card-wrapper.background2 {
+.service-card.background2 {
   background-image: url(../images/servicesProdBrand.jpg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
 }
 
-.services__card-wrapper.background3 {
+.service-card.background3 {
   background-image: url(../images/servicesWebstSoltn.jpg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
 }
 
-.services__card-wrapper.background4 {
+.service-card.background4 {
   background-image: url(../images/servicesCleanCode.jpg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
 }
 
-.services__card-wrapper.background5 {
+.service-card.background5 {
   background-image: url(../images/servicesDigMark.jpg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
 }
 
-.services__card-wrapper.background6 {
+.service-card.background6 {
   background-image: url(../images/servicesCustSuprt.jpg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
 }
 
-.services__card-wrapper::before {
+.service-card::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -825,21 +825,21 @@ a {
   transition: all 0.05s ease;
 }
 
-.services__card-wrapper:hover::before, .services__card-wrapper:focus::before {
+.service-card:hover::before, .service-card:focus::before {
   background-color: transparent;
   backdrop-filter: unset;
 }
 
-.services__card-wrapper:hover .services__inner-card-wrapper, .services__card-wrapper:focus .services__inner-card-wrapper {
+.service-card:hover .inner-card, .service-card:focus .inner-card {
   background: linear-gradient(180deg, #d93059 0%, #d95b7a 100%);
   color: #fff;
 }
 
-.services__card-wrapper:hover .services__inner-card-wrapper .services__inner-card-title, .services__card-wrapper:focus .services__inner-card-wrapper .services__inner-card-title {
+.service-card:hover .inner-card .inner-card__title, .service-card:focus .inner-card .inner-card__title {
   color: #fff;
 }
 
-.services__inner-card-wrapper {
+.inner-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -853,16 +853,16 @@ a {
   margin: auto;
 }
 
-.services__inner-card-title {
+.inner-card__title {
   text-align: center;
   margin-bottom: 21px;
 }
 
-.services__inner-card-desc {
+.inner-card__desc {
   margin-bottom: 39px;
 }
 
-.services__inner-card-circle {
+.inner-card__circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -870,27 +870,27 @@ a {
   display: flex;
 }
 
-.services__inner-card-circle:hover, .services__inner-card-circle:focus {
+.inner-card__circle:hover, .inner-card__circle:focus {
   transform: translateY(-2px) scale(1.02);
   box-shadow: -1px 6px 16px -10px rgba(79, 79, 79, 0.97);
 }
 
-.services__inner-card-circle:hover .services__inner-card-arrow, .services__inner-card-circle:focus .services__inner-card-arrow {
+.inner-card__circle:hover .inner-card__arrow, .inner-card__circle:focus .inner-card__arrow {
   filter: invert(64%) sepia(63%) saturate(6673%) hue-rotate(203deg) brightness(103%) contrast(104%);
   transform: translateY(3.5px);
 }
 
-.services__inner-card-circle:active {
+.inner-card__circle:active {
   transform: translateY(-1px) scale(1.01);
   box-shadow: -1px 6px 12px -10px rgba(79, 79, 79, 0.97);
 }
 
-.services__inner-card-circle:active .services__inner-card-arrow {
+.inner-card__circle:active .inner-card__arrow {
   filter: invert(64%) sepia(63%) saturate(6673%) hue-rotate(203deg) brightness(103%) contrast(104%);
   transform: translateY(2px);
 }
 
-.services__inner-card-arrow {
+.inner-card__arrow {
   margin: auto;
 }
 
