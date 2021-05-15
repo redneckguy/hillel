@@ -182,7 +182,7 @@ a {
   text-shadow: 0 0 0.5px #3988ff, 0 0 0.5px #3988ff;
 }
 
-.creativity__title, .features__title, .services__title, .reviews .section__title {
+.creativity .section__title, .features__title, .services__title, .reviews .section__title {
   color: #050c26;
   font-family: Lato;
   font-weight: 500;
@@ -192,7 +192,7 @@ a {
   margin-bottom: 24px;
 }
 
-.creativity .progressbar-row-title, .features__card-title, .services__inner-card-title {
+.progressbar__row-title, .features__card-title, .services__inner-card-title {
   font-family: Lato;
   font-style: normal;
   font-weight: 500;
@@ -448,30 +448,30 @@ a {
   margin: 0 auto;
 }
 
-.creativity__title {
+.creativity .section__title {
   font-weight: 600;
   line-height: 1.31;
 }
 
-.creativity__desc {
+.creativity .section__desc {
   max-width: 806px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 70px;
 }
 
-.creativity .progressbar-wrap {
+.creativity__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.creativity .progressbar-img {
+.creativity__content-img {
   border-radius: 10px;
   margin-right: 97px;
 }
 
-.creativity .progressbar-inner {
+.progressbar {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -482,18 +482,18 @@ a {
   width: 100%;
 }
 
-.creativity .progressbar-row-title {
+.progressbar__row-title {
   margin-bottom: 20px;
 }
 
-.creativity .container1 {
+.progressbar .container1 {
   background-color: rgba(228, 26, 26, 0.1);
   width: 100%;
   height: 15px;
   border-radius: 15px;
 }
 
-.creativity .filler1 {
+.progressbar .filler1 {
   position: relative;
   background-color: #e41a1a;
   height: 15px;
@@ -501,7 +501,7 @@ a {
   width: 80%;
 }
 
-.creativity .number1 {
+.progressbar .number1 {
   position: absolute;
   bottom: 180%;
   left: 92%;
@@ -513,14 +513,14 @@ a {
   line-height: 1.49;
 }
 
-.creativity .container2 {
+.progressbar .container2 {
   background-color: rgba(218, 90, 18, 0.1);
   width: 100%;
   height: 15px;
   border-radius: 15px;
 }
 
-.creativity .filler2 {
+.progressbar .filler2 {
   position: relative;
   background-color: #da5a12;
   height: 15px;
@@ -528,7 +528,7 @@ a {
   width: 90%;
 }
 
-.creativity .number2 {
+.progressbar .number2 {
   position: absolute;
   bottom: 180%;
   left: 92%;
@@ -540,14 +540,14 @@ a {
   line-height: 1.49;
 }
 
-.creativity .container3 {
+.progressbar .container3 {
   background-color: rgba(91, 187, 16, 0.1);
   width: 100%;
   height: 15px;
   border-radius: 15px;
 }
 
-.creativity .filler3 {
+.progressbar .filler3 {
   position: relative;
   background-color: #5bbb10;
   height: 15px;
@@ -555,7 +555,7 @@ a {
   width: 75%;
 }
 
-.creativity .number3 {
+.progressbar .number3 {
   position: absolute;
   bottom: 180%;
   left: 92%;
@@ -567,14 +567,14 @@ a {
   line-height: 1.49;
 }
 
-.creativity .container4 {
+.progressbar .container4 {
   background-color: rgba(21, 193, 204, 0.1);
   width: 100%;
   height: 15px;
   border-radius: 15px;
 }
 
-.creativity .filler4 {
+.progressbar .filler4 {
   position: relative;
   background-color: #15c1cc;
   height: 15px;
@@ -582,7 +582,7 @@ a {
   width: 80%;
 }
 
-.creativity .number4 {
+.progressbar .number4 {
   position: absolute;
   bottom: 180%;
   left: 92%;

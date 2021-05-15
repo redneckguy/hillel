@@ -4,47 +4,49 @@
     max-width: 1600px;
     margin: 0 auto;
 
-    &__title {
-        @extend %sectionTitle;
-        font-weight: 600;
-        line-height: 1.31;
+    .section {
+        &__title {
+            @extend %sectionTitle;
+            font-weight: 600;
+            line-height: 1.31;
+        }
+
+        &__desc {
+            @include sectionDesk(806px);
+        }
     }
 
-    &__desc {
-        @include sectionDesk(806px);
-    }
-
-    .progressbar-wrap {
+    &__content {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
 
-    .progressbar-img {
+    &__content-img {
         border-radius: 10px;
         margin-right: 97px;
     }
+}
 
-    .progressbar-inner {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        max-width: 488px;
-        width: 100%;
-    }
+.progressbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 488px;
+    width: 100%;
 
-    .progressbar-row-title {
+    &__row-title {
         @extend %subTitle;
         margin-bottom: 20px;
     }
 
-    // * progressbar-row 1
+    // * progressbar__row 1
 
     .container1 {
-        @include progressBarContainer(rgba($progress-bar-web, .1));
+        @include progressBarContainer(rgba($progress-bar-web, 0.1));
     }
 
     .filler1 {
@@ -55,10 +57,10 @@
         @include progressbar-row-number($progress-bar-web);
     }
 
-    // * progressbar-row 2
+    // * progressbar__row 2
 
     .container2 {
-        @include progressBarContainer(rgba($progress-bar-uiux, .1));
+        @include progressBarContainer(rgba($progress-bar-uiux, 0.1));
     }
 
     .filler2 {
@@ -69,10 +71,10 @@
         @include progressbar-row-number($progress-bar-uiux);
     }
 
-    // * progressbar-row 3
+    // * progressbar__row 3
 
     .container3 {
-        @include progressBarContainer(rgba($progress-bar-graphic, .1));
+        @include progressBarContainer(rgba($progress-bar-graphic, 0.1));
     }
 
     .filler3 {
@@ -83,10 +85,10 @@
         @include progressbar-row-number($progress-bar-graphic);
     }
 
-    // * progressbar-row 4
+    // * progressbar__row 4
 
     .container4 {
-        @include progressBarContainer(rgba($progress-bar-photo, .1));
+        @include progressBarContainer(rgba($progress-bar-photo, 0.1));
     }
 
     .filler4 {
