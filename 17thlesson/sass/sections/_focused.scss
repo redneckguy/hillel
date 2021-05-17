@@ -1,0 +1,51 @@
+.focused {
+    background-color: $red;
+    padding-top: 94px;
+    padding-bottom: 95px;
+
+    .focused-container {
+        @extend %flexRowWrapCenter;
+        justify-content: flex-start;
+    }
+
+    &__text-wrap {
+        max-width: 445px;
+        margin-right: 81px;
+        margin-top: 12px;
+    }
+
+    &__text-title,
+    &__text-desc {
+        color: $white;
+    }
+
+    &__text-title {
+        @extend %fonttitle;
+        margin-bottom: 45px;
+    }
+
+    &__text-desc {
+        @extend %fontsubttl;
+        text-align: justify;
+        margin-bottom: 44px;
+    }
+
+    &__text-icons-wrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 134px;
+        width: 100%;
+        margin-left: -2px;
+    }
+
+    &__text-link {
+        @extend %flexRowCenter;
+        font-size: 0;
+        line-height: 0;
+
+        &:hover .focused__text-icon,
+        &:focus .focused__text-icon {
+            filter: brightness(95%);
+        }
+    }
+}

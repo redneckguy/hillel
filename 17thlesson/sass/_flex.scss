@@ -1,0 +1,22 @@
+%flexRowWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%flexRowWrapCenter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+%flexRowCenter {
+    display: flex;
+    align-items: center;
+}
+
+%flexWrapColCntr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}

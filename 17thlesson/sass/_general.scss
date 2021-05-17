@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Lato";
+    font-weight: normal;
+    color: $black;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1110px;
+}
+
+a {
+    text-decoration: none;
+}
