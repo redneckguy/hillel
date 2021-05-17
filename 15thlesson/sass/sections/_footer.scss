@@ -1,7 +1,8 @@
 .footer {
     background-color: $primary-black;
     
-    .inner-container {
+    &__container {
+        @extend %container;
         padding-top: 75px;
     }
 

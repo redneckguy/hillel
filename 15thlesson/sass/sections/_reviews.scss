@@ -1,5 +1,6 @@
 .reviews {
-    .inner-container {
+    &__container {
+        @extend %container;
         padding-bottom: 140px;
     }
 

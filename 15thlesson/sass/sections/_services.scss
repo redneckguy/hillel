@@ -1,11 +1,16 @@
 .services {
     .container {
+        @extend %bgContainer;
         background-image: url(../images/servicesDots.svg);
         // background-position: top right;
         background-position: 1100px -1px;
         background-repeat: no-repeat;
         background-size: auto;
         padding-bottom: 81px;
+    }
+
+    &__container {
+        @extend %container;
     }
 
     .section {

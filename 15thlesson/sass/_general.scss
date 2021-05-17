@@ -1,7 +1,7 @@
-// // TODO hide scrollbar
-// body::-webkit-scrollbar {
-//     display: none;
-// }
+// TODO hide scrollbar
+body::-webkit-scrollbar {
+    display: none;
+}
 
 * {
     box-sizing: border-box;
@@ -17,17 +17,6 @@ body {
     font-size: 18px;
     line-height: 1.62;
     color: $main-text;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1600px;
-}
-
-.inner-container {
-    margin: 0 auto;
-    padding: 0 10px;
-    max-width: 1160px;
 }
 
 a {
