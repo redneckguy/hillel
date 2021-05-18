@@ -11,27 +11,27 @@
         transform: rotate(180deg);
         background-color: $light-pink;
     }
-    
+
     .wave-bottom svg {
         position: relative;
         display: block;
         width: calc(162% + 1.3px);
         height: 77px;
     }
-    
+
     .wave-bottom .shape-fill {
         fill: $white;
     }
 }
 
-// * container for bg 
+// * container for bg
 
 %bgContainer {
     margin: 0 auto;
     max-width: 1600px;
 }
 
-// * container for content 
+// * container for content
 
 %container {
     margin: 0 auto;
@@ -80,7 +80,6 @@
     line-height: 1.63;
     text-align: center;
 }
-
 
 // * Title for FOOTER navigation and contact us
 %whiteSubtitle {

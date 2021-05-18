@@ -21,7 +21,7 @@ $features-notif: rgba(#c548ff, 0.1);
 $features-support: rgba(#4f9efc, 0.1);
 
 $service-card-bg: rgba($black, 0.6);
-$service-card-btn-shadow: rgba(#4F4F4F, 0.97);
+$service-card-btn-shadow: rgba(#4f4f4f, 0.97);
 
 $fill-light-blue: invert(64%) sepia(63%) saturate(6673%) hue-rotate(203deg)
     brightness(103%) contrast(104%);
@@ -30,13 +30,21 @@ $inner-card-start: #d93059;
 $inner-card-end: #d95b7a;
 $inner-card-wrapper-bg: #f3f3f3;
 
-$pricing-green: #11BB92;
+$pricing-green: #11bb92;
 $pricing-bottom-dark-red: #d9315a;
 $pricing-bottom-light-red: #f3678a;
 $pricing-top-dark-red: #d32852;
 $pricing-top-light-red: #d95374;
-$pricing-bottom-bg: linear-gradient(180deg, $pricing-bottom-dark-red 0%, $pricing-bottom-light-red 100%);
-$pricing-top-bg: linear-gradient(180deg, $pricing-top-light-red 0%, $pricing-top-dark-red 100%);
+$pricing-bottom-bg: linear-gradient(
+    180deg,
+    $pricing-bottom-dark-red 0%,
+    $pricing-bottom-light-red 100%
+);
+$pricing-top-bg: linear-gradient(
+    180deg,
+    $pricing-top-light-red 0%,
+    $pricing-top-dark-red 100%
+);
 $pricing-black: #999999;
 $pricing-border-color: rgba($pricing-black, 0.14);
 $pricecard-shadow: rgba($pricing-black, 0.14);

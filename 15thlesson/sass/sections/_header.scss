@@ -102,7 +102,6 @@
 .contact-button {
     margin-right: 1px;
     @include blueButton($white, $white, $white);
-    
 }
 
 // * CONTENT PART
@@ -149,7 +148,7 @@
         cursor: pointer;
         position: relative;
         box-shadow: 0px 0px 30px $watch-video-btn-shadow;
-        transition: transform .2s ease;
+        transition: transform 0.2s ease;
 
         &:hover &-arrow,
         &:focus &-arrow {

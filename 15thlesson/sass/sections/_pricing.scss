@@ -4,14 +4,18 @@
         padding-bottom: 140px;
     }
 
+    &__offers,
+    &__plan {
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
     &__offers {
         font-size: 20px;
         line-height: 1.6;
         letter-spacing: 0.05em;
         margin-bottom: 15px;
-        font-weight: 500;
-        text-transform: uppercase;
-        text-align: center;
     }
 
     &__plan {
@@ -20,9 +24,6 @@
         line-height: 1.4;
         color: $primary-black;
         margin-bottom: 30px;
-        font-weight: 500;
-        text-transform: uppercase;
-        text-align: center;
     }
 }
 
@@ -78,10 +79,27 @@
     transition: .1s ease;
     transition-property: background-color;
 
+    &__emphasis,
+    &__top,
+    &__top-title,
+    &__bottom,
+    &__bottom-price,
+    &__bottom-term,
+    &__bottom-option,
+    &__btn {
+        position: relative;
+    }
+
     &__emphasis {
         box-shadow: none;
         background-color: $pricing-bottom-dark-red;
-        position: relative;
+    }
+
+    &__emphasis-deal,
+    &__top-title,
+    &__bottom-option,
+    &__btn {
+        text-transform: capitalize;
     }
 
     &__emphasis-deal {
@@ -91,7 +109,6 @@
         color: $primary-black;
         font-size: 9px;
         line-height: 1.56;
-        text-transform: capitalize;
         z-index: 1;
         padding: 15px 16px 18px;
         top: -3.2px;
@@ -101,7 +118,6 @@
 
     &__top {
         padding: 46px 0 45px 0;
-        position: relative;
 
         &:before {
             content: "";
@@ -125,29 +141,39 @@
         }
     }
 
-    &__top-title {
-        position: relative;
-        color: $primary-black;
-        margin: auto;
-        text-transform: capitalize;
+    &__top-title,
+    &__bottom-price {
         text-align: center;
         font-family: Lato;
         font-weight: 500;
+    }
+
+    &__top-title,
+    &__bottom-price,
+    &__bottom-term,
+    &__bottom-options {
+        transition: color .2s ease;
+    }
+
+    &__top-title {
+        color: $primary-black;
+        margin: auto;
         font-size: 25px;
         line-height: 1.52;
-        transition: color .2s ease;
 
         &.basic {
             text-transform: uppercase;
         }
     }
 
-    &__emphasis-top-title {
+    &__emphasis-top-title,
+    &__emphasis-bottom-price,
+    &__emphasis-bottom-term,
+    &__emphasis-bottom-options {
         color: $white;
     }
 
     &__bottom {
-        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -179,15 +205,10 @@
     }
 
     &__bottom-price {
-        position: relative;
         font-size: 35px;
         line-height: 1.4;
         color: $primary-black;
         margin-bottom: 15px;
-        text-align: center;
-        font-family: Lato;
-        font-weight: 500;
-        transition: color .2s ease;
 
         span {
             font-family: Poppins;
@@ -198,39 +219,28 @@
         }
     }
 
-    &__emphasis-bottom-price {
-        color: $white;
-    }
-
-    &__bottom-term {
-        position: relative;
-        font-size: 18px;
-        line-height: 1.62;
-        margin-bottom: 40px;
-        text-align: center;
-        transition: color .2s ease;
-    }
-
-    &__emphasis-bottom-term {
-        color: $white;
-    }
-
-    &__bottom-options {
-        transition: color .2s ease;
-    }
-
+    &__emphasis-bottom-price,
+    &__emphasis-bottom-term,
     &__emphasis-bottom-options {
         color: $white;
     }
 
+    &__bottom-term,
     &__bottom-option {
-        position: relative;
         text-align: center;
+    }
+
+    &__bottom-term {
+        font-size: 18px;
+        line-height: 1.62;
+        margin-bottom: 40px;
+    }
+
+    &__bottom-option {
         font-family: Poppins;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.6;
-        text-transform: capitalize;
 
         &:not(:last-child) {
             margin-bottom: 15px;
@@ -241,12 +251,10 @@
     }
 
     &__btn {
-        position: relative;
         background-color: $white;
         border: 1px solid $light-blue;
         border-radius: 5px;
         color: $light-blue;
-        text-transform: capitalize;
         padding: 14px 29px;
         margin-bottom: 40px;
         cursor: pointer;
@@ -268,12 +276,17 @@
     &:focus {
         background-color: $pricing-bottom-dark-red;
 
-        .pricecard__top:before {
+        .pricecard__top:before,
+        .pricecard__bottom:before {
             opacity: 1;
             visibility: visible;
         }
 
-        .pricecard__top-title {
+        .pricecard__top-title,
+        .pricecard__bottom-price,
+        .pricecard__bottom-term,
+        .pricecard__bottom-options,
+        .pricecard__btn {
             color: $white;
         }
 
@@ -281,20 +294,8 @@
             border-top: 1px solid $pricing-bottom-dark-red;
         }
 
-        .pricecard__bottom:before {
-            opacity: 1;
-            visibility: visible;
-            
-        }
-        .pricecard__bottom-price,
-        .pricecard__bottom-term,
-        .pricecard__bottom-options {
-            color: $white;
-        }
-
         .pricecard__btn {
             background-color: $light-blue;
-            color: $white;
         }
     }
 }

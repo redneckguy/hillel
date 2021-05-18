@@ -13,15 +13,18 @@
         @extend %container;
     }
 
+    &__title,
+    &__desc {
+        text-align: left;
+    }
+
     &__title {
         @extend %sectionTitle;
-        text-align: left;
         max-width: 492px;
     }
 
     &__desc {
         @include sectionDesk(604px);
-        text-align: left;
         margin-left: 0;
     }
 }

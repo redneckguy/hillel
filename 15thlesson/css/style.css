@@ -48,7 +48,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   src: url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
@@ -56,7 +56,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
@@ -64,7 +64,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   src: url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
@@ -72,7 +72,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   src: url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -80,7 +80,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -88,7 +88,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   src: url("../fonts/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -96,7 +96,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   src: url("../fonts/Poppins-MediumItalic.woff") format("woff"), url("../fonts/Poppins-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
@@ -104,7 +104,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -112,15 +112,11 @@ table {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 * {
@@ -132,7 +128,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.62;
@@ -399,7 +395,7 @@ a {
   cursor: pointer;
   position: relative;
   box-shadow: 0px 0px 30px #ffe6e6;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
 }
 
 .watch-video__button::after {
@@ -601,11 +597,14 @@ a {
   box-shadow: 0 5px 25px rgba(5, 12, 38, 0.15);
 }
 
-.feature__circle {
+.feature__circle, .feature__img {
   position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.feature__circle {
   top: 24.5%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -628,10 +627,8 @@ a {
 }
 
 .feature__img {
-  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .feature__title {
@@ -714,8 +711,11 @@ a {
   padding-bottom: 81px;
 }
 
-.services__title {
+.services__title, .services__desc {
   text-align: left;
+}
+
+.services__title {
   max-width: 492px;
 }
 
@@ -724,7 +724,6 @@ a {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 70px;
-  text-align: left;
   margin-left: 0;
 }
 
@@ -842,14 +841,17 @@ a {
   padding-bottom: 140px;
 }
 
+.pricing__offers, .pricing__plan {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .pricing__offers {
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.05em;
   margin-bottom: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .pricing__plan {
@@ -858,9 +860,6 @@ a {
   line-height: 1.4;
   color: #050c26;
   margin-bottom: 30px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .form {
@@ -916,20 +915,26 @@ a {
   transition-property: background-color;
 }
 
-.pricecard__emphasis {
-  box-shadow: none;
-  background-color: #d9315a;
+.pricecard__emphasis, .pricecard__top, .pricecard__top-title, .pricecard__bottom, .pricecard__bottom-price, .pricecard__bottom-term, .pricecard__bottom-option, .pricecard__btn {
   position: relative;
 }
 
+.pricecard__emphasis {
+  box-shadow: none;
+  background-color: #d9315a;
+}
+
+.pricecard__emphasis-deal, .pricecard__top-title, .pricecard__bottom-option, .pricecard__btn {
+  text-transform: capitalize;
+}
+
 .pricecard__emphasis-deal {
-  background-color: #11BB92;
+  background-color: #11bb92;
   position: absolute;
   transform: rotate(-45deg);
   color: #050c26;
   font-size: 9px;
   line-height: 1.56;
-  text-transform: capitalize;
   z-index: 1;
   padding: 15px 16px 18px;
   top: -3.2px;
@@ -940,7 +945,6 @@ a {
 
 .pricecard__top {
   padding: 46px 0 45px 0;
-  position: relative;
 }
 
 .pricecard__top:before {
@@ -962,29 +966,32 @@ a {
   visibility: visible;
 }
 
-.pricecard__top-title {
-  position: relative;
-  color: #050c26;
-  margin: auto;
-  text-transform: capitalize;
+.pricecard__top-title, .pricecard__bottom-price {
   text-align: center;
   font-family: Lato;
   font-weight: 500;
+}
+
+.pricecard__top-title, .pricecard__bottom-price, .pricecard__bottom-term, .pricecard__bottom-options {
+  transition: color .2s ease;
+}
+
+.pricecard__top-title {
+  color: #050c26;
+  margin: auto;
   font-size: 25px;
   line-height: 1.52;
-  transition: color .2s ease;
 }
 
 .pricecard__top-title.basic {
   text-transform: uppercase;
 }
 
-.pricecard__emphasis-top-title {
+.pricecard__emphasis-top-title, .pricecard__emphasis-bottom-price, .pricecard__emphasis-bottom-term, .pricecard__emphasis-bottom-options {
   color: #fff;
 }
 
 .pricecard__bottom {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1016,15 +1023,10 @@ a {
 }
 
 .pricecard__bottom-price {
-  position: relative;
   font-size: 35px;
   line-height: 1.4;
   color: #050c26;
   margin-bottom: 15px;
-  text-align: center;
-  font-family: Lato;
-  font-weight: 500;
-  transition: color .2s ease;
 }
 
 .pricecard__bottom-price span {
@@ -1035,39 +1037,25 @@ a {
   margin-right: -3px;
 }
 
-.pricecard__emphasis-bottom-price {
+.pricecard__emphasis-bottom-price, .pricecard__emphasis-bottom-term, .pricecard__emphasis-bottom-options {
   color: #fff;
+}
+
+.pricecard__bottom-term, .pricecard__bottom-option {
+  text-align: center;
 }
 
 .pricecard__bottom-term {
-  position: relative;
   font-size: 18px;
   line-height: 1.62;
   margin-bottom: 40px;
-  text-align: center;
-  transition: color .2s ease;
-}
-
-.pricecard__emphasis-bottom-term {
-  color: #fff;
-}
-
-.pricecard__bottom-options {
-  transition: color .2s ease;
-}
-
-.pricecard__emphasis-bottom-options {
-  color: #fff;
 }
 
 .pricecard__bottom-option {
-  position: relative;
-  text-align: center;
   font-family: Poppins;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.6;
-  text-transform: capitalize;
 }
 
 .pricecard__bottom-option:not(:last-child) {
@@ -1079,12 +1067,10 @@ a {
 }
 
 .pricecard__btn {
-  position: relative;
   background-color: #fff;
   border: 1px solid #3988ff;
   border-radius: 5px;
   color: #3988ff;
-  text-transform: capitalize;
   padding: 14px 29px;
   margin-bottom: 40px;
   cursor: pointer;
@@ -1135,12 +1121,22 @@ a {
   background-color: #d9315a;
 }
 
-.pricecard:hover .pricecard__top:before, .pricecard:focus .pricecard__top:before {
+.pricecard:hover .pricecard__top:before,
+.pricecard:hover .pricecard__bottom:before, .pricecard:focus .pricecard__top:before,
+.pricecard:focus .pricecard__bottom:before {
   opacity: 1;
   visibility: visible;
 }
 
-.pricecard:hover .pricecard__top-title, .pricecard:focus .pricecard__top-title {
+.pricecard:hover .pricecard__top-title,
+.pricecard:hover .pricecard__bottom-price,
+.pricecard:hover .pricecard__bottom-term,
+.pricecard:hover .pricecard__bottom-options,
+.pricecard:hover .pricecard__btn, .pricecard:focus .pricecard__top-title,
+.pricecard:focus .pricecard__bottom-price,
+.pricecard:focus .pricecard__bottom-term,
+.pricecard:focus .pricecard__bottom-options,
+.pricecard:focus .pricecard__btn {
   color: #fff;
 }
 
@@ -1148,22 +1144,8 @@ a {
   border-top: 1px solid #d9315a;
 }
 
-.pricecard:hover .pricecard__bottom:before, .pricecard:focus .pricecard__bottom:before {
-  opacity: 1;
-  visibility: visible;
-}
-
-.pricecard:hover .pricecard__bottom-price,
-.pricecard:hover .pricecard__bottom-term,
-.pricecard:hover .pricecard__bottom-options, .pricecard:focus .pricecard__bottom-price,
-.pricecard:focus .pricecard__bottom-term,
-.pricecard:focus .pricecard__bottom-options {
-  color: #fff;
-}
-
 .pricecard:hover .pricecard__btn, .pricecard:focus .pricecard__btn {
   background-color: #3988ff;
-  color: #fff;
 }
 
 .reviews__container {
@@ -1287,19 +1269,21 @@ a {
   background-image: url(../images/reviewsJacob.png);
 }
 
+.reviews .review__person-name, .reviews .review__person-position {
+  text-transform: capitalize;
+}
+
 .reviews .review__person-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.6;
   color: #050c26;
-  text-transform: capitalize;
   margin-bottom: 6px;
 }
 
 .reviews .review__person-position {
   font-size: 16px;
   line-height: 1.63;
-  text-transform: capitalize;
 }
 
 .footer {

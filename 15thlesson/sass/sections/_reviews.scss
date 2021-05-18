@@ -125,19 +125,22 @@
             background-image: url(../images/reviewsJacob.png);
         }
 
+        &__person-name,
+        &__person-position {
+            text-transform: capitalize;
+        }
+
         &__person-name {
             font-weight: 500;
             font-size: 20px;
             line-height: 1.6;
             color: $primary-black;
-            text-transform: capitalize;
             margin-bottom: 6px;
         }
 
         &__person-position {
             font-size: 16px;
             line-height: 1.63;
-            text-transform: capitalize;
         }
     }
 }
