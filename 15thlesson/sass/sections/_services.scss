@@ -32,42 +32,20 @@
     justify-content: space-between;
 }
 
-.service-card {
+.srvscard {
     display: flex;
-    padding: 40px;
     position: relative;
     max-width: 360px;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 60px;
 
-    &.background1 {
-        @include card-wrapper-bg(url(../images/servicesWebDev.jpg));
+    &__img {
+        filter: blur(4px);
+        position: absolute;
+        border-radius: 10px;
+        transition: filter .1s ease;
     }
-
-    &.background2 {
-        @include card-wrapper-bg(url(../images/servicesProdBrand.jpg));
-    }
-
-    &.background3 {
-        @include card-wrapper-bg(url(../images/servicesWebstSoltn.jpg));
-    }
-
-    &.background4 {
-        @include card-wrapper-bg(url(../images/servicesCleanCode.jpg));
-    }
-
-    &.background5 {
-        @include card-wrapper-bg(url(../images/servicesDigMark.jpg));
-    }
-
-    &.background6 {
-        @include card-wrapper-bg(url(../images/servicesCustSuprt.jpg));
-    }
-
-    // &-img {
-    //     border-radius: 10px;
-    // }
 
     &::before {
         content: "";
@@ -78,16 +56,17 @@
         left: 0;
         z-index: 1;
         background-color: $service-card-bg;
-        backdrop-filter: blur(104px);
-        transition: .05s ease;
-        transition-property: background-color, backdrop-filter;
+        transition: background-color .1s ease;
     }
 
     &:hover,
     &:focus {
         &::before {
             background-color: transparent;
-            backdrop-filter: unset;
+        }
+
+        .srvscard__img {
+            filter: none;
         }
 
         .inner-card {
@@ -116,7 +95,7 @@
     z-index: 1;
     padding-top: 63px;
     padding-bottom: 61px;
-    margin: auto;
+    margin: 40px;
 
     &__title {
         @extend %subTitle;
@@ -152,7 +131,6 @@
         &:active {
             transform: translateY(-1px) scale(1.01);
             box-shadow: -1px 6px 12px -10px $service-card-btn-shadow;
-            
 
             .inner-card__arrow {
                 filter: $fill-light-blue;

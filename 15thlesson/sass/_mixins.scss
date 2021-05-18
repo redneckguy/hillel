@@ -103,15 +103,6 @@
     margin-bottom: 70px;
 }
 
-// * Background for cards
-
-@mixin card-wrapper-bg($url) {
-    background-image: $url;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-}
-
 // * INNOVATED logo text template
 
 @mixin logo($color) {
