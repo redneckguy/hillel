@@ -10,7 +10,7 @@
         display: flex;
         justify-content: start;
         flex-wrap: wrap;
-        margin-bottom: 55px;
+        margin-bottom: 54px;
     }
 
     .innovated {
@@ -97,7 +97,7 @@
             line-height: 1.62;
             color: $white;
             opacity: 0.7;
-            margin-bottom: 10px;
+            margin-bottom: 9px;
 
             &:hover {
                 text-decoration: underline;
@@ -128,7 +128,7 @@
 
     &__copyright {
         border-top: 1px solid $copyright-border;
-        padding: 30px 0 29px;
+        padding: 31px 0 29px;
 
         .copyright-desc {
             font-family: Montserrat;
