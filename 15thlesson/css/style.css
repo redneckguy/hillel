@@ -494,112 +494,76 @@ a {
   margin-bottom: 20px;
 }
 
-.progressbar .container1 {
-  background-color: rgba(228, 26, 26, 0.1);
-  width: 100%;
+.progressbar__row-container, .progressbar__row-filler {
   height: 15px;
   border-radius: 15px;
 }
 
-.progressbar .filler1 {
+.progressbar__row-container--red {
+  background-color: rgba(228, 26, 26, 0.1);
+}
+
+.progressbar__row-container--orange {
+  background-color: rgba(218, 90, 18, 0.1);
+}
+
+.progressbar__row-container--green {
+  background-color: rgba(91, 187, 16, 0.1);
+}
+
+.progressbar__row-container--blue {
+  background-color: rgba(21, 193, 204, 0.1);
+}
+
+.progressbar__row-filler {
   position: relative;
+}
+
+.progressbar__row-filler--red {
   background-color: #e41a1a;
-  height: 15px;
-  border-radius: 15px;
   width: 80%;
 }
 
-.progressbar .number1 {
-  position: absolute;
-  bottom: 180%;
-  left: 92%;
-  color: #e41a1a;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 1.49;
-}
-
-.progressbar .container2 {
-  background-color: rgba(218, 90, 18, 0.1);
-  width: 100%;
-  height: 15px;
-  border-radius: 15px;
-}
-
-.progressbar .filler2 {
-  position: relative;
+.progressbar__row-filler--orange {
   background-color: #da5a12;
-  height: 15px;
-  border-radius: 15px;
   width: 90%;
 }
 
-.progressbar .number2 {
-  position: absolute;
-  bottom: 180%;
-  left: 92%;
-  color: #da5a12;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 1.49;
-}
-
-.progressbar .container3 {
-  background-color: rgba(91, 187, 16, 0.1);
-  width: 100%;
-  height: 15px;
-  border-radius: 15px;
-}
-
-.progressbar .filler3 {
-  position: relative;
+.progressbar__row-filler--green {
   background-color: #5bbb10;
-  height: 15px;
-  border-radius: 15px;
   width: 75%;
 }
 
-.progressbar .number3 {
-  position: absolute;
-  bottom: 180%;
-  left: 92%;
-  color: #5bbb10;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 1.49;
-}
-
-.progressbar .container4 {
-  background-color: rgba(21, 193, 204, 0.1);
-  width: 100%;
-  height: 15px;
-  border-radius: 15px;
-}
-
-.progressbar .filler4 {
-  position: relative;
+.progressbar__row-filler--blue {
   background-color: #15c1cc;
-  height: 15px;
-  border-radius: 15px;
   width: 80%;
 }
 
-.progressbar .number4 {
+.progressbar__row-number {
   position: absolute;
   bottom: 180%;
-  left: 92%;
-  color: #15c1cc;
+  right: -4%;
   font-family: Lato;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 1.49;
+}
+
+.progressbar__row-number--red {
+  color: #e41a1a;
+}
+
+.progressbar__row-number--orange {
+  color: #da5a12;
+}
+
+.progressbar__row-number--green {
+  color: #5bbb10;
+}
+
+.progressbar__row-number--blue {
+  color: #15c1cc;
 }
 
 .features {
