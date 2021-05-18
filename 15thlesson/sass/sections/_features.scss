@@ -5,15 +5,13 @@
         @extend %container;
     }
 
-    .section {
-        &__title {
-            @extend %sectionTitle;
-        }
+    &__title {
+        @extend %sectionTitle;
+    }
 
-        &__desk {
-            @include sectionDesk(874px);
-            margin-bottom: 74px;
-        }
+    &__desk {
+        @include sectionDesk(874px);
+        margin-bottom: 74px;
     }
 
     &__cards {
@@ -23,7 +21,7 @@
     }
 }
 
-.feature-card {
+.feature {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,19 +46,19 @@
         height: 150px;
         border-radius: 50%;
 
-        &.circle1 {
+        &--quality {
             background-color: $features-quality;
         }
 
-        &.circle2 {
+        &--friendly {
             background-color: $features-friendly;
         }
 
-        &.circle3 {
+        &--notif {
             background-color: $features-notif;
         }
 
-        &.circle4 {
+        &--support {
             background-color: $features-support;
         }
     }

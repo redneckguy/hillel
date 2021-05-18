@@ -13,18 +13,16 @@
         @extend %container;
     }
 
-    .section {
-        &__title {
-            @extend %sectionTitle;
-            text-align: left;
-            max-width: 492px;
-        }
+    &__title {
+        @extend %sectionTitle;
+        text-align: left;
+        max-width: 492px;
+    }
 
-        &__desc {
-            @include sectionDesk(604px);
-            text-align: left;
-            margin-left: 0;
-        }
+    &__desc {
+        @include sectionDesk(604px);
+        text-align: left;
+        margin-left: 0;
     }
 }
 

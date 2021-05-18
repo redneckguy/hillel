@@ -182,7 +182,7 @@ a {
   text-shadow: 0 0 0.5px #3988ff, 0 0 0.5px #3988ff;
 }
 
-.creativity .section__title, .features .section__title, .services .section__title, .reviews .section__title {
+.creativity__title, .features__title, .services__title, .reviews__title {
   color: #050c26;
   font-family: Lato;
   font-weight: 500;
@@ -192,7 +192,7 @@ a {
   margin-bottom: 24px;
 }
 
-.progressbar__row-title, .feature-card__title, .inner-card__title {
+.progressbar__row-title, .feature__title, .inner-card__title {
   font-family: Lato;
   font-style: normal;
   font-weight: 500;
@@ -202,7 +202,7 @@ a {
   text-transform: capitalize;
 }
 
-.feature-card__desc, .inner-card__desc {
+.feature__desc, .inner-card__desc {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
@@ -456,12 +456,12 @@ a {
   margin: 0 auto;
 }
 
-.creativity .section__title {
+.creativity__title {
   font-weight: 600;
   line-height: 1.31;
 }
 
-.creativity .section__desc {
+.creativity__desc {
   max-width: 806px;
   text-align: center;
   margin: 0 auto;
@@ -570,7 +570,7 @@ a {
   padding-bottom: 141px;
 }
 
-.features .section__desk {
+.features__desk {
   max-width: 874px;
   text-align: center;
   margin: 0 auto;
@@ -584,7 +584,7 @@ a {
   justify-content: space-between;
 }
 
-.feature-card {
+.feature {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -596,12 +596,12 @@ a {
   transition: transform 0.3s;
 }
 
-.feature-card:hover {
+.feature:hover {
   transform: translateY(-5px) scale(1.03);
   box-shadow: 0 5px 25px rgba(5, 12, 38, 0.15);
 }
 
-.feature-card__circle {
+.feature__circle {
   position: absolute;
   top: 24.5%;
   left: 50%;
@@ -611,45 +611,45 @@ a {
   border-radius: 50%;
 }
 
-.feature-card__circle.circle1 {
+.feature__circle--quality {
   background-color: rgba(255, 96, 96, 0.1);
 }
 
-.feature-card__circle.circle2 {
+.feature__circle--friendly {
   background-color: rgba(243, 83, 170, 0.1);
 }
 
-.feature-card__circle.circle3 {
+.feature__circle--notif {
   background-color: rgba(197, 72, 255, 0.1);
 }
 
-.feature-card__circle.circle4 {
+.feature__circle--support {
   background-color: rgba(79, 158, 252, 0.1);
 }
 
-.feature-card__img {
+.feature__img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.feature-card__title {
+.feature__title {
   text-align: center;
   margin-bottom: 16px;
   text-transform: none;
 }
 
-.feature-card__desc {
+.feature__desc {
   margin-bottom: 24px;
 }
 
-.feature-card__btn {
+.feature__btn {
   font-family: Poppins;
   margin-bottom: 26px;
 }
 
-.feature-card__btn {
+.feature__btn {
   position: relative;
   color: #fff;
   font-size: 18px;
@@ -665,7 +665,7 @@ a {
   transition-property: transform, box-shadow, opacity;
 }
 
-.feature-card__btn::after {
+.feature__btn::after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -680,29 +680,29 @@ a {
   background-color: #3988ff;
 }
 
-.feature-card__btn:hover {
+.feature__btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(5, 12, 38, 0.2);
   color: #fff;
 }
 
-.feature-card__btn:hover::after {
+.feature__btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
 
-.feature-card__btn:active, .feature-card__btn:focus {
+.feature__btn:active, .feature__btn:focus {
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 2px 5px rgba(5, 12, 38, 0.2);
   color: #fff;
 }
 
-.feature-card__btn:visited {
+.feature__btn:visited {
   color: #fff;
 }
 
-.feature-card__btn {
+.feature__btn {
   padding: 10px 20px;
 }
 
@@ -714,12 +714,12 @@ a {
   padding-bottom: 81px;
 }
 
-.services .section__title {
+.services__title {
   text-align: left;
   max-width: 492px;
 }
 
-.services .section__desc {
+.services__desc {
   max-width: 604px;
   text-align: center;
   margin: 0 auto;
@@ -1098,7 +1098,7 @@ a {
   padding-bottom: 140px;
 }
 
-.reviews .section__desc {
+.reviews__desc {
   max-width: 715px;
   text-align: center;
   margin: 0 auto;

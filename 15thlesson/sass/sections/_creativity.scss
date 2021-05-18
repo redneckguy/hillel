@@ -4,16 +4,14 @@
     max-width: 1600px;
     margin: 0 auto;
 
-    .section {
-        &__title {
-            @extend %sectionTitle;
-            font-weight: 600;
-            line-height: 1.31;
-        }
+    &__title {
+        @extend %sectionTitle;
+        font-weight: 600;
+        line-height: 1.31;
+    }
 
-        &__desc {
-            @include sectionDesk(806px);
-        }
+    &__desc {
+        @include sectionDesk(806px);
     }
 
     &__content {

@@ -4,14 +4,12 @@
         padding-bottom: 140px;
     }
 
-    .section {
-        &__title {
-            @extend %sectionTitle;
-        }
+    &__title {
+        @extend %sectionTitle;
+    }
 
-        &__desc {
-            @include sectionDesk(715px);
-        }
+    &__desc {
+        @include sectionDesk(715px);
     }
 
     &__bg {
