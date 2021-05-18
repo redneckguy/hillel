@@ -4,25 +4,14 @@
         padding-bottom: 140px;
     }
 
-    &__offers,
-    &__plan {
-        font-weight: 500;
-        text-transform: uppercase;
-    }
-
-    &__offers,
-    &__plan,
-    &__title,
-    &__bottom-price,
-    &__bottom-term {
-        text-align: center;
-    }
-
     &__offers {
         font-size: 20px;
         line-height: 1.6;
         letter-spacing: 0.05em;
         margin-bottom: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
     }
 
     &__plan {
@@ -31,6 +20,9 @@
         line-height: 1.4;
         color: $primary-black;
         margin-bottom: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 
@@ -44,97 +36,76 @@
     padding: 9px;
     margin-bottom: 60px;
 
-    &__btn {
+    &__button {
         color: $main-text;
         padding: 10px 0;
     }
 
-    &__btn-input {
+    &__button-input {
         display: none;
     }
 
-    &__btn-label {
+    &__button-label {
         cursor: pointer;
         text-transform: capitalize;
         padding: 20px;
     }
 
-    &__btn-input:checked ~ &__btn-label {
+    &__button-input:checked ~ &__button-label {
         color: $white;
         background-color: $light-blue;
         padding: 12px 21px;
     }
 
-    &__btn,
-    &__btn-input:checked ~ &__btn-label {
+    &__button,
+    &__button-input:checked ~ &__button-label {
         border-radius: 5px;
     }
 }
 
-.pricing-cards {
+.pricecards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.pricing-card {
+.pricecard {
     max-width: 360px;
     width: 100%;
-    background-color: $white;
-    box-shadow: 0px 4px 30px $pricing-card-shadow;
+    box-shadow: 0px 4px 30px $pricecard-shadow;
     border-radius: 10px;
     overflow: hidden;
 
-    &:hover {
-        background: $pricing-bottom-bg;
-
-        .pricing-card__top {
-            background: $pricing-top-bg;
-
-            .pricing-card__title {
-                color: $white;
-            }
-        }
-
-        .pricing-card__bottom {
-            background: $pricing-bottom-bg;
-            border-top: 1px solid $pricing-bottom-dark-red;
-
-            .pricing-card__bottom-price,
-            .pricing-card__bottom-term,
-            .pricing-card__bottom-options {
-                color: $white;
-            }
-        }
-
-        .pricing-card__btn {
-            background-color: $light-blue;
-            color: $white;
-        }
-    }
-
     &__top {
-        display: flex;
         padding: 46px 0 45px 0;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: $pricing-top-bg;
+            opacity: 0;
+            visibility: hidden;
+            transition: .2s ease;
+            transition-property: opacity, visibility;
+        }
     }
 
-    &__title,
-    &__bottom-price,
-    &__btn {
-        font-family: Lato;
-        font-weight: 500;
-    }
-
-    &__title,
-    &__btn {
-        font-size: 25px;
-        line-height: 1.52;
-    }
-
-    &__title {
+    &__top-title {
+        position: relative;
         color: $primary-black;
         margin: auto;
         text-transform: capitalize;
+        text-align: center;
+        font-family: Lato;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.52;
+        transition: color .2s ease;
 
         &.basic {
             text-transform: uppercase;
@@ -142,18 +113,38 @@
     }
 
     &__bottom {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 39px;
         border-top: 1px solid $pricing-border-color;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: $pricing-bottom-bg;
+            opacity: 0;
+            visibility: hidden;
+            transition: .2s ease;
+            transition-property: opacity, visibility;
+        }
     }
 
     &__bottom-price {
+        position: relative;
         font-size: 35px;
         line-height: 1.4;
         color: $primary-black;
         margin-bottom: 15px;
+        text-align: center;
+        font-family: Lato;
+        font-weight: 500;
+        transition: color .2s ease;
 
         span {
             font-family: Poppins;
@@ -165,12 +156,20 @@
     }
 
     &__bottom-term {
+        position: relative;
         font-size: 18px;
         line-height: 1.62;
         margin-bottom: 40px;
+        text-align: center;
+        transition: color .2s ease;
+    }
+
+    &__bottom-options {
+        transition: color .2s ease;
     }
 
     &__bottom-option {
+        position: relative;
         text-align: center;
         font-family: Poppins;
         font-weight: 500;
@@ -187,7 +186,8 @@
     }
 
     &__btn {
-        background-color: transparent;
+        position: relative;
+        background-color: $white;
         border: 1px solid $light-blue;
         border-radius: 5px;
         color: $light-blue;
@@ -195,7 +195,46 @@
         padding: 14px 29px;
         margin-bottom: 40px;
         cursor: pointer;
+        font-family: Lato;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.52;
+        transition: background .2s ease;
 
         @include buttonAfter(5px, $light-blue);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $pricing-bottom-dark-red;
+
+        .pricecard__top:before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .pricecard__top-title {
+            color: $white;
+        }
+
+        .pricecard__bottom {
+            border-top: 1px solid $pricing-bottom-dark-red;
+        }
+
+        .pricecard__bottom:before {
+            opacity: 1;
+            visibility: visible;
+            
+        }
+        .pricecard__bottom-price,
+        .pricecard__bottom-term,
+        .pricecard__bottom-options {
+            color: $white;
+        }
+
+        .pricecard__btn {
+            background-color: $light-blue;
+            color: $white;
+        }
     }
 }
