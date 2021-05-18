@@ -76,6 +76,27 @@
     border-radius: 10px;
     overflow: hidden;
 
+    &__emphasis {
+        box-shadow: none;
+        background-color: $pricing-bottom-dark-red;
+        position: relative;
+    }
+
+    &__emphasis-deal {
+        background-color: $pricing-green;
+        position: absolute;
+        transform: rotate(-45deg);
+        color: $primary-black;
+        font-size: 9px;
+        line-height: 1.56;
+        text-transform: capitalize;
+        z-index: 1;
+        padding: 15px 15px 18px;
+        top: -3px;
+        left: -14px;
+        -webkit-clip-path: polygon(10% 27%, 90% 27%, 100% 40%, 100% 60%, 89% 71%, 10% 71%, 0 60%, 0 40%); clip-path: polygon(10% 27%, 90% 27%, 100% 40%, 100% 60%, 94% 71%, 5% 71%, 0 60%, 0 40%);
+    }
+
     &__top {
         padding: 46px 0 45px 0;
         position: relative;
@@ -95,6 +116,13 @@
         }
     }
 
+    &__emphasis-top {
+        &:before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
     &__top-title {
         position: relative;
         color: $primary-black;
@@ -110,6 +138,10 @@
         &.basic {
             text-transform: uppercase;
         }
+    }
+
+    &__emphasis-top-title {
+        color: $white;
     }
 
     &__bottom {
@@ -135,6 +167,15 @@
         }
     }
 
+    &__emphasis-bottom {
+        border-top: 1px solid transparent;
+
+        &:before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
     &__bottom-price {
         position: relative;
         font-size: 35px;
@@ -155,6 +196,10 @@
         }
     }
 
+    &__emphasis-bottom-price {
+        color: $white;
+    }
+
     &__bottom-term {
         position: relative;
         font-size: 18px;
@@ -164,8 +209,16 @@
         transition: color .2s ease;
     }
 
+    &__emphasis-bottom-term {
+        color: $white;
+    }
+
     &__bottom-options {
         transition: color .2s ease;
+    }
+
+    &__emphasis-bottom-options {
+        color: $white;
     }
 
     &__bottom-option {
@@ -202,6 +255,11 @@
         transition: background .2s ease;
 
         @include buttonAfter(5px, $light-blue);
+    }
+
+    &__emphasis-bottom-btn {
+        background-color: $light-blue;
+        color: $white;
     }
 
     &:hover,
