@@ -10,45 +10,45 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header__container">
             <div class="header__navbar">
-                <div class="header__logo-link">
-                    <a class="header__logo-img" href="/">
+                <div class="logo">
+                    <a class="logo__img" href="/">
                         <img src="images/cloundBudgetLogo.svg" alt="cloud logo">
                     </a>
-                    <a href="/" class="header__logo-text">
+                    <a href="/" class="logo__text">
                         CloudBudget
                     </a>
                 </div>
-                <ul class="header__nav">
-                    <li class="header__nav-item">
-                        <a href="#overview" class="header__nav-link">
+                <ul class="navigation">
+                    <li class="navigation__item">
+                        <a href="#overview" class="navigation__link">
                             OVERVIEW
                         </a>
                     </li>
-                    <li class="header__nav-item">
-                        <a href="#features" class="header__nav-link">
+                    <li class="navigation__item">
+                        <a href="#features" class="navigation__link">
                             FEATURES
                         </a>
                     </li>
-                    <li class="header__nav-item">
-                        <a href="#technology" class="header__nav-link">
+                    <li class="navigation__item">
+                        <a href="#technology" class="navigation__link">
                             TECHNOLOGY
                         </a>
                     </li>
-                    <li class="header__nav-item">
-                        <a href="#contact" class="header__nav-link">
+                    <li class="navigation__item">
+                        <a href="#contact" class="navigation__link">
                             CONTACT
                         </a>
                     </li>
-                    <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
                             Sign up
                         </a>
                     </li>
                 </ul>
-                <div class="header__login-wrap">
-                    <div class="lang-selector__wrap">
+                <div class="language-and-login">
+                    <div class="lang-selector">
                         <label class="lang-selector__label" for="lang">
                             <img class="lang-selector__img" src="images/flag-united-states.svg" alt="flag">
                         </label>
@@ -63,12 +63,67 @@
                         Login
                     </a>
                 </div>
+                <div class="toggle">
+                    <input type="checkbox" class="toggle__checkbox" id="navi-toggle">
+                    
+                    <label for="navi-toggle" class="toggle__button">
+                        <span class="toggle__icon">&nbsp;</span>
+                    </label>
+
+                    <div class="toggle__background">&nbsp;</div>
+
+                    <div class="toggle__nav">
+                        <ul class="navigation">
+                            <li class="navigation__item">
+                                <a href="#overview" class="navigation__link">
+                                    OVERVIEW
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#features" class="navigation__link">
+                                    FEATURES
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#technology" class="navigation__link">
+                                    TECHNOLOGY
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#contact" class="navigation__link">
+                                    CONTACT
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                    Sign up
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="language-and-login">
+                            <div class="lang-selector">
+                                <label class="lang-selector__label" for="lang">
+                                    <img class="lang-selector__img" src="images/flag-united-states.svg" alt="flag">
+                                </label>
+                                <select class="lang-selector__drop" name="lang" id="lang">
+                                    <option value="en" class="lang-selector__item">en</option>
+                                    <option value="uk" class="lang-selector__item">uk</option>
+                                    <option value="ua" class="lang-selector__item">ua</option>
+                                </select>
+                                <img class="lang-selector__arrow" src="images/langArrowSelector.svg" alt="langarrow">
+                            </div>
+                            <a href="#" class="button">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="title__wrap">
-                <h1 class="title__title">
+            <div class="slogan">
+                <h1 class="slogan__title">
                     CloudBudget
                 </h1>
-                <p class="title__text">
+                <p class="slogan__text">
                     Cloud budget management for everyone. Only &euro;69.95 a Month After a 7 Day Trial of <br> Up to &euro;4.99
                 </p>
                 <button type="submit" class="button button__signup">
@@ -78,7 +133,7 @@
         </div>
     </header>
     <main>
-        <section class="management-soft" id="overview">
+        <!-- <section class="management-soft" id="overview">
             <div class="container management-soft__container">
                 <div class="management-soft__descr-wrap">
                     <h3 class="management-soft__title">
@@ -94,12 +149,10 @@
                 <div class="management-soft__image-wrap">
                     <button class="management-soft__image-button" type="button"></button>
                     <img class="management-soft__image-img" src="images/managment-soft.jpg" alt="video">
-                    <!-- as background -->
-                    <!-- <div class="management-soft__image-img__bg"></div> -->
                 </div>
             </div>
-        </section>
-        <section class="features" id="features">
+        </section> -->
+        <!-- <section class="features" id="features">
             <div class="container features__container">
                 <h3 class="features__title fonttitle">
                     Features
@@ -149,8 +202,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="technology" id="technology">
+        </section> -->
+        <!-- <section class="technology" id="technology">
             <div class="container">
                 <h3 class="technology__title">
                     Technology
@@ -206,8 +259,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="focused">
+        </section> -->
+        <!-- <section class="focused">
             <div class="container focused-container">
                 <div class="focused__text-wrap">
                     <h3 class="focused__text-title">
@@ -230,8 +283,8 @@
                 </div>
                 <img src="images/cafeSlider.png" alt="cafe slider">
             </div>
-        </section>
-        <section class="contact" id="contact">
+        </section> -->
+        <!-- <section class="contact" id="contact">
             <div class="container contact-wrap">
                 <div class="contact__text-wrap">
                     <h3 class="contact__text-title">
@@ -261,9 +314,9 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="footer__wrap">
                 <div class="footer__card-wrap">
@@ -343,6 +396,6 @@
                 </a>
             </p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
