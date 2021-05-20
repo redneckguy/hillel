@@ -1212,6 +1212,11 @@ a {
   transition-property: width;
 }
 
+.reviews .slider__btn:first-child {
+  width: 40px;
+  opacity: 1;
+}
+
 .reviews .slider__btn:hover, .reviews .slider__btn:focus {
   opacity: 1;
 }

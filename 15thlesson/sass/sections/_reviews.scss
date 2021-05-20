@@ -45,6 +45,11 @@
             transition: .2s ease;
             transition-property: width;
 
+            &:first-child {
+                width: 40px;
+                opacity: 1;
+            }
+
             &:hover,
             &:focus {
                 opacity: 1;
