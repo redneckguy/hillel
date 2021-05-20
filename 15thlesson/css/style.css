@@ -926,36 +926,16 @@ a {
   box-shadow: 0px 4px 30px rgba(153, 153, 153, 0.14);
   border-radius: 10px;
   overflow: hidden;
-  transition: .1s ease;
+  transition: 0.1s ease;
   transition-property: background-color;
 }
 
-.pricecard__emphasis, .pricecard__top, .pricecard__top-title, .pricecard__bottom, .pricecard__bottom-price, .pricecard__bottom-term, .pricecard__bottom-option, .pricecard__btn {
+.pricecard__top, .pricecard__top-title, .pricecard__bottom, .pricecard__bottom-price, .pricecard__bottom-term, .pricecard__bottom-option, .pricecard__btn {
   position: relative;
 }
 
-.pricecard__emphasis {
-  box-shadow: none;
-  background-color: #d9315a;
-}
-
-.pricecard__emphasis-deal, .pricecard__top-title, .pricecard__bottom-option, .pricecard__btn {
+.pricecard__top-title, .pricecard__bottom-option, .pricecard__btn {
   text-transform: capitalize;
-}
-
-.pricecard__emphasis-deal {
-  background-color: #11bb92;
-  position: absolute;
-  transform: rotate(-45deg);
-  color: #050c26;
-  font-size: 9px;
-  line-height: 1.56;
-  z-index: 1;
-  padding: 15px 16px 18px;
-  top: -3.2px;
-  left: -15px;
-  -webkit-clip-path: polygon(10% 27%, 90% 27%, 100% 40%, 100% 60%, 89% 71%, 10% 71%, 0 60%, 0 40%);
-  clip-path: polygon(10% 27%, 90% 27%, 100% 40%, 100% 60%, 94% 71%, 5% 71%, 0 60%, 0 40%);
 }
 
 .pricecard__top {
@@ -972,13 +952,8 @@ a {
   background-image: linear-gradient(180deg, #d95374 0%, #d32852 100%);
   opacity: 0;
   visibility: hidden;
-  transition: .2s ease;
+  transition: 0.2s ease;
   transition-property: opacity, visibility;
-}
-
-.pricecard__emphasis-top:before {
-  opacity: 1;
-  visibility: visible;
 }
 
 .pricecard__top-title, .pricecard__bottom-price {
@@ -988,7 +963,7 @@ a {
 }
 
 .pricecard__top-title, .pricecard__bottom-price, .pricecard__bottom-term, .pricecard__bottom-options {
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 }
 
 .pricecard__top-title {
@@ -1000,10 +975,6 @@ a {
 
 .pricecard__top-title.basic {
   text-transform: uppercase;
-}
-
-.pricecard__emphasis-top-title, .pricecard__emphasis-bottom-price, .pricecard__emphasis-bottom-term, .pricecard__emphasis-bottom-options {
-  color: #fff;
 }
 
 .pricecard__bottom {
@@ -1024,17 +995,8 @@ a {
   background-image: linear-gradient(180deg, #d9315a 0%, #f3678a 100%);
   opacity: 0;
   visibility: hidden;
-  transition: .2s ease;
+  transition: 0.2s ease;
   transition-property: opacity, visibility;
-}
-
-.pricecard__emphasis-bottom {
-  border-top: 1px solid transparent;
-}
-
-.pricecard__emphasis-bottom:before {
-  opacity: 1;
-  visibility: visible;
 }
 
 .pricecard__bottom-price {
@@ -1050,10 +1012,6 @@ a {
   font-size: 18px;
   line-height: 1.62;
   margin-right: -3px;
-}
-
-.pricecard__emphasis-bottom-price, .pricecard__emphasis-bottom-term, .pricecard__emphasis-bottom-options {
-  color: #fff;
 }
 
 .pricecard__bottom-term, .pricecard__bottom-option {
@@ -1093,7 +1051,7 @@ a {
   font-weight: 500;
   font-size: 25px;
   line-height: 1.52;
-  transition: background .2s ease;
+  transition: background 0.2s ease;
 }
 
 .pricecard__btn::after {
@@ -1127,7 +1085,51 @@ a {
   box-shadow: 0 2px 5px rgba(5, 12, 38, 0.2);
 }
 
-.pricecard__emphasis-bottom-btn {
+.pricecard--emphasis {
+  position: relative;
+  box-shadow: none;
+  background-color: #d9315a;
+}
+
+.pricecard--emphasis__deal {
+  text-transform: capitalize;
+  background-color: #11bb92;
+  position: absolute;
+  transform: rotate(-45deg);
+  color: #050c26;
+  font-size: 9px;
+  line-height: 1.56;
+  z-index: 1;
+  padding: 15px 16px 18px;
+  top: -3.2px;
+  left: -15px;
+  -webkit-clip-path: polygon(10% 27%, 90% 27%, 100% 40%, 100% 60%, 89% 71%, 10% 71%, 0 60%, 0 40%);
+  clip-path: polygon(10% 27%, 90% 27%, 100% 40%, 100% 60%, 94% 71%, 5% 71%, 0 60%, 0 40%);
+}
+
+.pricecard--emphasis__top:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pricecard--emphasis__top-title, .pricecard--emphasis__bottom-price, .pricecard--emphasis__bottom-term, .pricecard--emphasis__bottom-options {
+  color: #fff;
+}
+
+.pricecard--emphasis__bottom {
+  border-top: 1px solid transparent;
+}
+
+.pricecard--emphasis__bottom:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pricecard--emphasis__bottom-price, .pricecard--emphasis__bottom-term, .pricecard--emphasis__bottom-options {
+  color: #fff;
+}
+
+.pricecard--emphasis__bottom-btn {
   background-color: #3988ff;
   color: #fff;
 }
