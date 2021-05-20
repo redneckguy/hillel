@@ -1,6 +1,5 @@
 .pricing {
-    &__container {
-        @extend %container;
+    .container {
         padding-bottom: 140px;
     }
 

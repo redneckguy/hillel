@@ -1,31 +1,31 @@
 .services {
+    position: relative;
+
     .container {
-        @extend %bgContainer;
+        padding-bottom: 80px;
+    }
+
+    .dots {
+        position: absolute;
+        width: 500px;
+        height: 250px;
         background-image: url(../images/servicesDots.svg);
-        // background-position: top right;
-        background-position: 1100px -1px;
         background-repeat: no-repeat;
         background-size: auto;
-        padding-bottom: 81px;
-    }
-
-    &__container {
-        @extend %container;
-    }
-
-    &__title,
-    &__desc {
-        text-align: left;
+        top: -0.14%;
+        right: -19%;
     }
 
     &__title {
         @extend %sectionTitle;
         max-width: 492px;
+        text-align: left;
     }
 
     &__desc {
         @include sectionDesk(604px);
         margin-left: 0;
+        text-align: left;
     }
 }
 

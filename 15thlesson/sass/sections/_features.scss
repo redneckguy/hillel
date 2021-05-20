@@ -1,10 +1,6 @@
 .features {
     padding-bottom: 141px;
 
-    &__container {
-        @extend %container;
-    }
-
     &__title {
         @extend %sectionTitle;
     }

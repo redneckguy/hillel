@@ -1,7 +1,7 @@
-// // TODO hide scrollbar
-// body::-webkit-scrollbar {
-//     display: none;
-// }
+// TODO hide scrollbar
+body::-webkit-scrollbar {
+    display: none;
+}
 
 * {
     box-sizing: border-box;
@@ -22,4 +22,11 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1160px;
 }
