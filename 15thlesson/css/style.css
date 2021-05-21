@@ -1211,7 +1211,7 @@ a {
   width: 20px;
   height: 11px;
   cursor: pointer;
-  transition: .2s ease;
+  transition: 0.2s ease;
   transition-property: width;
 }
 
