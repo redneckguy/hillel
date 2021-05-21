@@ -70,6 +70,7 @@
 }
 
 .pricecard {
+    align-self: center;
     max-width: 360px;
     width: 100%;
     box-shadow: 0px 4px 30px $pricecard-shadow;
@@ -216,12 +217,87 @@
         @include buttonAfter(5px, $light-blue);
     }
 
+    // &--emphasis {
+    //     position: relative;
+    //     box-shadow: none;
+    //     background-color: $pricing-bottom-dark-red;
+
+    //     &__deal {
+    //         text-transform: capitalize;
+    //         background-color: $pricing-green;
+    //         position: absolute;
+    //         transform: rotate(-45deg);
+    //         color: $primary-black;
+    //         font-size: 9px;
+    //         line-height: 1.56;
+    //         z-index: 1;
+    //         padding: 15px 16px 18px;
+    //         top: -3.2px;
+    //         left: -15px;
+    //         -webkit-clip-path: polygon(
+    //             10% 27%,
+    //             90% 27%,
+    //             100% 40%,
+    //             100% 60%,
+    //             89% 71%,
+    //             10% 71%,
+    //             0 60%,
+    //             0 40%
+    //         );
+    //         clip-path: polygon(
+    //             10% 27%,
+    //             90% 27%,
+    //             100% 40%,
+    //             100% 60%,
+    //             94% 71%,
+    //             5% 71%,
+    //             0 60%,
+    //             0 40%
+    //         );
+    //     }
+
+    //     &__top {
+    //         &:before {
+    //             opacity: 1;
+    //             visibility: visible;
+    //         }
+    //     }
+
+    //     &__top-title,
+    //     &__bottom-price,
+    //     &__bottom-term,
+    //     &__bottom-options {
+    //         color: $white;
+    //     }
+
+    //     &__bottom {
+    //         border-top: 1px solid transparent;
+
+    //         &:before {
+    //             opacity: 1;
+    //             visibility: visible;
+    //         }
+    //     }
+
+    //     &__bottom-price,
+    //     &__bottom-term,
+    //     &__bottom-options {
+    //         color: $white;
+    //     }
+
+    //     &__bottom-btn {
+    //         background-color: $light-blue;
+    //         color: $white;
+    //     }
+    // }
+
     &--emphasis {
         position: relative;
         box-shadow: none;
         background-color: $pricing-bottom-dark-red;
 
-        &__deal {
+        &:before {
+            content: "best deal";
             text-transform: capitalize;
             background-color: $pricing-green;
             position: absolute;
@@ -255,21 +331,21 @@
             );
         }
 
-        &__top {
+        .pricecard__top {
             &:before {
                 opacity: 1;
                 visibility: visible;
             }
         }
 
-        &__top-title,
-        &__bottom-price,
-        &__bottom-term,
-        &__bottom-options {
+        .pricecard__top-title,
+        .pricecard__bottom-price,
+        .pricecard__bottom-term,
+        .pricecard__bottom-options {
             color: $white;
         }
 
-        &__bottom {
+        .pricecard__bottom {
             border-top: 1px solid transparent;
 
             &:before {
@@ -278,13 +354,15 @@
             }
         }
 
-        &__bottom-price,
-        &__bottom-term,
-        &__bottom-options {
+        
+
+        .pricecard__bottom-price,
+        .pricecard__bottom-term,
+        .pricecard__bottom-options {
             color: $white;
         }
 
-        &__bottom-btn {
+        .pricecard__btn {
             background-color: $light-blue;
             color: $white;
         }

@@ -119,10 +119,6 @@ table {
   font-display: swap;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -921,6 +917,7 @@ a {
 }
 
 .pricecard {
+  align-self: center;
   max-width: 360px;
   width: 100%;
   box-shadow: 0px 4px 30px rgba(153, 153, 153, 0.14);
@@ -1091,7 +1088,8 @@ a {
   background-color: #d9315a;
 }
 
-.pricecard--emphasis__deal {
+.pricecard--emphasis:before {
+  content: "best deal";
   text-transform: capitalize;
   background-color: #11bb92;
   position: absolute;
@@ -1107,29 +1105,34 @@ a {
   clip-path: polygon(10% 27%, 90% 27%, 100% 40%, 100% 60%, 94% 71%, 5% 71%, 0 60%, 0 40%);
 }
 
-.pricecard--emphasis__top:before {
+.pricecard--emphasis .pricecard__top:before {
   opacity: 1;
   visibility: visible;
 }
 
-.pricecard--emphasis__top-title, .pricecard--emphasis__bottom-price, .pricecard--emphasis__bottom-term, .pricecard--emphasis__bottom-options {
+.pricecard--emphasis .pricecard__top-title,
+.pricecard--emphasis .pricecard__bottom-price,
+.pricecard--emphasis .pricecard__bottom-term,
+.pricecard--emphasis .pricecard__bottom-options {
   color: #fff;
 }
 
-.pricecard--emphasis__bottom {
+.pricecard--emphasis .pricecard__bottom {
   border-top: 1px solid transparent;
 }
 
-.pricecard--emphasis__bottom:before {
+.pricecard--emphasis .pricecard__bottom:before {
   opacity: 1;
   visibility: visible;
 }
 
-.pricecard--emphasis__bottom-price, .pricecard--emphasis__bottom-term, .pricecard--emphasis__bottom-options {
+.pricecard--emphasis .pricecard__bottom-price,
+.pricecard--emphasis .pricecard__bottom-term,
+.pricecard--emphasis .pricecard__bottom-options {
   color: #fff;
 }
 
-.pricecard--emphasis__bottom-btn {
+.pricecard--emphasis .pricecard__btn {
   background-color: #3988ff;
   color: #fff;
 }

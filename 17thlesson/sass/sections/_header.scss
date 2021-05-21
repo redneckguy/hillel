@@ -24,7 +24,6 @@
 
         &__container {
             margin: 0 auto;
-            // padding: 50px 10px 187px;
             padding: 25px 10px 216px;
             max-width: 1110px;
         }
@@ -34,7 +33,6 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            // margin-bottom: 167px;
             margin-bottom: 142px;
             position: relative;
             z-index: 2;
@@ -44,21 +42,15 @@
     .logo {
         display: flex;
         align-items: center;
-        // margin-left: 1.45px;
         margin-left: 10px;
         transition: filter 0.2s ease;
 
         margin-top: 16px;
 
-        // &:hover,
-        // &:focus {
-        //     filter: drop-shadow(0px 0px 0.4px $white);
-        // }
-    
         &__img {
             margin-right: 8.5px;
         }
-    
+
         &__text {
             font-size: 18px;
             line-height: 1.23;
@@ -72,12 +64,11 @@
     }
 
     .navigation {
-        // display: flex;
         display: none;
         flex-wrap: wrap;
         margin-left: 39px;
         padding-bottom: 3px;
-    
+
         &__item {
             font-size: 14px;
             line-height: 1.22;
@@ -85,20 +76,14 @@
             text-transform: uppercase;
             padding: 0 10px;
         }
-    
+
         &__link {
             color: inherit;
             transition: text-shadow 0.2s ease;
-    
-            // &:hover,
-            // &:focus {
-            //     text-shadow: 0 0 0.4px $white, 0 0 0.4px $white;
-            // }
         }
     }
 
     .language-and-login {
-        // display: flex;
         display: none;
         flex-wrap: wrap;
         align-items: center;
@@ -153,7 +138,7 @@
             }
         }
     }
-    
+
     .toggle {
         &__checkbox {
             display: none;
@@ -168,7 +153,7 @@
             right: 18px;
             border-radius: 50%;
             z-index: 2;
-            box-shadow: 0 1rem 3rem rgba($black, .1);
+            box-shadow: 0 1rem 3rem rgba($black, 0.1);
             text-align: center;
             cursor: pointer;
         }
@@ -182,9 +167,7 @@
             right: 18px;
             background-image: radial-gradient($light-red, $red);
             z-index: 1;
-            transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-
-            // transform: scale(80);
+            transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         }
 
         &__nav {
@@ -193,18 +176,15 @@
             top: 0;
             left: 0;
             z-index: 1;
-    
             opacity: 0;
             width: 0;
-            // opacity: 1;
-            // width: 1;
-            transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
 
         &__icon {
             position: relative;
             margin-top: 29px;
-    
+
             &,
             &::before,
             &::after {
@@ -213,23 +193,27 @@
                 background-color: $bg-color1;
                 display: inline-block;
             }
-    
+
             &::before,
             &::after {
                 content: "";
                 position: absolute;
                 left: 0;
-                transition: all .2s;
+                transition: all 0.2s;
             }
-    
-            &::before { top: -8px; }
-            &::after { top: 8px; }
+
+            &::before {
+                top: -8px;
+            }
+            &::after {
+                top: 8px;
+            }
         }
 
         &__checkbox:checked ~ &__background {
             transform: scale(80);
         }
-    
+
         &__checkbox:checked ~ &__nav {
             opacity: 1;
             width: 100%;
@@ -238,20 +222,20 @@
         &__button:hover &__icon::before {
             top: -10px;
         }
-    
+
         &__button:hover &__icon::after {
             top: 10px;
         }
-    
+
         &__checkbox:checked + &__button &__icon {
             background-color: transparent;
         }
-    
+
         &__checkbox:checked + &__button &__icon::before {
             top: 0;
             transform: rotate(135deg);
         }
-    
+
         &__checkbox:checked + &__button &__icon::after {
             top: 0;
             transform: rotate(-135deg);
@@ -264,7 +248,7 @@
             top: 47%;
             left: 52%;
             transform: translate(-50%, -50%);
-        
+
             &__item {
                 font-size: 35px;
                 line-height: 1.22;
@@ -272,18 +256,18 @@
                 text-transform: uppercase;
                 margin-bottom: 28px;
             }
-        
+
             &__link {
                 color: inherit;
                 transition: text-shadow 0.2s ease;
-        
+
                 &:hover,
                 &:focus {
                     text-shadow: 0 0 0.4px $white, 0 0 0.4px $white;
                 }
             }
         }
-    
+
         .language-and-login {
             display: flex;
             flex-wrap: wrap;
@@ -294,12 +278,12 @@
             left: 68%;
             transform: translate(-50%, -50%);
         }
-    
+
         .lang-selector {
             display: flex;
             margin-right: 20px;
             padding-top: 3px;
-    
+
             &__label {
                 margin-right: 25px;
                 padding-bottom: 2px;
@@ -309,12 +293,12 @@
             &__img {
                 width: 150%;
             }
-    
+
             &__drop,
             &__arrow {
                 transition: filter 0.2s ease;
             }
-    
+
             &__drop {
                 font-size: 30px;
                 line-height: 1.22;
@@ -329,17 +313,17 @@
                 cursor: pointer;
                 outline: none;
             }
-    
+
             &__item {
                 background-color: transparent;
             }
-    
+
             &__arrow {
                 margin-left: 7px;
                 width: 19%;
                 padding-bottom: 2px;
             }
-    
+
             &__drop,
             &__arrow {
                 &:hover,
@@ -359,7 +343,6 @@
         text-align: center;
         max-width: 578px;
         position: relative;
-        // z-index: 2;
         z-index: 1;
 
         &__title,
@@ -368,27 +351,21 @@
         }
 
         &__title {
-            // font-size: 72px;
             font-size: 37px;
             line-height: 1.2;
             letter-spacing: 0.05em;
             font-weight: bold;
             text-transform: uppercase;
-            // margin-bottom: 39px;
             margin-bottom: 28px;
         }
 
         &__text {
             margin: 0 auto;
-            // font-size: 24px;
             font-size: 16px;
             line-height: 1.5;
             font-weight: 600;
-            // max-width: 490px;
             max-width: 320px;
-            // margin-bottom: 55px;
             margin-bottom: 53px;
         }
     }
 }
-
