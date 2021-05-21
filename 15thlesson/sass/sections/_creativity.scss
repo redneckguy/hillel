@@ -50,43 +50,59 @@
     &__row-container {
         &--red {
             background-color: rgba($progress-bar-web, 0.1);
+
+            .progressbar__row-filler {
+                background-color: $progress-bar-web;
+                width: 80%;
+            }
+
+            .progressbar__row-number {
+                color: $progress-bar-web;
+            }
         }
 
         &--orange {
             background-color: rgba($progress-bar-uiux, 0.1);
+
+            .progressbar__row-filler {
+                background-color: $progress-bar-uiux;
+                width: 90%;
+            }
+
+            .progressbar__row-number {
+                color: $progress-bar-uiux;
+            }
         }
 
         &--green {
             background-color: rgba($progress-bar-graphic, 0.1);
+
+            .progressbar__row-filler {
+                background-color: $progress-bar-graphic;
+                width: 75%;
+            }
+
+            .progressbar__row-number {
+                color: $progress-bar-graphic;
+            }
         }
 
         &--blue {
             background-color: rgba($progress-bar-photo, 0.1);
+
+            .progressbar__row-filler {
+                background-color: $progress-bar-photo;
+                width: 80%;
+            }
+
+            .progressbar__row-number {
+                color: $progress-bar-photo;
+            }
         }
     }
 
     &__row-filler {
         position: relative;
-
-        &--red {
-            background-color: $progress-bar-web;
-            width: 80%;
-        }
-
-        &--orange {
-            background-color: $progress-bar-uiux;
-            width: 90%;
-        }
-
-        &--green {
-            background-color: $progress-bar-graphic;
-            width: 75%;
-        }
-
-        &--blue {
-            background-color: $progress-bar-photo;
-            width: 80%;
-        }
     }
 
     &__row-number {
@@ -98,21 +114,5 @@
         font-weight: 500;
         font-size: 25px;
         line-height: 1.49;
-
-        &--red {
-            color: $progress-bar-web;
-        }
-
-        &--orange {
-            color: $progress-bar-uiux;
-        }
-
-        &--green {
-            color: $progress-bar-graphic;
-        }
-
-        &--blue {
-            color: $progress-bar-photo;
-        }
     }
 }

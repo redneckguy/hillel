@@ -501,40 +501,56 @@ a {
   background-color: rgba(228, 26, 26, 0.1);
 }
 
+.progressbar__row-container--red .progressbar__row-filler {
+  background-color: #e41a1a;
+  width: 80%;
+}
+
+.progressbar__row-container--red .progressbar__row-number {
+  color: #e41a1a;
+}
+
 .progressbar__row-container--orange {
   background-color: rgba(218, 90, 18, 0.1);
+}
+
+.progressbar__row-container--orange .progressbar__row-filler {
+  background-color: #da5a12;
+  width: 90%;
+}
+
+.progressbar__row-container--orange .progressbar__row-number {
+  color: #da5a12;
 }
 
 .progressbar__row-container--green {
   background-color: rgba(91, 187, 16, 0.1);
 }
 
-.progressbar__row-container--blue {
-  background-color: rgba(21, 193, 204, 0.1);
-}
-
-.progressbar__row-filler {
-  position: relative;
-}
-
-.progressbar__row-filler--red {
-  background-color: #e41a1a;
-  width: 80%;
-}
-
-.progressbar__row-filler--orange {
-  background-color: #da5a12;
-  width: 90%;
-}
-
-.progressbar__row-filler--green {
+.progressbar__row-container--green .progressbar__row-filler {
   background-color: #5bbb10;
   width: 75%;
 }
 
-.progressbar__row-filler--blue {
+.progressbar__row-container--green .progressbar__row-number {
+  color: #5bbb10;
+}
+
+.progressbar__row-container--blue {
+  background-color: rgba(21, 193, 204, 0.1);
+}
+
+.progressbar__row-container--blue .progressbar__row-filler {
   background-color: #15c1cc;
   width: 80%;
+}
+
+.progressbar__row-container--blue .progressbar__row-number {
+  color: #15c1cc;
+}
+
+.progressbar__row-filler {
+  position: relative;
 }
 
 .progressbar__row-number {
@@ -546,22 +562,6 @@ a {
   font-weight: 500;
   font-size: 25px;
   line-height: 1.49;
-}
-
-.progressbar__row-number--red {
-  color: #e41a1a;
-}
-
-.progressbar__row-number--orange {
-  color: #da5a12;
-}
-
-.progressbar__row-number--green {
-  color: #5bbb10;
-}
-
-.progressbar__row-number--blue {
-  color: #15c1cc;
 }
 
 .features {
