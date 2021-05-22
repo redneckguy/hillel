@@ -180,28 +180,39 @@
         &__title {
             text-align: center;
             margin-bottom: 15px;
+            font-size: 23px;
 
             &--3rd {
                 margin-left: 0;
             }
         }
 
-        &__text {
-            text-align: center;
-        }
-
-        &__list {
-            text-align: center;
-        }
-
+        &__text,
+        &__list,
+        &__list-link,
         &__contact {
             text-align: center;
+            font-size: 15px;
+        }
+
+        &__list-item,
+        &__list-link {
+            font-size: 17px;
+            margin-bottom: 10px;
         }
 
         &__social {
+            max-width: 85px;
+
             &--facebook,
             &--linkedin {
-                margin-right: 10px;
+                margin-right: 12px;
+            }
+
+            &--facebook-img,
+            &--linkedin-img,
+            &--twitter-img {
+                width: 20px;
             }
         }
 
