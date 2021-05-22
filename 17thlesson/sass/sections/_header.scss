@@ -408,16 +408,13 @@
         z-index: 1;
 
         &__title {
-            font-size: 32px;
-            // font-size: clamp(32px, 50%, 51px);
+            font-size: clamp(32px, 10vw, 64px);
             margin-bottom: 28px;
         }
 
         &__text {
-            font-size: 16px;
-            // font-size: clamp(16px, 50%, 24px);
-            max-width: 320px;
-            // max-width: clamp(320px, 50%, 340px);
+            font-size: clamp(16px, 3vw, 22px);
+            max-width: clamp(320px, 80vw, 340px);
             margin-bottom: 53px;
         }
     }
@@ -451,12 +448,14 @@
         z-index: 1;
 
         &__title {
-            font-size: 64px;
+            font-size: clamp(64px, 10vw, 72px);
         }
 
         &__text {
             font-size: 22px;
             max-width: 413px;
+            font-size: clamp(22px, 4vw, 24px);
+            max-width: clamp(340px, 80vw, 490px);
         }
     }
 }
