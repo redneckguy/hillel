@@ -78,15 +78,15 @@ table {
   border: 1px solid #333333;
 }
 
-.footer__card-social--facebook:hover {
+.footer-card__social--facebook:hover {
   filter: invert(44%) sepia(13%) saturate(2199%) hue-rotate(182deg) brightness(86%) contrast(97%);
 }
 
-.footer__card-social--linkedin:hover {
+.footer-card__social--linkedin:hover {
   filter: invert(26%) sepia(80%) saturate(1436%) hue-rotate(175deg) brightness(103%) contrast(104%);
 }
 
-.footer__card-social--twitter:hover {
+.footer-card__social--twitter:hover {
   filter: invert(61%) sepia(69%) saturate(4249%) hue-rotate(179deg) brightness(99%) contrast(98%);
 }
 
@@ -142,7 +142,7 @@ a {
   color: #fff;
 }
 
-.feature-card__title, .tech-card__title, .footer__card-title {
+.feature-card__title, .tech-card__title, .footer-card__title {
   font-size: 18px;
   line-height: 1.23;
   color: #101010;
@@ -167,7 +167,7 @@ a {
   text-align: center;
 }
 
-.footer__card-contact, .footer .copyright {
+.footer-card__contact, .copyright {
   font-size: 12px;
   line-height: 1.17;
   color: #101010;
@@ -199,7 +199,7 @@ a {
   background-color: #f1f1f1;
 }
 
-.management .container, .features-cards, .technology-cards, .tech-card__icon, .contact .container, .footer__wrap, .footer__card-social {
+.management .container, .features-cards, .technology-cards, .tech-card__icon, .contact .container, .footer .top-part, .footer-card__social {
   display: flex;
   flex-wrap: wrap;
 }
@@ -1335,16 +1335,16 @@ a {
   background-color: #fafafa;
 }
 
-.footer .footer-container {
+.footer .container {
   padding-top: 85px;
   padding-bottom: 85px;
 }
 
-.footer__wrap {
+.footer .top-part {
   margin-bottom: 106px;
 }
 
-.footer__card-wrap {
+.footer-card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -1352,59 +1352,59 @@ a {
   width: 100%;
 }
 
-.footer__card-wrap:not(:last-child) {
+.footer-card:not(:last-child) {
   margin-right: 30px;
 }
 
-.footer__card-wrap:first-child {
+.footer-card:first-child {
   margin-left: 1px;
 }
 
-.footer__card-wrap:nth-child(3) {
+.footer-card:nth-child(3) {
   margin-right: 34px;
 }
 
-.footer__card-wrap:last-child {
+.footer-card:last-child {
   max-width: 220px;
 }
 
-.footer__card-wrap .footer__card-contact:last-of-type {
+.footer-card__contact:last-of-type {
   margin-bottom: 19px;
 }
 
-.footer__card-title {
+.footer-card__title {
   text-align: left;
   margin-bottom: 34px;
 }
 
-.footer__card-title--3rd {
+.footer-card__title--3rd {
   margin-left: 0.5px;
 }
 
-.footer__card-title--services {
+.footer-card__title--services {
   margin-bottom: 28px;
 }
 
-.footer__card-text {
+.footer-card__text {
   font-size: 12px;
   line-height: 1.5;
   color: #101010;
 }
 
-.footer__card-social {
+.footer-card__social {
   justify-content: space-between;
   max-width: 66px;
 }
 
-.footer__card-contact {
+.footer-card__contact {
   margin-bottom: 11px;
 }
 
-.footer__card-contact:hover, .footer__card-contact:focus {
+.footer-card__contact:hover, .footer-card__contact:focus {
   text-decoration: underline;
 }
 
-.footer__card-list-item {
+.footer-card__list-item {
   font-size: 12px;
   line-height: 1.59;
   color: #000;
@@ -1414,29 +1414,29 @@ a {
   text-transform: capitalize;
 }
 
-.footer__card-list-link {
+.footer-card__list-link {
   color: inherit;
   text-transform: capitalize;
 }
 
-.footer__card-list-link:hover, .footer__card-list-link:focus {
+.footer-card__list-link:hover, .footer-card__list-link:focus {
   text-decoration: underline;
 }
 
-.footer .copyright {
+.copyright {
   margin-left: -4px;
 }
 
-.footer .copyright-link {
+.copyright__link {
   color: inherit;
   text-transform: capitalize;
 }
 
-.footer .copyright-link:hover, .footer .copyright-link:focus {
+.copyright__link:hover, .copyright__link:focus {
   text-decoration: underline;
 }
 
-.footer .visa-mastercard-img {
+.visa-mastercard-img {
   width: 216px;
   margin-left: 6px;
   margin-top: -1px;

@@ -1,45 +1,45 @@
 .footer {
     background-color: $middle-white;
 
-    .footer-container {
+    .container {
         padding-top: 85px;
         padding-bottom: 85px;
     }
 
-    &__wrap {
+    .top-part {
         @extend %flexRowWrap;
         margin-bottom: 106px;
     }
+}
 
-    &__card-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        max-width: 254px;
-        width: 100%;
+.footer-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 254px;
+    width: 100%;
 
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-
-        &:first-child {
-            margin-left: 1px;
-        }
-
-        &:nth-child(3) {
-            margin-right: 34px;
-        }
-
-        &:last-child {
-            max-width: 220px;
-        }
-
-        .footer__card-contact:last-of-type {
-            margin-bottom: 19px;
-        }
+    &:not(:last-child) {
+        margin-right: 30px;
     }
 
-    &__card-title {
+    &:first-child {
+        margin-left: 1px;
+    }
+
+    &:nth-child(3) {
+        margin-right: 34px;
+    }
+
+    &:last-child {
+        max-width: 220px;
+    }
+
+    &__contact:last-of-type {
+        margin-bottom: 19px;
+    }
+
+    &__title {
         @extend %cardtitle;
         text-align: left;
         margin-bottom: 34px;
@@ -53,13 +53,13 @@
         }
     }
 
-    &__card-text {
+    &__text {
         font-size: 12px;
         line-height: 1.5;
         color: $middle-black;
     }
 
-    &__card-social {
+    &__social {
         @extend %flexRowWrap;
         justify-content: space-between;
         max-width: 66px;
@@ -77,7 +77,7 @@
         }
     }
 
-    &__card-contact {
+    &__contact {
         @extend %footerFont;
         margin-bottom: 11px;
 
@@ -87,7 +87,7 @@
         }
     }
 
-    &__card-list-item {
+    &__list-item {
         font-size: 12px;
         line-height: 1.59;
         color: $black;
@@ -97,7 +97,7 @@
         text-transform: capitalize;
     }
 
-    &__card-list-link {
+    &__list-link {
         color: inherit;
         text-transform: capitalize;
 
@@ -106,13 +106,13 @@
             text-decoration: underline;
         }
     }
+}
 
-    .copyright {
-        @extend %footerFont;
-        margin-left: -4px;
-    }
+.copyright {
+    @extend %footerFont;
+    margin-left: -4px;
 
-    .copyright-link {
+    &__link {
         color: inherit;
         text-transform: capitalize;
 
@@ -121,10 +121,10 @@
             text-decoration: underline;
         }
     }
+}
 
-    .visa-mastercard-img {
-        width: 216px;
-        margin-left: 6px;
-        margin-top: -1px;
-    }
+.visa-mastercard-img {
+    width: 216px;
+    margin-left: 6px;
+    margin-top: -1px;
 }
