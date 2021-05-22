@@ -1171,10 +1171,35 @@ a {
   padding-bottom: 123px;
 }
 
+@media screen and (max-width: 1013px) {
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .contact .container {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  .contact .container {
+    justify-content: center;
+  }
+}
+
 .contact__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 1013px) {
+  .contact__form {
+    align-items: center;
+  }
 }
 
 .contact-desc {
@@ -1183,13 +1208,39 @@ a {
   margin-right: 125px;
 }
 
+@media screen and (max-width: 1130px) {
+  .contact-desc {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-desc {
+    margin-right: 0;
+  }
+}
+
 .contact-desc__title {
   margin-bottom: 53px;
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 1013px) {
+  .contact-desc__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
 .contact-desc__text {
   text-align: justify;
+}
+
+@media screen and (max-width: 1013px) {
+  .contact-desc__text {
+    margin-bottom: 30px;
+  }
 }
 
 .form {
@@ -1200,12 +1251,25 @@ a {
   color: rgba(25, 57, 103, 0.5);
   font-family: "Lato";
   font-weight: normal;
+  width: 540px;
+}
+
+@media screen and (max-width: 576px) {
+  .form {
+    width: 100%;
+  }
 }
 
 .form__inputs {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
+}
+
+@media screen and (max-width: 576px) {
+  .form__inputs {
+    flex-wrap: wrap;
+  }
 }
 
 .form__input, .form__input--tel, .form__select {
@@ -1218,6 +1282,13 @@ a {
 
 .form__input:first-child {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .form__input:first-child {
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
 }
 
 .form__input--tel {
