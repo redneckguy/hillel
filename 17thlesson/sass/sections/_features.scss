@@ -5,6 +5,10 @@
         padding-top: 63px;
         padding-bottom: 124px;
 
+        @media screen and (max-width: 1129px) {
+            padding-bottom: 60px;
+        }
+
         @media screen and (max-width: 365px) {
             padding-top: 49px;
             padding-bottom: 30px;

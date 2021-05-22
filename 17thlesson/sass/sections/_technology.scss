@@ -2,32 +2,44 @@
     padding-top: 63px;
     padding-bottom: 104px;
 
+    @media screen and (max-width: 1040px) {
+        padding-bottom: 75px;
+    }
+
     &__title {
         @extend %fonttitle;
         text-align: center;
         margin-bottom: 64px;
         text-transform: capitalize;
-    }
 
-    &__cards-wrap {
-        @extend %flexRowWrap;
-        justify-content: space-between;
-        counter-reset: card-counter;
-    }
-
-    &__card-wrapper {
-        @extend %flexWrapColCntr;
-        align-content: center;
-        max-width: 255px;
-        width: 100%;
-
-        &:hover .technology__card-figcap::before,
-        &:focus .technology__card-figcap::before {
-            z-index: 1;
+        @media screen and (max-width: 1040px) {
+            margin-bottom: 30px;
         }
     }
+}
 
-    &__card-figcap {
+.technology-cards {
+    @extend %flexRowWrap;
+    justify-content: space-between;
+    counter-reset: card-counter;
+
+    @media screen and (max-width: 1040px) {
+        justify-content: space-evenly;
+    }
+}
+
+.tech-card {
+    @extend %flexWrapColCntr;
+    align-content: center;
+    max-width: 255px;
+    width: 100%;
+
+    &:hover .technology__card-figcap::before,
+    &:focus .technology__card-figcap::before {
+        z-index: 1;
+    }
+
+    &__figcap {
         counter-increment: card-counter;
         position: relative;
 
@@ -37,16 +49,14 @@
         }
     }
 
-    &__card-icon-wrap {
+    &__icon {
         @extend %flexRowWrap;
         justify-content: center;
         width: 80px;
         height: 80px;
         margin-right: 1px;
         padding-top: 59px;
-    }
 
-    &__card-icon {
         &--secure,
         &--csv {
             padding-bottom: 2px;
@@ -58,7 +68,7 @@
         }
     }
 
-    &__card-title {
+    &__title {
         &--pdf {
             margin-right: 1px;
         }
@@ -73,7 +83,7 @@
         }
     }
 
-    &__card-text {
+    &__text {
         text-align: center;
         font-size: 12px;
         line-height: 1.17;
