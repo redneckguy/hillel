@@ -2,88 +2,95 @@
     padding-top: 117px;
     padding-bottom: 123px;
 
-    .contact-wrap {
+    .container {
         @extend %flexRowWrap;
-    }
-
-    &__text-wrap {
-        max-width: 434px;
-        margin-left: 11px;
-        margin-right: 125px;
-    }
-
-    &__text-title {
-        @extend %fonttitle;
-        margin-bottom: 53px;
-        text-transform: capitalize;
-    }
-
-    &__text-desc {
-        @extend %fontsubttl;
-        text-align: justify;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
-        font-size: 16px;
-        line-height: 1.19;
-        color: rgba($light-blue, 0.5);
-        font-family: "Lato";
-        font-weight: normal;
-        max-width: 540px;
-        width: 100%;
+        align-items: flex-start;
+    }
+}
+
+.contact-desc {
+    max-width: 434px;
+    margin-left: 11px;
+    margin-right: 125px;
+
+    &__title {
+        @extend %fonttitle;
+        margin-bottom: 53px;
+        text-transform: capitalize;
     }
 
-    &__form-input-wrap {
-        @extend %flexRowWrap;
+    &__text {
+        @extend %fontsubttl;
+        text-align: justify;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 1.19;
+    color: rgba($light-blue, 0.5);
+    font-family: "Lato";
+    font-weight: normal;
+    // width: 540px;
+
+    &__inputs {
+        display: flex;
         justify-content: space-between;
         margin-bottom: 24px;
     }
 
-    &__form-select {
+    &__input,
+    &__input--tel,
+    &__select {
+        padding: 20px 0 19px 30px;
         @extend %formBorder;
         @extend %fontinherit;
     }
 
-    &__form-input {
-        padding: 20px 30px 19px 30px;
-        width: 193px;
-        @extend %formBorder;
-        @extend %fontinherit;
+    &__input {
+        width: 100%;
+
+        &:first-child {
+            margin-right: 30px;
+        }
 
         &--tel {
-            padding: 20px 315px 19px 30px;
             margin-bottom: 24px;
-            width: 193px;
-            @extend %formBorder;
+        }
+
+        &::placeholder,
+        &--tel::placeholder {
             @extend %fontinherit;
         }
     }
 
-    &__form-input::placeholder,
-    &__form-input--tel::placeholder {
-        @extend %fontinherit;
+    &__select-wrap {
+        position: relative;
     }
 
-    &__form-select {
-        max-width: 540px;
-        padding: 20px 390px 19px 30px;
+    &__select {
+        width: 100%;
         margin-bottom: 27px;
         appearance: none;
         cursor: pointer;
     }
 
-    &__form-select-arrow {
+    &__select-arrow {
         width: 14px;
         height: 14px;
-        position: relative;
-        top: -64px;
-        right: -500px;
-        margin-bottom: -14px;
+        position: absolute;
+        top: 26.5%;
+        right: 4.8%;
     }
 
-    &__form-button {
+    &__button {
         @extend %font14;
         text-transform: uppercase;
         font-family: "Lato";
