@@ -1,32 +1,70 @@
-.management-soft {
+.management {
     line-height: 0;
     font-size: 0;
     padding-top: 94px;
     padding-bottom: 95px;
 
-    &__container {
-        @extend %flexRowWrap;
-        justify-content: flex-start;
+    @media screen and (max-width: 944px) {
+        padding-top: 25px;
+        padding-bottom: 70px;
     }
 
-    &__descr-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        max-width: 445px;
-        padding-top: 46px;
-        margin-right: 125px;
+    .container {
+        @extend %flexRowWrap;
+        justify-content: flex-start;
+
+        @media screen and (max-width: 1035px) {
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 992px) {
+            justify-content: space-around;
+        }
+    }
+}
+
+.software-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 445px;
+    padding-top: 46px;
+    margin-right: 125px;
+
+    @media screen and (max-width: 1035px) {
+        margin-right: 35px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+        align-items: center;
+        margin-right: 0;
     }
 
     &__title {
         @extend %fonttitle;
         margin-bottom: 45px;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: clamp(28px, 7vw, 36px);
+        }
     }
 
     &__text {
         @extend %fontsubttl;
         text-align: justify;
         margin-bottom: 19px;
+
+        @media screen and (max-width: 576px) {
+            font-size: clamp(12px, 3vw, 14px);
+        }
     }
 
     &__link {
@@ -35,23 +73,27 @@
         color: $red;
         text-transform: capitalize;
 
+        @media screen and (max-width: 768px) {
+            
+        }
+
         &:focus,
         &:hover {
             color: $light-red;
             text-decoration: underline;
         }
     }
+}
 
-    &__image-button,
-    &__image-button::before {
+.video {
+    position: relative;
+
+    &__button,
+    &__button::before {
         transition: all 0.2s ease;
     }
 
-    &__image-wrap {
-        position: relative;
-    }
-
-    &__image-button {
+    &__button {
         width: 66px;
         height: 66px;
         background-color: $red;
@@ -62,6 +104,10 @@
         z-index: 1;
         top: 50%;
         transform: translate(-50%, -50%);
+
+        @media screen and (max-width: 944px) {
+            left: 50%;
+        }
 
         &:hover,
         &:focus {
@@ -85,26 +131,16 @@
             left: 50%;
             top: 50%;
             transform: translate(-38%, -50%);
-            // position: relative;
-            // top: 2px;
-            // left: 1.45px;
         }
     }
 
-    &__image-img {
+    &__image {
         width: auto;
         border-radius: 15px;
         position: relative;
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
     }
 }
-
-//  ? img as background 
-// &__image-img__bg {
-//     background-image: url(../images/managment-soft.jpg);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     width: 445px;
-//     height: 311px;
-//     background-color: $middle-grey;
-//     border-radius: 15px; 
