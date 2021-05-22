@@ -1,9 +1,14 @@
 .features {
     background-color: $middle-white;
 
-    &__container {
+    .container {
         padding-top: 63px;
         padding-bottom: 124px;
+
+        @media screen and (max-width: 365px) {
+            padding-top: 49px;
+            padding-bottom: 30px;
+        }
     }
     
     &__title {
@@ -11,85 +16,96 @@
         text-align: center;
         margin-bottom: 75px;
         text-transform: capitalize;
+
+        @media screen and (max-width: 365px) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.features-cards {
+    @extend %flexRowWrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1190px) {
+        justify-content: space-evenly;
+        margin: 0 -15px;
+    }
+}
+
+.feature-card {
+    @extend %flexWrapColCntr;
+    max-width: 350px;
+
+    @media screen and (max-width: 1190px) {
+        margin: 0 15px;
     }
 
-    &__cards-wrap {
-        @extend %flexRowWrap;
-        justify-content: space-between;
+    @media screen and (max-width: 1129px) {
+        margin-bottom: 30px;
     }
 
-    &__card {
-        @extend %flexWrapColCntr;
-        max-width: 350px;
+    &__background {
+        width: 350px;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+        background-color: $middle-grey;
 
-        &-background {
-            width: 350px;
-            height: 250px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 8px;
-            background-color: $middle-grey;
-        }
-
-        .background1 {
-            background-image: url(../images/moneyInHands.jpg);
-        }
-        
-        .background2 {
-            background-image: url(../images/girlWithWatch.jpg);
-        }
-        
-        .background3 {
-            background-image: url(../images/passage.jpg);
-        }
-
-        &-wraper {
-            @extend %flexWrapColCntr;
-            align-content: center;
-            max-width: 293px;
+        @media screen and (max-width: 365px) {
             width: 100%;
-            background: $white;
-            box-shadow: 0px 5px 30px rgba($black, 0.1);
-            border-radius: 8px;
-            padding-top: 33px;
-            padding-bottom: 24px;
-            margin-top: -93px;
-            // position: relative;
-            // bottom: 93px;
         }
+    }
 
-        &-title,
-        &-text {
-            max-width: 229px;
+    &__wraper {
+        @extend %flexWrapColCntr;
+        align-content: center;
+        max-width: 293px;
+        width: 100%;
+        background: $white;
+        box-shadow: 0px 5px 30px rgba($black, 0.1);
+        border-radius: 8px;
+        padding-top: 33px;
+        padding-bottom: 24px;
+        margin-top: -93px;
+
+        @media screen and (max-width: 365px) {
+            width: 100%;
         }
+    }
 
-        &-title {
-            @extend %cardtitle;
-            margin-bottom: 17px;
-        }
+    &__title,
+    &__text {
+        max-width: 229px;
+    }
 
-        &-text,
-        &-link {
-            @extend %font1215;
-        }
+    &__title {
+        @extend %cardtitle;
+        margin-bottom: 17px;
+    }
 
-        &-text {
-            color: $middle-black;
-            margin-bottom: 26px;
-        }
+    &__text,
+    &__link {
+        @extend %font1215;
+    }
 
-        &-link {
-            font-weight: bold;
-            color: $red;
-            transition: all 0.2s ease;
-            text-transform: capitalize;
+    &__text {
+        color: $middle-black;
+        margin-bottom: 26px;
+    }
 
-            &:hover,
-            :focus {
-                color: $light-red;
-                text-decoration: underline;
-            }
+    &__link {
+        font-weight: bold;
+        color: $red;
+        transition: all 0.2s ease;
+        text-transform: capitalize;
+
+        &:hover,
+        :focus {
+            color: $light-red;
+            text-decoration: underline;
         }
     }
 }
