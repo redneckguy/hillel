@@ -1215,17 +1215,13 @@ a {
   transition-property: width;
 }
 
-.reviews .slider__btn:first-child {
+.reviews .slider__btn:active, .reviews .slider__btn:visited {
   width: 40px;
   opacity: 1;
 }
 
 .reviews .slider__btn:hover, .reviews .slider__btn:focus {
   opacity: 1;
-}
-
-.reviews .slider__btn:active {
-  width: 40px;
 }
 
 .reviews .review {
@@ -1237,7 +1233,7 @@ a {
   color: #050c26;
 }
 
-.reviews .review:hover .review__person-picture {
+.reviews .review:hover .review__person-img-wrap::before {
   box-shadow: inset 0px 0px 0px 1px #3988ff;
 }
 
@@ -1275,23 +1271,25 @@ a {
   justify-content: start;
 }
 
-.reviews .review__person-picture {
-  margin-right: 30px;
+.reviews .review__person-img-wrap {
+  position: relative;
+}
+
+.reviews .review__person-img-wrap::before {
+  content: "";
+  position: absolute;
   width: 90px;
   height: 90px;
   box-shadow: inset 0px 0px 0px 1px #050c26;
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
+  z-index: 1;
 }
 
-.reviews .review__person-picture.picture1 {
-  background-image: url(../images/reviewsCorey.png);
-}
-
-.reviews .review__person-picture.picture2 {
-  background-image: url(../images/reviewsJacob.png);
+.reviews .review__person-picture {
+  margin-right: 30px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
 
 .reviews .review__person-name, .reviews .review__person-position {
