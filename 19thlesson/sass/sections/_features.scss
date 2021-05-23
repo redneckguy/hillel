@@ -1,0 +1,92 @@
+.features {
+    padding-bottom: 141px;
+
+    &__title {
+        @extend %sectionTitle;
+    }
+
+    &__desk {
+        @include sectionDesk(874px);
+        margin-bottom: 74px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 263px;
+    border: 1px solid $features-card-border;
+    border-radius: 10px;
+    padding-top: 207px;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 5px 25px $features-card-shadow;
+    }
+
+    &__circle,
+    &__img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    &__circle {
+        top: 24.5%;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+
+        &--quality {
+            background-color: $features-quality;
+        }
+
+        &--friendly {
+            background-color: $features-friendly;
+        }
+
+        &--notif {
+            background-color: $features-notif;
+        }
+
+        &--support {
+            background-color: $features-support;
+        }
+    }
+
+    &__img {
+        top: 50%;
+        left: 50%;
+    }
+
+    &__title {
+        @extend %subTitle;
+        text-align: center;
+        margin-bottom: 16px;
+        text-transform: none;
+    }
+
+    &__desc {
+        @extend %cardDesc;
+        margin-bottom: 24px;
+    }
+
+    &__btn {
+        @include blueButton($white, $white, $white);
+        font-family: Poppins;
+        margin-bottom: 26px;
+    }
+
+    &__btn {
+        padding: 10px 20px;
+    }
+}

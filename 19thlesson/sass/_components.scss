@@ -1,0 +1,78 @@
+// * Header bottom part wave SVG
+
+%wave {
+    .wave-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        background-color: $light-pink;
+    }
+
+    .wave-bottom svg {
+        position: relative;
+        display: block;
+        width: calc(162% + 1.3px);
+        height: 77px;
+    }
+
+    .wave-bottom .shape-fill {
+        fill: $white;
+    }
+}
+
+// * bold blue text on hovered links
+
+%linksHover {
+    &:hover,
+    &:focus {
+        color: $light-blue;
+        text-shadow: 0 0 0.5px $light-blue, 0 0 0.5px $light-blue;
+    }
+}
+
+// * SECTION title
+
+%sectionTitle {
+    color: $primary-black;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+// * Title in CARDS
+
+%subTitle {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.49;
+    color: $primary-black;
+    text-transform: capitalize;
+}
+
+// * text description in CARDS
+
+%cardDesc {
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+}
+
+// * Title for FOOTER navigation and contact us
+%whiteSubtitle {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+    color: $white;
+    text-transform: capitalize;
+    margin-bottom: 26px;
+}

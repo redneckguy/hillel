@@ -1,0 +1,200 @@
+.reviews {
+    .container {
+        padding-bottom: 140px;
+    }
+
+    &__title {
+        @extend %sectionTitle;
+    }
+
+    &__desc {
+        @include sectionDesk(715px);
+    }
+
+    &__bg {
+        max-width: 1140px;
+        padding: 45px 68px;
+        border: 1px solid $reviews-border-color;
+        border-radius: 10px;
+        background-image: url(../images/reviewsWaves.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+    }
+
+    .slider {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__buttons {
+            margin: 0 auto;
+            max-width: 110px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        // &__input {
+        //     display: none;
+        // }
+
+        // &__label {
+        //     position: relative;
+
+        //     &--left {
+        //         top: 0;
+        //         left: 0;
+        //     }
+
+        //     &--middle {
+        //         top: 0;
+        //         left: 0;
+        //     }
+
+        //     &--right {
+        //         top: 0;
+        //         left: 0;
+        //     }
+        // }
+
+        // &__span {
+        //     position: absolute;
+        //     background: $light-blue;
+        //     opacity: 0.1;
+        //     border-radius: 20px;
+        //     border: none;
+        //     width: 20px;
+        //     height: 11px;
+        //     cursor: pointer;
+        //     transition: .2s ease;
+        //     transition-property: width;
+
+        //     &:hover,
+        //     &:focus {
+        //         opacity: 1;
+        //     }
+
+        //     &:active {
+        //         width: 40px;
+        //     }
+        // }
+
+        // &__input:checked ~ span {
+        //     width: 40px;
+        //     opacity: 1;
+        // }
+
+        &__btn {
+            background: $light-blue;
+            opacity: 0.1;
+            border-radius: 20px;
+            border: none;
+            width: 20px;
+            height: 11px;
+            cursor: pointer;
+            transition: 0.2s ease;
+            transition-property: width;
+
+            &:first-child {
+                width: 40px;
+                opacity: 1;
+            }
+
+            &:hover,
+            &:focus {
+                opacity: 1;
+            }
+
+            &:active {
+                width: 40px;
+            }
+        }
+    }
+
+    .review {
+        margin-bottom: 50px;
+        cursor: pointer;
+
+        &:hover {
+            .review__desc {
+                color: $primary-black;
+            }
+
+            .review__person-picture {
+                box-shadow: inset 0px 0px 0px 1px $light-blue;
+            }
+        }
+
+        &__desc {
+            max-width: 371px;
+            font-family: Poppins;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.62;
+            position: relative;
+            margin-top: 14px;
+            margin-left: 46.33px;
+            margin-bottom: 30px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -14px;
+                left: -46px;
+                opacity: 0.1;
+                width: 41.33px;
+                height: 34.52px;
+                background-image: url(../images/reviewsQuote.svg),
+                    url(../images/reviewsQuote.svg);
+                background-repeat: no-repeat;
+                background-position: 0 0, 21px 0;
+                background-size: auto;
+            }
+        }
+
+        &__person {
+            display: flex;
+            align-items: center;
+            max-width: 263px;
+            justify-content: start;
+        }
+
+        &__person-picture {
+            margin-right: 30px;
+            width: 90px;
+            height: 90px;
+            box-shadow: inset 0px 0px 0px 1px $primary-black;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+        }
+
+        &__person-picture.picture1 {
+            background-image: url(../images/reviewsCorey.png);
+        }
+
+        &__person-picture.picture2 {
+            background-image: url(../images/reviewsJacob.png);
+        }
+
+        &__person-name,
+        &__person-position {
+            text-transform: capitalize;
+        }
+
+        &__person-name {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.6;
+            color: $primary-black;
+            margin-bottom: 6px;
+        }
+
+        &__person-position {
+            font-size: 16px;
+            line-height: 1.63;
+        }
+    }
+}

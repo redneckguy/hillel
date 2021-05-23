@@ -1,0 +1,118 @@
+.creativity {
+    padding-top: 96.41px;
+    padding-bottom: 189px;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    &__title {
+        @extend %sectionTitle;
+        font-weight: 600;
+        line-height: 1.31;
+    }
+
+    &__desc {
+        @include sectionDesk(806px);
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__content-img {
+        border-radius: 10px;
+        margin-right: 97px;
+    }
+}
+
+.progressbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 488px;
+    width: 100%;
+
+    &__row-title {
+        @extend %subTitle;
+        margin-bottom: 20px;
+    }
+
+    &__row-container,
+    &__row-filler {
+        height: 15px;
+        border-radius: 15px;
+    }
+
+    &__row-container {
+        &--red {
+            background-color: rgba($progress-bar-web, 0.1);
+
+            .progressbar__row-filler {
+                background-color: $progress-bar-web;
+                width: 80%;
+            }
+
+            .progressbar__row-number {
+                color: $progress-bar-web;
+            }
+        }
+
+        &--orange {
+            background-color: rgba($progress-bar-uiux, 0.1);
+
+            .progressbar__row-filler {
+                background-color: $progress-bar-uiux;
+                width: 90%;
+            }
+
+            .progressbar__row-number {
+                color: $progress-bar-uiux;
+            }
+        }
+
+        &--green {
+            background-color: rgba($progress-bar-graphic, 0.1);
+
+            .progressbar__row-filler {
+                background-color: $progress-bar-graphic;
+                width: 75%;
+            }
+
+            .progressbar__row-number {
+                color: $progress-bar-graphic;
+            }
+        }
+
+        &--blue {
+            background-color: rgba($progress-bar-photo, 0.1);
+
+            .progressbar__row-filler {
+                background-color: $progress-bar-photo;
+                width: 80%;
+            }
+
+            .progressbar__row-number {
+                color: $progress-bar-photo;
+            }
+        }
+    }
+
+    &__row-filler {
+        position: relative;
+    }
+
+    &__row-number {
+        position: absolute;
+        bottom: 180%;
+        right: -4%;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.49;
+    }
+}

@@ -1,0 +1,150 @@
+.services {
+    position: relative;
+
+    .container {
+        padding-bottom: 80px;
+    }
+
+    .dots {
+        position: absolute;
+        width: 500px;
+        height: 250px;
+        background-image: url(../images/servicesDots.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        top: -0.14%;
+        right: -19%;
+    }
+
+    &__title {
+        @extend %sectionTitle;
+        max-width: 492px;
+        text-align: left;
+    }
+
+    &__desc {
+        @include sectionDesk(604px);
+        margin-left: 0;
+        text-align: left;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.srvscard {
+    display: flex;
+    position: relative;
+    max-width: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    &__img {
+        filter: blur(4px);
+        position: absolute;
+        border-radius: 10px;
+        transition: filter 0.1s ease;
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: $service-card-bg;
+        transition: background-color 0.1s ease;
+    }
+
+    &:hover,
+    &:focus {
+        &::before {
+            background-color: transparent;
+        }
+
+        .srvscard__img {
+            filter: none;
+        }
+
+        .inner-card {
+            background: linear-gradient(
+                180deg,
+                $inner-card-start 0%,
+                $inner-card-end 100%
+            );
+            color: $white;
+
+            .inner-card__title {
+                color: $white;
+            }
+        }
+    }
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    background: $inner-card-wrapper-bg;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    padding-top: 63px;
+    padding-bottom: 61px;
+    margin: 40px;
+
+    &__title {
+        @extend %subTitle;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    &__desc {
+        @extend %cardDesc;
+        margin-bottom: 39px;
+    }
+
+    &__circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $white;
+        display: flex;
+        transition: 0.2s ease;
+        transition-property: transform;
+
+        &:hover,
+        &:focus {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: -1px 6px 16px -10px $service-card-btn-shadow;
+
+            .inner-card__arrow {
+                filter: $fill-light-blue;
+                transform: translateY(3.5px);
+            }
+        }
+
+        &:active {
+            transform: translateY(-1px) scale(1.01);
+            box-shadow: -1px 6px 12px -10px $service-card-btn-shadow;
+
+            .inner-card__arrow {
+                filter: $fill-light-blue;
+                transform: translateY(2px);
+            }
+        }
+    }
+
+    &__arrow {
+        margin: auto;
+        transition: 0.2s ease;
+        transition-property: transform;
+    }
+}
