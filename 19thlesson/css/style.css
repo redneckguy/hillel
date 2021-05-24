@@ -1660,9 +1660,28 @@ a {
   margin-bottom: 54px;
 }
 
+@media screen and (max-width: 1111px) {
+  .footer__top-part {
+    justify-content: space-evenly;
+  }
+}
+
 .footer .innovated {
   max-width: 318px;
   margin-right: 71px;
+}
+
+@media screen and (max-width: 1111px) {
+  .footer .innovated {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .footer .innovated {
+    margin-bottom: 25px;
+  }
 }
 
 .footer .innovated__logo {
@@ -1704,10 +1723,30 @@ a {
   width: 100%;
 }
 
+@media screen and (max-width: 1111px) {
+  .footer .verticalnav {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .footer .verticalnav {
+    margin-bottom: 25px;
+  }
+}
+
 .footer .verticalnav.support {
   margin-right: 64px;
   max-width: 127px;
   width: 100%;
+}
+
+@media screen and (max-width: 1111px) {
+  .footer .verticalnav.support {
+    width: 100%;
+    margin-right: 10px;
+  }
 }
 
 .footer .verticalnav.support .verticalnav__nav-item:not(:last-child) {
@@ -1741,6 +1780,12 @@ a {
 .footer .contact-us {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 924px) {
+  .footer .contact-us {
+    margin-bottom: 25px;
+  }
 }
 
 .footer .contact-us .email {
