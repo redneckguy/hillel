@@ -177,6 +177,9 @@
     }
 
     &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -250,10 +253,7 @@
     .navigation {
         display: flex;
         flex-direction: column;
-        position: relative;
-        top: 47%;
-        left: 52%;
-        transform: translate(-50%, -50%);
+        margin-bottom: 25px;
 
         &__item {
             font-size: 35px;
@@ -277,12 +277,16 @@
     .language-and-login {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: center;
-        position: relative;
-        top: 31%;
-        left: 65%;
-        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: 881px) {
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            justify-content: space-around;
+        }
     }
 
     .lang-selector {
