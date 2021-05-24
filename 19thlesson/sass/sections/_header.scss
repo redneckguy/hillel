@@ -11,6 +11,10 @@
     padding-top: 40px;
     padding-bottom: 230px;
 
+    @media screen and (max-width: 1600px) {
+        max-width: 100vw;
+    }
+
     // * HEADER BAR
 
     &__bar {
@@ -32,8 +36,7 @@
     position: absolute;
     width: 930px;
     height: 840px;
-    bottom: -17.2%;
-    right: -17.21%;
+
     background-image: url(../images/headerGraph.svg),
     url(../images/headerGraph2pink.svg), url(../images/headerGuy.png),
     url(../images/headerGreenExclipse.svg),
@@ -41,6 +44,42 @@
     background-repeat: no-repeat;
     background-position: 283px 270px, 640px 270px, 0 116px, 251px 258px,
         181px 384px;
+
+    &__in-header {
+        @media screen and (min-width: 1601px) {
+            display: none;
+        }
+    
+        @media screen and (max-width: 1600px) {
+            top: 0%;
+            right: 0.6%;
+            margin-right: 10px;
+        }
+    
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__in-container {
+        @media screen and (min-width: 1601px) {
+            bottom: -17.2%;
+            right: -17.21%;
+        }
+    
+        @media screen and (max-width: 1600px) {
+            display: none;
+        }
+    }
+}
+
+.laptop-guy-img {
+    display: none;
+
+    @media screen and (max-width: 992px) {
+        display: inline-block;
+        width: 100%;
+    }
 }
 
 // * LOGO

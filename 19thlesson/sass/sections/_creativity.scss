@@ -4,6 +4,12 @@
     max-width: 1600px;
     margin: 0 auto;
 
+    @media screen and (max-width: 1600px) {
+        max-width: 100vw;
+        padding: 0 10px;
+        padding-bottom: 189px;
+    }
+
     &__title {
         @extend %sectionTitle;
         font-weight: 600;
@@ -18,11 +24,32 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+
+        @media screen and (max-width: 1348px) {
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 1260px) {
+            justify-content: space-around;
+        }
     }
 
     &__content-img {
         border-radius: 10px;
         margin-right: 97px;
+        
+        @media screen and (max-width: 1600px) {
+            margin-left: 10px;
+        }
+
+        @media screen and (max-width: 1348px) {
+            margin-right: 10px;
+        }
+
+        @media screen and (max-width: 1260px) {
+            width: 100%;
+            margin-bottom: 35px;
+        }
     }
 }
 

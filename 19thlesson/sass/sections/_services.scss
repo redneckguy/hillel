@@ -14,7 +14,31 @@
         background-size: auto;
         top: -0.14%;
         right: -19%;
+
+        &__services {
+            @media screen and (min-width: 1601px) {
+                display: none;
+            }
+
+            @media screen and (max-width: 1600px) {
+                right: 0;
+                margin-right: 10px;
+            }
+
+            @media screen and (max-width: 572px) {
+                display: none;
+            }
+        }
+    
+        &__container {
+            @media screen and (max-width: 1600px) {
+                display: none;
+            }
+        }
     }
+
+
+   
 
     &__title {
         @extend %sectionTitle;
