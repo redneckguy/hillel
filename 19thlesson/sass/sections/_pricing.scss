@@ -1,6 +1,10 @@
 .pricing {
     .container {
         padding-bottom: 140px;
+
+        @media screen and (max-width: 576px) {
+            padding-bottom: 60px;
+        }
     }
 
     &__offers,
@@ -36,6 +40,11 @@
     padding: 9px;
     margin-bottom: 60px;
 
+    @media screen and (max-width: 376px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__button {
         color: $main-text;
         padding: 10px 0;
@@ -67,6 +76,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media screen and (max-width: 1130px) {
+        justify-content: space-evenly;
+    }
 }
 
 .pricecard {
@@ -78,6 +91,11 @@
     overflow: hidden;
     transition: 0.1s ease;
     transition-property: background-color;
+
+    @media screen and (max-width: 1130px) {
+        margin: 0 5px;
+        margin-bottom: 25px;
+    }
 
     &__top,
     &__top-title,

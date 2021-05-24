@@ -1141,6 +1141,12 @@ a {
   padding-bottom: 140px;
 }
 
+@media screen and (max-width: 576px) {
+  .pricing .container {
+    padding-bottom: 60px;
+  }
+}
+
 .pricing__offers, .pricing__plan {
   font-weight: 500;
   text-transform: uppercase;
@@ -1171,6 +1177,13 @@ a {
   border-radius: 5px;
   padding: 9px;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 376px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__button {
@@ -1205,6 +1218,12 @@ a {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1130px) {
+  .pricecards {
+    justify-content: space-evenly;
+  }
+}
+
 .pricecard {
   align-self: center;
   max-width: 360px;
@@ -1214,6 +1233,13 @@ a {
   overflow: hidden;
   transition: 0.1s ease;
   transition-property: background-color;
+}
+
+@media screen and (max-width: 1130px) {
+  .pricecard {
+    margin: 0 5px;
+    margin-bottom: 25px;
+  }
 }
 
 .pricecard__top, .pricecard__top-title, .pricecard__bottom, .pricecard__bottom-price, .pricecard__bottom-term, .pricecard__bottom-option, .pricecard__btn {
