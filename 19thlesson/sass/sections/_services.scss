@@ -3,6 +3,12 @@
 
     .container {
         padding-bottom: 80px;
+
+        @media screen and (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .dots {
@@ -37,19 +43,27 @@
         }
     }
 
-
-   
-
     &__title {
         @extend %sectionTitle;
         max-width: 492px;
         text-align: left;
+
+        @media screen and (max-width: 576px) {
+            font-size: clamp(36px, 10vw, 43px);
+            text-align: center;
+        }
     }
 
     &__desc {
         @include sectionDesk(604px);
         margin-left: 0;
         text-align: left;
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 45px;
+            font-size: clamp(14px, 3vw, 18px);
+            text-align: center;
+        }
     }
 }
 
@@ -57,6 +71,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media screen and (max-width: 1120px) {
+        justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: 576px) {
+        // margin: auto;
+    }
 }
 
 .srvscard {
@@ -66,6 +88,15 @@
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1120px) {
+        margin: 0 5px;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 320px) {
+        max-width: clamp(340px, 10vw, 360px);
+    }
 
     &__img {
         filter: blur(4px);
@@ -123,6 +154,10 @@
     padding-top: 63px;
     padding-bottom: 61px;
     margin: 40px;
+
+    @media screen and (max-width: 320px) {
+        max-width: clamp(245px, 10vw, 280px);
+    }
 
     &__title {
         @extend %subTitle;

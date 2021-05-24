@@ -929,6 +929,14 @@ a {
   padding-bottom: 80px;
 }
 
+@media screen and (max-width: 576px) {
+  .services .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .services .dots {
   position: absolute;
   width: 500px;
@@ -970,6 +978,13 @@ a {
   text-align: left;
 }
 
+@media screen and (max-width: 576px) {
+  .services__title {
+    font-size: clamp(36px, 10vw, 43px);
+    text-align: center;
+  }
+}
+
 .services__desc {
   max-width: 604px;
   text-align: center;
@@ -979,10 +994,24 @@ a {
   text-align: left;
 }
 
+@media screen and (max-width: 576px) {
+  .services__desc {
+    margin-bottom: 45px;
+    font-size: clamp(14px, 3vw, 18px);
+    text-align: center;
+  }
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1120px) {
+  .cards {
+    justify-content: space-evenly;
+  }
 }
 
 .srvscard {
@@ -992,6 +1021,19 @@ a {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1120px) {
+  .srvscard {
+    margin: 0 5px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .srvscard {
+    max-width: clamp(340px, 10vw, 360px);
+  }
 }
 
 .srvscard__img {
@@ -1042,6 +1084,12 @@ a {
   padding-top: 63px;
   padding-bottom: 61px;
   margin: 40px;
+}
+
+@media screen and (max-width: 320px) {
+  .inner-card {
+    max-width: clamp(245px, 10vw, 280px);
+  }
 }
 
 .inner-card__title {
@@ -1592,6 +1640,15 @@ a {
   opacity: 0.7;
   width: 316px;
   margin-left: 2px;
+}
+
+@media screen and (max-width: 576px) {
+  .footer .innovated__desc {
+    margin-bottom: 45px;
+    font-size: clamp(14px, 3vw, 18px);
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .footer .verticalnav {
