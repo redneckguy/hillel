@@ -1,14 +1,29 @@
 .reviews {
     .container {
         padding-bottom: 140px;
+
+        @media screen and (max-width: 576px) {
+            padding-bottom: 60px;
+        }
     }
 
     &__title {
         @extend %sectionTitle;
+
+        @media screen and (max-width: 576px) {
+            font-size: clamp(36px, 8vw, 43px);
+            margin: auto;
+            margin-bottom: 15px;
+        }
     }
 
     &__desc {
         @include sectionDesk(715px);
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 45px;
+            font-size: clamp(14px, 3vw, 18px);
+        }
     }
 
     &__bg {

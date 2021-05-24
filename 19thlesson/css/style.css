@@ -1487,11 +1487,32 @@ a {
   padding-bottom: 140px;
 }
 
+@media screen and (max-width: 576px) {
+  .reviews .container {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .reviews__title {
+    font-size: clamp(36px, 8vw, 43px);
+    margin: auto;
+    margin-bottom: 15px;
+  }
+}
+
 .reviews__desc {
   max-width: 715px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 70px;
+}
+
+@media screen and (max-width: 576px) {
+  .reviews__desc {
+    margin-bottom: 45px;
+    font-size: clamp(14px, 3vw, 18px);
+  }
 }
 
 .reviews__bg {
