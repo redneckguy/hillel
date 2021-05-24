@@ -603,6 +603,7 @@ a {
 
 @media screen and (max-width: 576px) {
   .creativity__desc {
+    margin-bottom: 45px;
     font-size: clamp(14px, 3vw, 18px);
   }
 }
@@ -746,6 +747,18 @@ a {
   padding-bottom: 141px;
 }
 
+@media screen and (max-width: 850px) {
+  .features {
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .features__title {
+    font-size: clamp(36px, 10vw, 43px);
+  }
+}
+
 .features__desk {
   max-width: 874px;
   text-align: center;
@@ -754,10 +767,23 @@ a {
   margin-bottom: 74px;
 }
 
+@media screen and (max-width: 576px) {
+  .features__desk {
+    margin-bottom: 45px;
+    font-size: clamp(14px, 3vw, 18px);
+  }
+}
+
 .features__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1111px) {
+  .features__cards {
+    justify-content: space-evenly;
+  }
 }
 
 .feature {
@@ -770,6 +796,18 @@ a {
   border-radius: 10px;
   padding-top: 207px;
   transition: transform 0.3s;
+}
+
+@media screen and (max-width: 1120px) {
+  .feature {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 1111px) {
+  .feature {
+    margin: 0 10px 15px;
+  }
 }
 
 .feature:hover {

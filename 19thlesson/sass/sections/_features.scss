@@ -1,19 +1,36 @@
 .features {
     padding-bottom: 141px;
 
+    @media screen and (max-width: 850px) {
+        padding-bottom: 80px;
+    }
+
     &__title {
         @extend %sectionTitle;
+
+        @media screen and (max-width: 576px) {
+            font-size: clamp(36px, 10vw, 43px);
+        }
     }
 
     &__desk {
         @include sectionDesk(874px);
         margin-bottom: 74px;
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 45px;
+            font-size: clamp(14px, 3vw, 18px);
+        }
     }
 
     &__cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media screen and (max-width: 1111px) {
+            justify-content: space-evenly;
+        }
     }
 }
 
@@ -27,6 +44,14 @@
     border-radius: 10px;
     padding-top: 207px;
     transition: transform 0.3s;
+
+    @media screen and (max-width: 1120px) {
+        margin: 0 5px;
+    }
+
+    @media screen and (max-width: 1111px) {
+        margin: 0 10px 15px;
+    }
 
     &:hover {
         transform: translateY(-5px) scale(1.03);

@@ -26,8 +26,9 @@
 
     &__desc {
         @include sectionDesk(806px);
-        
+
         @media screen and (max-width: 576px) {
+            margin-bottom: 45px;
             font-size: clamp(14px, 3vw, 18px);
         }
     }
