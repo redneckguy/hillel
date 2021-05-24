@@ -10,24 +10,11 @@
         justify-content: start;
         flex-wrap: wrap;
         margin-bottom: 54px;
-
-        @media screen and (max-width: 1111px) {
-            justify-content: space-evenly;
-        }
     }
 
     .innovated {
         max-width: 318px;
         margin-right: 71px;
-
-        @media screen and (max-width: 1111px) {
-            width: 100%;
-            margin-right: 10px;
-        }
-
-        @media screen and (max-width: 924px) {
-            margin-bottom: 25px;
-        }
 
         &__logo {
             @include logo($white);
@@ -45,13 +32,6 @@
             opacity: 0.7;
             width: 316px;
             margin-left: 2px;
-
-            @media screen and (max-width: 576px) {
-                margin-bottom: 45px;
-                font-size: clamp(14px, 3vw, 18px);
-                text-align: center;
-                width: 100%;
-            }
         }
     }
 
@@ -60,24 +40,10 @@
         max-width: 226px;
         width: 100%;
 
-        @media screen and (max-width: 1111px) {
-            width: 100%;
-            margin-right: 10px;
-        }
-
-        @media screen and (max-width: 924px) {
-            margin-bottom: 25px;
-        }
-
         &.support {
             margin-right: 64px;
             max-width: 127px;
             width: 100%;
-
-            @media screen and (max-width: 1111px) {
-                width: 100%;
-                margin-right: 10px;
-            }
 
             .verticalnav__nav-item:not(:last-child) {
                 margin-bottom: 10px;
@@ -181,6 +147,81 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1111px) {
+    .footer {
+        &__top-part {
+            justify-content: space-between;
+        }
+
+        .innovated,
+        .verticalnav,
+        .verticalnav.support {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 939px) {
+    .footer {
+        &__top-part {
+            justify-content: space-evenly;
+        }
+
+        .innovated,
+        .verticalnav,
+        .verticalnav.support,
+        .contact-us {
+            margin-bottom: 25px;
+            max-width: 320px;
+            width: 100%;
+            margin-right: 15px;
+        }
+    }
     
+    .innovated {
+
+        &__logo {
+            @include logo($white);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        &__desc {
+            font-size: clamp(14px, 3vw, 18px);
+            line-height: 1.62;
+            color: $white;
+            opacity: 0.7;
+            max-width: 320px;
+            margin-left: 2px;
+            text-align: center;
+        }
+    }
+
+    .verticalnav {
+        margin-bottom: 25px;
+
+        &.support {
+            max-width: 320px;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__nav-item {
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        text-align: center;
+    }
 }

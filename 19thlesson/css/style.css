@@ -119,6 +119,10 @@ table {
   font-display: swap;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -1660,28 +1664,9 @@ a {
   margin-bottom: 54px;
 }
 
-@media screen and (max-width: 1111px) {
-  .footer__top-part {
-    justify-content: space-evenly;
-  }
-}
-
 .footer .innovated {
   max-width: 318px;
   margin-right: 71px;
-}
-
-@media screen and (max-width: 1111px) {
-  .footer .innovated {
-    width: 100%;
-    margin-right: 10px;
-  }
-}
-
-@media screen and (max-width: 924px) {
-  .footer .innovated {
-    margin-bottom: 25px;
-  }
 }
 
 .footer .innovated__logo {
@@ -1708,45 +1693,16 @@ a {
   margin-left: 2px;
 }
 
-@media screen and (max-width: 576px) {
-  .footer .innovated__desc {
-    margin-bottom: 45px;
-    font-size: clamp(14px, 3vw, 18px);
-    text-align: center;
-    width: 100%;
-  }
-}
-
 .footer .verticalnav {
   margin-right: 72px;
   max-width: 226px;
   width: 100%;
 }
 
-@media screen and (max-width: 1111px) {
-  .footer .verticalnav {
-    width: 100%;
-    margin-right: 10px;
-  }
-}
-
-@media screen and (max-width: 924px) {
-  .footer .verticalnav {
-    margin-bottom: 25px;
-  }
-}
-
 .footer .verticalnav.support {
   margin-right: 64px;
   max-width: 127px;
   width: 100%;
-}
-
-@media screen and (max-width: 1111px) {
-  .footer .verticalnav.support {
-    width: 100%;
-    margin-right: 10px;
-  }
 }
 
 .footer .verticalnav.support .verticalnav__nav-item:not(:last-child) {
@@ -1890,4 +1846,71 @@ a {
 
 .footer__copyright .copyright-desc a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1111px) {
+  .footer__top-part {
+    justify-content: space-between;
+  }
+  .footer .innovated,
+  .footer .verticalnav,
+  .footer .verticalnav.support {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .footer__top-part {
+    justify-content: space-evenly;
+  }
+  .footer .innovated,
+  .footer .verticalnav,
+  .footer .verticalnav.support,
+  .footer .contact-us {
+    margin-bottom: 25px;
+    max-width: 320px;
+    width: 100%;
+    margin-right: 15px;
+  }
+  .innovated__logo {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 1.52;
+    letter-spacing: 1.1px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .innovated__desc {
+    font-size: clamp(14px, 3vw, 18px);
+    line-height: 1.62;
+    color: #fff;
+    opacity: 0.7;
+    max-width: 320px;
+    margin-left: 2px;
+    text-align: center;
+  }
+  .verticalnav {
+    margin-bottom: 25px;
+  }
+  .verticalnav.support {
+    max-width: 320px;
+  }
+  .verticalnav__subtitle {
+    text-align: center;
+  }
+  .verticalnav__nav-item {
+    text-align: center;
+  }
+  .verticalnav__nav-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    text-align: center;
+  }
 }
