@@ -235,7 +235,13 @@ a {
 
 @media screen and (max-width: 992px) {
   .header {
-    padding-bottom: 95px;
+    padding-bottom: 75px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    padding-top: 15px;
   }
 }
 
@@ -259,6 +265,12 @@ a {
     top: 0%;
     right: 0.6%;
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header .laptop-guy__in-header {
+    opacity: .5;
   }
 }
 
@@ -292,6 +304,12 @@ a {
 @media screen and (max-width: 992px) {
   .header__bar {
     margin-bottom: 58px;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .header__bar {
+    margin-bottom: 0;
   }
 }
 
@@ -433,9 +451,16 @@ a {
 
 @media screen and (max-width: 992px) {
   .laptop-guy-img {
-    display: inline-block;
+    display: block;
     width: 100%;
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .laptop-guy-img {
+    width: 90vw;
+    margin: 0 auto;
   }
 }
 
