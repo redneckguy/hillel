@@ -511,6 +511,24 @@ a {
   padding-top: 3px;
 }
 
+@media screen and (max-width: 881px) {
+  .toggle .lang-selector {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .toggle .lang-selector {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 286px) {
+  .toggle .lang-selector {
+    margin-bottom: 10px;
+  }
+}
+
 .toggle .lang-selector__label {
   margin-right: 25px;
   padding-bottom: 2px;
