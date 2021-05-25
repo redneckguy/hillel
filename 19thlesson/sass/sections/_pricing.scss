@@ -2,8 +2,16 @@
     .container {
         padding-bottom: 140px;
 
+        @media screen and (max-width: 1130px) {
+            padding-bottom: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 20px;
+        }
+
         @media screen and (max-width: 576px) {
-            padding-bottom: 60px;
+            padding-bottom: 10px;
         }
     }
 
@@ -19,6 +27,10 @@
         line-height: 1.6;
         letter-spacing: 0.05em;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__plan {
@@ -27,6 +39,10 @@
         line-height: 1.4;
         color: $primary-black;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -39,6 +55,10 @@
     border-radius: 5px;
     padding: 9px;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
 
     @media screen and (max-width: 376px) {
         flex-direction: column;
