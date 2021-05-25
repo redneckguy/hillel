@@ -239,6 +239,12 @@ a {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .header {
+    padding-top: 25px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .header {
     padding-top: 15px;
@@ -612,6 +618,13 @@ a {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .creativity {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+}
+
 .creativity__title {
   font-weight: 600;
   line-height: 1.31;
@@ -620,6 +633,7 @@ a {
 @media screen and (max-width: 576px) {
   .creativity__title {
     font-size: clamp(36px, 10vw, 43px);
+    margin-bottom: 17px;
   }
 }
 
@@ -630,9 +644,16 @@ a {
   margin-bottom: 70px;
 }
 
+@media screen and (max-width: 768px) {
+  .creativity__desc {
+    margin-bottom: 40px;
+    font-size: clamp(14px, 3vw, 18px);
+  }
+}
+
 @media screen and (max-width: 576px) {
   .creativity__desc {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     font-size: clamp(14px, 3vw, 18px);
   }
 }
@@ -679,6 +700,12 @@ a {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .creativity__content-img {
+    margin-bottom: 25px;
+  }
+}
+
 .progressbar {
   display: flex;
   flex-direction: column;
@@ -696,13 +723,38 @@ a {
   }
 }
 
+@media screen and (max-width: 1260px) {
+  .progressbar__row {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .progressbar__row {
+    margin-bottom: 15px;
+  }
+}
+
 .progressbar__row-title {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .progressbar__row-title {
+    font-size: clamp(19px, 4vw, 25px);
+    margin-bottom: 12px;
+  }
 }
 
 .progressbar__row-container, .progressbar__row-filler {
   height: 15px;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .progressbar__row-container, .progressbar__row-filler {
+    height: clamp(10px, 4vw, 15px);
+  }
 }
 
 .progressbar__row-container--red {
@@ -770,6 +822,12 @@ a {
   font-weight: 500;
   font-size: 25px;
   line-height: 1.49;
+}
+
+@media screen and (max-width: 768px) {
+  .progressbar__row-number {
+    font-size: clamp(19px, 4vw, 25px);
+  }
 }
 
 .features {

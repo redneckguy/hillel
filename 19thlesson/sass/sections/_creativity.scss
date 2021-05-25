@@ -14,6 +14,11 @@
         padding-bottom: 80px;
     }
 
+    @media screen and (max-width: 576px) {
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+
     &__title {
         @extend %sectionTitle;
         font-weight: 600;
@@ -21,14 +26,20 @@
 
         @media screen and (max-width: 576px) {
             font-size: clamp(36px, 10vw, 43px);
+            margin-bottom: 17px;
         }
     }
 
     &__desc {
         @include sectionDesk(806px);
 
+        @media screen and (max-width: 768px) {
+            margin-bottom: 40px;
+            font-size: clamp(14px, 3vw, 18px);
+        }
+
         @media screen and (max-width: 576px) {
-            margin-bottom: 45px;
+            margin-bottom: 30px;
             font-size: clamp(14px, 3vw, 18px);
         }
     }
@@ -63,6 +74,10 @@
             width: 100%;
             margin-bottom: 35px;
         }
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 25px;
+        }
     }
 }
 
@@ -80,15 +95,35 @@
         margin: 0 15px;
     }
 
+    &__row {
+        @media screen and (max-width: 1260px) {
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 1260px) {
+            margin-bottom: 15px;
+        }
+    }
+    
+
     &__row-title {
         @extend %subTitle;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+            font-size: clamp(19px, 4vw, 25px);
+            margin-bottom: 12px;
+        }
     }
 
     &__row-container,
     &__row-filler {
         height: 15px;
         border-radius: 15px;
+
+        @media screen and (max-width: 768px) {
+            height: clamp(10px, 4vw, 15px);
+        }
     }
 
     &__row-container {
@@ -158,5 +193,9 @@
         font-weight: 500;
         font-size: 25px;
         line-height: 1.49;
+
+        @media screen and (max-width: 768px) {
+            font-size: clamp(19px, 4vw, 25px);
+        }
     }
 }
