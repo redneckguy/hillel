@@ -2,27 +2,39 @@
     .container {
         padding-bottom: 140px;
 
+        @media screen and (max-width: 992px) {
+            padding-bottom: 45px;
+        }
+
         @media screen and (max-width: 576px) {
-            padding-bottom: 60px;
+            padding-bottom: 25px;
         }
     }
 
     &__title {
         @extend %sectionTitle;
 
-        @media screen and (max-width: 576px) {
-            font-size: clamp(36px, 8vw, 43px);
-            margin: auto;
+        @media screen and (max-width: 992px) {
             margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: clamp(31px, 8vw, 43px);
+            max-width: 270px;
+            margin: 0 auto 15px;
         }
     }
 
     &__desc {
         @include sectionDesk(715px);
 
-        @media screen and (max-width: 576px) {
-            margin-bottom: 45px;
+        @media screen and (max-width: 992px) {
+            margin-bottom: 35px;
             font-size: clamp(14px, 3vw, 18px);
+        }
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 20px;
         }
     }
 
@@ -35,12 +47,24 @@
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;
+
+        @media screen and (max-width: 768px) {
+            padding: 30px 50px;
+        }
+
+        @media screen and (max-width: 576px) {
+            padding: 18px 21px;
+        }
     }
 
     .slider {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media screen and (max-width: 992px) {
+            justify-content: space-evenly;
+        }
 
         &__buttons {
             margin: 0 auto;
@@ -77,6 +101,16 @@
         margin-bottom: 50px;
         cursor: pointer;
 
+        @media screen and (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 20px;
+        }
+
         &:hover {
             .review__desc {
                 color: $primary-black;
@@ -99,6 +133,11 @@
             margin-left: 46.33px;
             margin-bottom: 30px;
 
+            @media screen and (max-width: 576px) {
+                margin-bottom: 15px;
+                font-size: clamp(14px, 3vw, 18px);
+            }
+
             &::before {
                 content: "";
                 position: absolute;
@@ -120,6 +159,8 @@
             align-items: center;
             max-width: 263px;
             justify-content: start;
+
+            
         }
 
         &__person-img-wrap {
@@ -133,6 +174,11 @@
                 box-shadow: inset 0px 0px 0px 1px $primary-black;
                 border-radius: 50%;
                 z-index: 1;
+
+                @media screen and (max-width: 576px) {
+                    width: clamp(70px, 17vw, 90px);
+                    height: auto;
+                }
             }
         }
 
@@ -141,6 +187,11 @@
             width: 90px;
             height: 90px;
             border-radius: 50%;
+
+            @media screen and (max-width: 576px) {
+                width: clamp(70px, 17vw, 90px);
+                height: auto;
+            }
         }
 
         &__person-name,
@@ -154,11 +205,19 @@
             line-height: 1.6;
             color: $primary-black;
             margin-bottom: 6px;
+
+            @media screen and (max-width: 576px) {
+                font-size: clamp(14px, 3vw, 20px);
+            }
         }
 
         &__person-position {
             font-size: 16px;
             line-height: 1.63;
+
+            @media screen and (max-width: 576px) {
+                font-size: clamp(12px, 3vw, 16px);
+            }
         }
     }
 }
