@@ -1,15 +1,20 @@
 .features {
     padding-bottom: 141px;
 
-    @media screen and (max-width: 850px) {
-        padding-bottom: 80px;
+    @media screen and (max-width: 1111px) {
+        padding-bottom: 30px;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-bottom: 20px;
     }
 
     &__title {
         @extend %sectionTitle;
 
         @media screen and (max-width: 576px) {
-            font-size: clamp(36px, 10vw, 43px);
+            font-size: clamp(33px, 10vw, 43px);
+            margin-bottom: 17px;
         }
     }
 
@@ -17,8 +22,13 @@
         @include sectionDesk(874px);
         margin-bottom: 74px;
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
             margin-bottom: 45px;
+            font-size: clamp(14px, 3vw, 18px);
+        }        
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 25px;
             font-size: clamp(14px, 3vw, 18px);
         }
     }
