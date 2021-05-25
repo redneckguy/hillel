@@ -6,8 +6,12 @@
             padding-bottom: 45px;
         }
 
+        @media screen and (max-width: 768px) {
+            padding-bottom: 20px;
+        }
+
         @media screen and (max-width: 576px) {
-            padding-bottom: 25px;
+            padding-bottom: 15px;
         }
     }
 
