@@ -1030,11 +1030,18 @@ a {
   padding-bottom: 80px;
 }
 
+@media screen and (max-width: 992px) {
+  .services .container {
+    padding-bottom: 40px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .services .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 25px;
   }
 }
 
@@ -1081,8 +1088,9 @@ a {
 
 @media screen and (max-width: 576px) {
   .services__title {
-    font-size: clamp(36px, 10vw, 43px);
+    font-size: clamp(33px, 10vw, 43px);
     text-align: center;
+    margin-bottom: 17px;
   }
 }
 
@@ -1095,11 +1103,17 @@ a {
   text-align: left;
 }
 
+@media screen and (max-width: 992px) {
+  .services__desc {
+    margin-bottom: 40px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .services__desc {
-    margin-bottom: 45px;
     font-size: clamp(14px, 3vw, 18px);
     text-align: center;
+    margin-bottom: 25px;
   }
 }
 
@@ -1131,9 +1145,9 @@ a {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 376px) {
   .srvscard {
-    max-width: clamp(340px, 10vw, 360px);
+    max-width: clamp(315px, 3vw, 360px);
   }
 }
 
@@ -1187,9 +1201,10 @@ a {
   margin: 40px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 376px) {
   .inner-card {
-    max-width: clamp(245px, 10vw, 280px);
+    max-width: clamp(245px, 3vw, 280px);
+    margin: 31px;
   }
 }
 
