@@ -68,10 +68,40 @@
         box-shadow: 0 5px 25px $features-card-shadow;
     }
 
-    &__circle,
-    &__img {
+    &__circle {
         position: absolute;
         transform: translate(-50%, -50%);
+    }
+
+    &__img-svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &--graphic {
+            fill: $features-graphic;
+            width: 45px;
+            height: 45px;
+        }
+
+        &--people {
+            stroke: $features-people;
+            width: 50px;
+            height: 42px;
+        }
+        
+        &--bell {
+            stroke: $features-bell;
+            width: 44px;
+            height: 49px;
+        }
+
+        &--clock {
+            stroke: $features-clock;
+            width: 48px;
+            height: 48px;
+        }
     }
 
     &__circle {
@@ -96,11 +126,6 @@
         &--support {
             background-color: $features-support;
         }
-    }
-
-    &__img {
-        top: 50%;
-        left: 50%;
     }
 
     &__title {
