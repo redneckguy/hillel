@@ -196,7 +196,7 @@
             box-shadow: -1px 6px 16px -10px $service-card-btn-shadow;
 
             .inner-card__arrow {
-                filter: $fill-light-blue;
+                stroke: $light-blue;
                 transform: translateY(3.5px);
             }
         }
@@ -206,7 +206,7 @@
             box-shadow: -1px 6px 12px -10px $service-card-btn-shadow;
 
             .inner-card__arrow {
-                filter: $fill-light-blue;
+                stroke: $light-blue;
                 transform: translateY(2px);
             }
         }
@@ -215,6 +215,9 @@
     &__arrow {
         margin: auto;
         transition: 0.2s ease;
-        transition-property: transform;
+        transition-property: transform, stroke;
+        stroke: $primary-black;
+        width: 16px;
+        height: 16px;
     }
 }

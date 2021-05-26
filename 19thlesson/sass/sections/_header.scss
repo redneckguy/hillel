@@ -260,8 +260,7 @@
 
         &:hover &-arrow,
         &:focus &-arrow {
-            filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(69deg)
-                brightness(106%) contrast(101%);
+            fill: $pricing-black;
         }
     }
 
@@ -270,6 +269,9 @@
         top: 50%;
         left: 54%;
         transform: translate(-50%, -50%);
+        width: 16px;
+        height: 18px;
+        fill: $dark-blue;
     }
 
     &__link {

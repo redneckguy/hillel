@@ -583,7 +583,7 @@ a {
 
 .watch-video__button:hover .watch-video__button-arrow,
 .watch-video__button:focus .watch-video__button-arrow {
-  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(69deg) brightness(106%) contrast(101%);
+  fill: #999999;
 }
 
 .watch-video__button-arrow {
@@ -591,6 +591,9 @@ a {
   top: 50%;
   left: 54%;
   transform: translate(-50%, -50%);
+  width: 16px;
+  height: 18px;
+  fill: #1b45da;
 }
 
 .watch-video__link {
@@ -1457,7 +1460,7 @@ a {
 }
 
 .inner-card__circle:hover .inner-card__arrow, .inner-card__circle:focus .inner-card__arrow {
-  filter: invert(64%) sepia(63%) saturate(6673%) hue-rotate(203deg) brightness(103%) contrast(104%);
+  stroke: #3988ff;
   transform: translateY(3.5px);
 }
 
@@ -1467,14 +1470,17 @@ a {
 }
 
 .inner-card__circle:active .inner-card__arrow {
-  filter: invert(64%) sepia(63%) saturate(6673%) hue-rotate(203deg) brightness(103%) contrast(104%);
+  stroke: #3988ff;
   transform: translateY(2px);
 }
 
 .inner-card__arrow {
   margin: auto;
   transition: 0.2s ease;
-  transition-property: transform;
+  transition-property: transform, stroke;
+  stroke: #050c26;
+  width: 16px;
+  height: 16px;
 }
 
 .pricing .container {
