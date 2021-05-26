@@ -119,10 +119,6 @@ table {
   font-display: swap;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -1130,25 +1126,25 @@ a {
 }
 
 .feature__img-svg--graphic {
-  fill: #E80F0F;
+  fill: #e80f0f;
   width: 45px;
   height: 45px;
 }
 
 .feature__img-svg--people {
-  stroke: #D7187F;
+  stroke: #d7187f;
   width: 50px;
   height: 42px;
 }
 
 .feature__img-svg--bell {
-  stroke: #9113CD;
+  stroke: #9113cd;
   width: 44px;
   height: 49px;
 }
 
 .feature__img-svg--clock {
-  stroke: #1660B7;
+  stroke: #1660b7;
   width: 48px;
   height: 48px;
 }

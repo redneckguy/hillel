@@ -25,7 +25,7 @@
         @media screen and (max-width: 768px) {
             margin-bottom: 45px;
             font-size: clamp(14px, 3vw, 18px);
-        }        
+        }
 
         @media screen and (max-width: 576px) {
             margin-bottom: 25px;
@@ -90,7 +90,7 @@
             width: 50px;
             height: 42px;
         }
-        
+
         &--bell {
             stroke: $features-bell;
             width: 44px;

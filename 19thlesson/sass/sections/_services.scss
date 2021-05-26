@@ -40,7 +40,7 @@
                 display: none;
             }
         }
-    
+
         &__container {
             @media screen and (max-width: 1600px) {
                 display: none;
@@ -84,10 +84,6 @@
 
     @media screen and (max-width: 1120px) {
         justify-content: space-evenly;
-    }
-
-    @media screen and (max-width: 576px) {
-        // margin: auto;
     }
 }
 
