@@ -16,6 +16,10 @@
             font-size: clamp(33px, 10vw, 43px);
             margin-bottom: 17px;
         }
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 10vw, 33px);
+        }
     }
 
     &__desk {
@@ -30,6 +34,10 @@
         @media screen and (max-width: 576px) {
             margin-bottom: 25px;
             font-size: clamp(14px, 3vw, 18px);
+        }
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 3vw, 14px);
         }
     }
 
@@ -111,6 +119,11 @@
         height: 150px;
         border-radius: 50%;
 
+        @media screen and (max-width: 250px) {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
         &--quality {
             background-color: $features-quality;
         }
@@ -133,11 +146,19 @@
         text-align: center;
         margin-bottom: 16px;
         text-transform: none;
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 10vw, 33px);
+        }
     }
 
     &__desc {
         @extend %cardDesc;
         margin-bottom: 24px;
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 3vw, 14px);
+        }
     }
 
     &__btn {

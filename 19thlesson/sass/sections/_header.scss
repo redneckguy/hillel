@@ -104,6 +104,10 @@
     @include logo($primary-black);
     @extend %linksHover;
 
+    @media screen and (max-width: 250px) {
+        font-size: clamp(20%, 8vw, 25px);
+    }
+
     &__link {
         color: inherit;
         transition: 0.2s ease;
@@ -208,6 +212,10 @@
         @media screen and (max-width: 650px) {
             font-size: clamp(39px, 10vw, 69px);
         }
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(100%, 7vw, 30px);
+        }
     }
 
     &__text {
@@ -217,6 +225,10 @@
         @media screen and (max-width: 650px) {
             font-size: clamp(14px, 3vw, 18px);
             max-width: clamp(340px, 3vw, 496px);
+        }
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 3vw, 14px);
         }
     }
 }

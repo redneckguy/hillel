@@ -58,6 +58,10 @@
             text-align: center;
             margin-bottom: 17px;
         }
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 10vw, 33px);
+        }
     }
 
     &__desc {
@@ -73,6 +77,10 @@
             font-size: clamp(14px, 3vw, 18px);
             text-align: center;
             margin-bottom: 25px;
+        }
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 3vw, 14px);
         }
     }
 }
@@ -106,6 +114,10 @@
 
     @media screen and (max-width: 319px) {
         max-width: clamp(210px, 3vw, 315px);
+    }
+
+    @media screen and (max-width: 250px) {
+        max-width: clamp(70%, 3vw, 315px);
     }
 
     &__img {

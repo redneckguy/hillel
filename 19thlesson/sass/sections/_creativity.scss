@@ -28,6 +28,10 @@
             font-size: clamp(33px, 10vw, 43px);
             margin-bottom: 17px;
         }
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 10vw, 33px);
+        }
     }
 
     &__desc {
@@ -41,6 +45,10 @@
         @media screen and (max-width: 576px) {
             margin-bottom: 30px;
             font-size: clamp(14px, 3vw, 18px);
+        }
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 3vw, 14px);
         }
     }
 

@@ -43,6 +43,10 @@
         @media screen and (max-width: 768px) {
             margin-bottom: 20px;
         }
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(50%, 10vw, 33px);
+        }
     }
 }
 
@@ -68,6 +72,10 @@
     &__button {
         color: $main-text;
         padding: 10px 0;
+
+        @media screen and (max-width: 250px) {
+            font-size: clamp(30%, 7vw, 33px);
+        }
     }
 
     &__button-input {
