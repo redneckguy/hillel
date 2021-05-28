@@ -104,6 +104,10 @@
         max-width: clamp(315px, 3vw, 360px);
     }
 
+    @media screen and (max-width: 319px) {
+        max-width: clamp(210px, 3vw, 315px);
+    }
+
     &__img {
         filter: blur(4px);
         position: absolute;
@@ -166,15 +170,34 @@
         margin: 31px;
     }
 
+    @media screen and (max-width: 319px) {
+        max-width: clamp(180px, 3vw, 245px);
+        padding: 5px;
+    }
+
     &__title {
         @extend %subTitle;
         text-align: center;
         margin-bottom: 21px;
+
+        @media screen and (max-width: 376px) {
+            font-size: clamp(17px, 7vw, 25px);
+            max-width: 100%;
+        }
     }
 
     &__desc {
         @extend %cardDesc;
         margin-bottom: 39px;
+
+        @media screen and (max-width: 376px) {
+            font-size: clamp(12px, 9vw, 16px);
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 319px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__circle {
