@@ -288,3 +288,14 @@
         }
     }
 }
+
+@media screen and (max-width: 319px) {
+    .footer {
+        .innovated {
+            &__desc {
+                max-width: 100%;
+                font-size: clamp(12px, 7vw, 16px);
+            }
+        }
+    }
+}

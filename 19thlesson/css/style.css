@@ -2455,3 +2455,10 @@ a {
     margin-bottom: 5px;
   }
 }
+
+@media screen and (max-width: 319px) {
+  .footer .innovated__desc {
+    max-width: 100%;
+    font-size: clamp(12px, 7vw, 16px);
+  }
+}
