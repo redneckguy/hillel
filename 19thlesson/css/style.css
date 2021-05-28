@@ -1414,6 +1414,12 @@ a {
   }
 }
 
+@media screen and (max-width: 250px) {
+  .cards {
+    width: 100%;
+  }
+}
+
 .srvscard {
   display: flex;
   position: relative;
@@ -1445,6 +1451,7 @@ a {
 @media screen and (max-width: 250px) {
   .srvscard {
     max-width: clamp(70%, 3vw, 315px);
+    margin: auto;
   }
 }
 
@@ -1512,6 +1519,13 @@ a {
   }
 }
 
+@media screen and (max-width: 250px) {
+  .inner-card {
+    max-width: clamp(70%, 3vw, 315px);
+    margin: auto;
+  }
+}
+
 .inner-card__title {
   text-align: center;
   margin-bottom: 21px;
@@ -1520,6 +1534,13 @@ a {
 @media screen and (max-width: 376px) {
   .inner-card__title {
     font-size: clamp(17px, 7vw, 25px);
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .inner-card__title {
+    font-size: clamp(50%, 7vw, 17px);
     max-width: 100%;
   }
 }
@@ -1538,6 +1559,13 @@ a {
 @media screen and (max-width: 319px) {
   .inner-card__desc {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .inner-card__desc {
+    font-size: clamp(50%, 7vw, 12px);
+    max-width: 100%;
   }
 }
 
@@ -1672,7 +1700,7 @@ a {
 
 @media screen and (max-width: 250px) {
   .form__button {
-    font-size: clamp(30%, 7vw, 33px);
+    font-size: clamp(30%, 4vw, 33px);
   }
 }
 
