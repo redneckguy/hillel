@@ -232,18 +232,7 @@ a {
 @media screen and (max-width: 992px) {
   .header {
     padding-bottom: 75px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .header {
-    padding-top: 25px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .header {
-    padding-top: 15px;
+    padding-top: 23px;
   }
 }
 
@@ -614,8 +603,8 @@ a {
 
 .toggle__button {
   background-color: #999999;
-  height: 60px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   position: fixed;
   top: 20px;
   right: 18px;
@@ -628,11 +617,11 @@ a {
 
 .toggle__icon {
   position: relative;
-  margin-top: 29px;
+  margin-top: 22px;
 }
 
 .toggle__icon, .toggle__icon::before, .toggle__icon::after {
-  width: 30px;
+  width: 27px;
   height: 2px;
   background-color: #fff5f5;
   display: inline-block;
@@ -654,8 +643,8 @@ a {
 }
 
 .toggle__background {
-  height: 56px;
-  width: 56px;
+  height: 43px;
+  width: 43px;
   border-radius: 50%;
   position: fixed;
   top: 21px;
