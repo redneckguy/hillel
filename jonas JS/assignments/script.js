@@ -52,10 +52,10 @@ console.log(description);
 
 console.log("         ");
 
-// * ===== CHALLANGE #1 =====
+// * ===== CHALLENGE #1 =====
 
 console.log("");
-console.log("Challange #1");
+console.log("Challenge #1");
 
 let massMark = 78;
 let heightMark = 1.69;
@@ -66,9 +66,9 @@ let heightJohn = 1.95;
 let BMIMark = massMark / heightMark ** 2;
 let BMIJohn = massJohn / heightJohn ** 2;
 
-let markHighterBMI = BMIMark > BMIJohn;
+let markHigherBMI = BMIMark > BMIJohn;
 
-console.log(markHighterBMI);
+console.log(markHigherBMI);
 
 massMark = 95;
 heightMark = 1.88;
@@ -130,10 +130,10 @@ if (population > averagePopulation) {
     );
 }
 
-// * ===== CHALLANGE #2 =====
+// * ===== CHALLENGE #2 =====
 
 console.log("");
-console.log("CHALLANGE 2");
+console.log("CHALLENGE 2");
 
 if (BMIMark > BMIJohn) {
     console.log(`Mark's BMI(${BMIMark}) is higher than John's(${BMIJohn})!`);
@@ -154,19 +154,50 @@ if (BMIMark > BMIJohn) {
 
 //? DZ 8
 
-console.log("");
-console.log("DZ 8");
-
+// console.log("");
+// console.log("DZ 8");
+//
 // let numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
-
-if (numNeighbours === 1) {
-    console.log("Only 1 border!");
-} else if (numNeighbours > 1) {
-    console.log("More than 1 border");
-} else if (numNeighbours === 0) console.log("No borders");
+//
+// if (numNeighbours === 1) {
+//     console.log("Only 1 border!");
+// } else if (numNeighbours > 1) {
+//     console.log("More than 1 border");
+// } else if (numNeighbours === 0) console.log("No borders");
 
 //? DZ 9
 
 console.log("");
 console.log("DZ 9");
 
+if (language === "English" && (population < 50000000) && isIsland === true) {
+    console.log(`You should live in Ukraine :)`);
+} else {
+    console.log(`Ukraine does not meet your criteria :(`);
+}
+
+// * ===== CHALLENGE #3 =====
+
+console.log("");
+console.log("CHALLENGE 3");
+
+let dolphinsScore1 = 97;
+let dolphinsScore2 = 87;
+let dolphinsScore3 = 81;
+
+let koalasScore1 = 10;
+let koalasScore2 = 9;
+let koalasScore3 = 16;
+
+let averageScoreDolphins = Math.floor((dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3);
+let averageScoreKoalas = Math.floor((koalasScore1 + koalasScore2 + koalasScore3) / 3);
+
+if ((averageScoreDolphins > averageScoreKoalas) && (averageScoreDolphins >= 100)) {
+    console.log(`${averageScoreDolphins}, Dolphins win`);
+} else if ((averageScoreDolphins < averageScoreKoalas) && (averageScoreKoalas >= 100)) {
+    console.log(`${averageScoreKoalas}, Koalas win`);
+} else if ((averageScoreDolphins === averageScoreKoalas) && (averageScoreDolphins >= 100) && (averageScoreKoalas >= 100)) {
+    console.log(`${averageScoreDolphins} Dolphins, ${averageScoreKoalas} Koalas, Draw`);
+} else {
+    console.log(`${averageScoreDolphins} Dolphins, ${averageScoreKoalas} Koalas, no one wins`);
+}
